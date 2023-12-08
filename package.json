@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "npm run fetch && npm run render",
+		"fetch": "node --no-warnings get-highscores-data.mjs",
+		"render": "node render-html.mjs"
+	},
+	"devDependencies": {
+		"glob": "^10.3.10",
+		"html-minifier-terser": "^7.2.0",
+		"lodash-es": "^4.17.21",
+		"prettier": "^3.0.3"
+	}
+}

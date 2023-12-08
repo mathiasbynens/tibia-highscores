@@ -1,0 +1,81 @@
+import * as fs from 'node:fs/promises';
+import {correctUnfairAchievementsHighscores} from './fix-achievements.mjs';
+import {completionists} from './compute-completionists.mjs';
+
+const categoryMap = new Map([ // categoryId → niceCategoryName
+	['achievements', 'achievements'],
+	['axefighting', 'axe-fighting'],
+	['bosspoints', 'boss-points'],
+	['charmpoints', 'charm-points'],
+	['clubfighting', 'club-fighting'],
+	['distancefighting', 'distance-fighting'],
+	['dromescore', 'drome-score'],
+	['experience', 'experience'],
+	['fishing', 'fishing'],
+	['fistfighting', 'fist-fighting'],
+	['goshnarstaint', 'goshnars-taint'],
+	['loyaltypoints', 'loyalty-points'],
+	['magiclevel', 'magic-level'],
+	['shielding', 'shielding'],
+	['swordfighting', 'sword-fighting'],
+]);
+const normalizeCategory = (categoryId) => {
+	return categoryMap.get(categoryId);
+};
+const CATEGORY_IDS = new Set(categoryMap.keys());
+const VOCATION_IDS = new Set([
+	'knights',
+	'paladins',
+	'druids',
+	'sorcerers',
+]);
+const MAX_PAGE = 10;
+
+const stringify = (data) => {
+	return JSON.stringify(data, null, '\t') + '\n';
+};
+
+const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all', page = 1, results = []) => {
+	const url = `https://api.tibiadata.com/v4/highscores/all/${categoryId}/${vocationId}/${page}`;
+	console.log(url);
+	const response = await fetch(url);
+	const data = await response.json();
+
+	const elements = data.highscores.highscore_list;
+	results.push(...elements);
+	if (page < MAX_PAGE) {
+		return getHighscoreData(categoryId, vocationId, page + 1, results);
+	}
+	return results;
+};
+
+const combinations = [];
+const INTERESTING_CATEGORY_IDS_FOR_ALL_VOCATIONS = new Set([
+	'experience',
+	'magiclevel',
+	'shielding',
+]);
+for (const categoryId of CATEGORY_IDS) {
+	combinations.push({ categoryId, vocationId: 'all' });
+	if (INTERESTING_CATEGORY_IDS_FOR_ALL_VOCATIONS.has(categoryId)) {
+		for (const vocationId of VOCATION_IDS) {
+			combinations.push({ categoryId, vocationId });
+		}
+	}
+}
+
+for (const combination of combinations) {
+	const {categoryId, vocationId} = combination;
+	const normalizedCategory = normalizeCategory(categoryId);
+	const id = vocationId === 'all' ? normalizedCategory : `${normalizedCategory}-${vocationId}`;
+	console.log(`Getting highscore data for category=${normalizedCategory} and vocation=${vocationId}…`);
+	const highscores = await getHighscoreData(categoryId, vocationId);
+	if (categoryId === 'achievements') {
+		await fs.writeFile(`./data/${id}-unfair.json`, stringify(highscores));
+		await fs.writeFile(`./data/${id}.json`, stringify(correctUnfairAchievementsHighscores(highscores)));
+		continue;
+	}
+	await fs.writeFile(`./data/${id}.json`, stringify(highscores));
+}
+
+await fs.writeFile(`./data/completionists.json`, stringify(completionists));

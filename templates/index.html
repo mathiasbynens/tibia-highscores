@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Tibia highscores: %%%CATEGORY%%%</title>
+<meta content="width=device-width" name="viewport">
+<link rel="icon" href="icon.webp">
+<style>
+	:root {
+		color-scheme: dark light;
+		--darkblue: #0A50C2;
+		--yellow: #FAD956;
+
+		/* Light mode colors. */
+		--html-color: #000;
+		--main-background: #FFF;
+		--table-border: #D6D6D6;
+		--alt-table-row-background: #EEE;
+		--link-color: var(--darkblue);
+		--link-color-alt: var(--html-color);
+		--link-hover-background: #CFE0FC;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			/* Dark mode colors. */
+			--html-color: #FEFEFE;
+			--main-background: #232323;
+			--table-border: #A6A6A6;
+			--alt-table-row-background: #111;
+			--link-color: var(--yellow);
+			--link-color-alt: var(--main-background);
+			--link-hover-background: var(--yellow);
+		}
+	}
+
+	html {
+		font: 1rem/1.6 sans-serif;
+		color: var(--html-color);
+		background: var(--main-background);
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+	}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		max-width: 80rem;
+		margin-bottom: 1em;
+		font-variant-numeric: tabular-nums;
+	}
+	tfoot {
+		vertical-align: top;
+	}
+	thead th, tfoot th, tfoot td {
+		background: var(--darkblue);
+		color: #FFF;
+		font-weight: bold;
+	}
+	th, td {
+		border: 1px solid var(--table-border);
+		padding: .5em 1em;
+	}
+	tbody tr:nth-child(odd) {
+		background-color: var(--alt-table-row-background);
+	}
+	tbody tr:hover {
+    background-color: var(--link-hover-background);
+    color: var(--link-color-alt);
+	}
+	td {
+		text-align: right;
+	}
+	td[colspan] {
+		text-align: center;
+	}
+	span {
+		font-weight: bold;
+	}
+	.neutral {
+		display: none;
+	}
+	tbody .good {
+		color: #116329;
+		background: #DAFBE1;
+	}
+	tbody .bad {
+		color: #82071E;
+		background: #FFEBE9;
+	}
+	small {
+		font-size: 0.7rem;
+	}
+	.extra {
+		display: block;
+		font-size: 0.8rem;
+	}
+	progress {
+		display: inline;
+		width: 4rem;
+		accent-color: var(--darkblue);
+		/* Alternatively, Tibia client green: #06BF01 */
+		/* accent-color: #06BF01; */
+	}
+	span[title] {
+		border-bottom: 1px dotted;
+		cursor: help;
+	}
+</style>
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<h1>Tibia highscores: %%%CATEGORY%%%</h1>
+%%%DATA%%%
