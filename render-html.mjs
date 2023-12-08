@@ -66,20 +66,20 @@ const renderHtml = (highscores, categoryId) => {
 				<tr>
 					<th scope=row>${escapeHtml(entry.rank)}
 					<th scope=row>${escapeHtml(entry.name)}
-					<td>${escapeHtml(formatInt(entry.level))} ${escapeHtml(abbreviateVocation(entry.vocation))}
+					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
 					<td>${escapeHtml(entry.world)}
 					<td>${escapeHtml(formatInt(entry.achievementPoints))}
 					<td>${escapeHtml(formatInt(entry.charmPoints))}
 					<td>${escapeHtml(formatInt(entry.bossPoints))}
 					<td>${escapeHtml(formatInt(entry.score))}
-					<td>${escapeHtml(formatPercentage(entry.overallPercentage))}
+					<td>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${entry.overallPercentage}"></progress>
 			`);
 		} else {
 			table.push(`
 				<tr>
 					<th scope=row>${escapeHtml(entry.rank)}
 					<th scope=row>${escapeHtml(entry.name)}
-					<td>${escapeHtml(formatInt(entry.level))} ${escapeHtml(abbreviateVocation(entry.vocation))}
+					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
 					<td>${escapeHtml(entry.world)}
 					<td>${escapeHtml(formatInt(entry.value))}
 			`);
