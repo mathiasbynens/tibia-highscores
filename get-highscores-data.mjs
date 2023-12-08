@@ -23,13 +23,19 @@ const normalizeCategory = (categoryId) => {
 	return categoryMap.get(categoryId);
 };
 const CATEGORY_IDS = new Set(categoryMap.keys());
+const CATEGORY_IDS_REQUIRING_MORE_PAGES = new Set([
+	'achievements',
+	'bosspoints',
+	'charmpoints',
+]);
 const VOCATION_IDS = new Set([
 	'knights',
 	'paladins',
 	'druids',
 	'sorcerers',
 ]);
-const MAX_PAGE = 10;
+const MAX_PAGE = 5;
+const MAX_PAGE_SPECIAL = 20;
 
 const stringify = (data) => {
 	return JSON.stringify(data, null, '\t') + '\n';
@@ -43,7 +49,8 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 
 	const elements = data.highscores.highscore_list;
 	results.push(...elements);
-	if (page < MAX_PAGE) {
+	const maxPage = CATEGORY_IDS_REQUIRING_MORE_PAGES.has(categoryId) ? MAX_PAGE_SPECIAL : MAX_PAGE;
+	if (page < maxPage) {
 		return getHighscoreData(categoryId, vocationId, page + 1, results);
 	}
 	return results;
