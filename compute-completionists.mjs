@@ -7,6 +7,8 @@ const readJsonFile = async (fileName) => {
 	return data;
 };
 
+const MAX_ENTRIES = 100;
+
 // Characters that rook themselves can unlock a number of coinciding
 // achievements, resulting in some additional points. Since this is
 // feasible for new characters but not feasible for characters that
@@ -133,7 +135,7 @@ for (const [name, stats] of characters) {
 }
 export const completionists = Array.from(characters.values()).sort((a, b) => {
 	return b.score - a.score;
-});
+}).slice(0, MAX_ENTRIES);
 let rank = 1;
 for (const entry of completionists) {
 	entry.rank = rank++;
