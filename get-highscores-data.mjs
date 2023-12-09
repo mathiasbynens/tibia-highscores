@@ -1,4 +1,5 @@
-import * as fs from 'node:fs/promises';
+import fs from 'node:fs/promises';
+import fetch from 'node-fetch-retry';
 import {correctUnfairAchievementsHighscores} from './fix-achievements.mjs';
 import {completionists} from './compute-completionists.mjs';
 
@@ -44,8 +45,16 @@ const stringify = (data) => {
 const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all', page = 1, results = []) => {
 	const url = `https://api.tibiadata.com/v4/highscores/all/${categoryId}/${vocationId}/${page}`;
 	console.log(url);
-	const response = await fetch(url);
+	const response = await fetch(url, {
+		retry: 3,
+		pause: 1_000,
+	});
 	const data = await response.json();
+
+	if (data.information.status.error || !data.highscores) {
+		console.log('Error in API response. Retrying…');
+		return getHighscoreData(categoryId, vocationId, page, results);
+	}
 
 	const elements = data.highscores.highscore_list;
 	results.push(...elements);
