@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import fetch from 'node-fetch-retry';
-import {correctUnfairAchievementsHighscores} from './fix-achievements.mjs';
-import {completionists} from './compute-completionists.mjs';
+import {adjustUnfairAchievementsHighscoreEntries, removeUnfairAchievementsHighscoreEntries} from './fix-achievements.mjs';
+import {computeCompletionists} from './compute-completionists.mjs';
 
 const categoryMap = new Map([ // categoryId → niceCategoryName
 	['achievements', 'achievements'],
@@ -49,7 +49,14 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 		retry: 3,
 		pause: 1_000,
 	});
-	const data = await response.json();
+
+	let data = null;
+	try {
+		data = await response.json();
+	} catch {
+		console.log('Error in API response. Retrying…');
+		return getHighscoreData(categoryId, vocationId, page, results);
+	}
 
 	if (data.information.status.error || !data.highscores) {
 		console.log('Error in API response. Retrying…');
@@ -88,10 +95,12 @@ for (const combination of combinations) {
 	const highscores = await getHighscoreData(categoryId, vocationId);
 	if (categoryId === 'achievements') {
 		await fs.writeFile(`./data/${id}-unfair.json`, stringify(highscores));
-		await fs.writeFile(`./data/${id}.json`, stringify(correctUnfairAchievementsHighscores(highscores)));
+		await fs.writeFile(`./data/${id}-filtered.json`, stringify(removeUnfairAchievementsHighscoreEntries(highscores)));
+		await fs.writeFile(`./data/${id}.json`, stringify(adjustUnfairAchievementsHighscoreEntries(highscores)));
 		continue;
 	}
 	await fs.writeFile(`./data/${id}.json`, stringify(highscores));
 }
 
+const completionists = await computeCompletionists();
 await fs.writeFile(`./data/completionists.json`, stringify(completionists));
