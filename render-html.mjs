@@ -47,16 +47,10 @@ const renderHtml = (highscores, categoryId) => {
 	const output = [
 		`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`,
 	];
-/*
-		"achievementPoints": 1276,
-		"charmPoints": 23825,
-		"bossPoints": 19935,
-		"score": 280.08
-*/
 	const isCompletionists = 'completionists' === categoryId;
 	const table = [];
 	if (isCompletionists) {
-		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Score<th>Completion percentage<tbody>');
+		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Completion percentage<tbody>');
 	} else {
 		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Value<tbody>');
 	}
@@ -71,7 +65,6 @@ const renderHtml = (highscores, categoryId) => {
 					<td>${escapeHtml(formatInt(entry.achievementPoints))}
 					<td>${escapeHtml(formatInt(entry.charmPoints))}
 					<td>${escapeHtml(formatInt(entry.bossPoints))}
-					<td>${escapeHtml(formatInt(entry.score))}
 					<td>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${entry.overallPercentage}"></progress>
 			`);
 		} else {

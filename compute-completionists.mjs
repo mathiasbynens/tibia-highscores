@@ -13,35 +13,6 @@ const MAX_ACHIEVEMENT_POINTS = 1302; // TODO: Add points for "The Rule of Raccoo
 const MAX_CHARM_POINTS = 24275;
 const MAX_BOSS_POINTS = 24950;
 
-// Points beyond 90% of the max get a 25% bonus on the score.
-const SCORE_BONUS_QUANTILE = 0.90;
-const SCORE_BONUS_MULTIPLIER = 1.25;
-
-// Score bonus limits.
-const ACHIEVEMENT_POINTS_BONUS_LIMIT = Math.round(MAX_ACHIEVEMENT_POINTS * SCORE_BONUS_QUANTILE);
-const CHARM_POINTS_BONUS_LIMIT = Math.round(MAX_CHARM_POINTS * SCORE_BONUS_QUANTILE);
-const BOSS_POINTS_BONUS_LIMIT = Math.round(MAX_BOSS_POINTS * SCORE_BONUS_QUANTILE);
-
-const computeScore = (entry) => {
-	const extraAchievementPoints = entry.achievementPoints - ACHIEVEMENT_POINTS_BONUS_LIMIT;
-	const extraCharmPoints = entry.charmPoints - CHARM_POINTS_BONUS_LIMIT;
-	const extraBossPoints = entry.bossPoints - BOSS_POINTS_BONUS_LIMIT;
-	let achievementScore = entry.achievementPoints / MAX_ACHIEVEMENT_POINTS;
-	if (extraAchievementPoints > 0) {
-		achievementScore = (extraAchievementPoints * SCORE_BONUS_MULTIPLIER + ACHIEVEMENT_POINTS_BONUS_LIMIT) / MAX_ACHIEVEMENT_POINTS;
-	}
-	let charmScore = entry.charmPoints / MAX_CHARM_POINTS;
-	if (extraCharmPoints > 0) {
-		charmScore = (extraCharmPoints * SCORE_BONUS_MULTIPLIER + CHARM_POINTS_BONUS_LIMIT) / MAX_CHARM_POINTS;
-	}
-	let bossScore = entry.bossPoints / MAX_BOSS_POINTS;
-	if (extraBossPoints > 0) {
-		bossScore = (extraBossPoints * SCORE_BONUS_MULTIPLIER + BOSS_POINTS_BONUS_LIMIT) / MAX_BOSS_POINTS;
-	}
-	const score = Math.round((achievementScore + charmScore + bossScore) * 10_000) / 100;
-	return score;
-};
-
 export const computeCompletionists = async () => {
 
 	const achievements = await readJsonFile('./data/achievements-unfair.json');
@@ -119,17 +90,15 @@ export const computeCompletionists = async () => {
 				charmPointsPercentage: 0,
 				bossPointsPercentage: bossPointsPercentage,
 				overallPercentage: 0,
-				score: 0,
 			});
 		}
 	}
 
 	for (const [name, stats] of characters) {
-		stats.score = computeScore(stats);
 		stats.overallPercentage = Math.round(100 * (stats.achievementPointsPercentage + stats.charmPointsPercentage + stats.bossPointsPercentage) / 3) / 100;
 	}
 	const completionists = Array.from(characters.values()).sort((a, b) => {
-		return b.score - a.score;
+		return b.overallPercentage - a.overallPercentage;
 	}).slice(0, MAX_ENTRIES);
 	let rank = 1;
 	for (const entry of completionists) {
