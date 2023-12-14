@@ -73,19 +73,19 @@
 	},
 	{
 		"rank": 10,
+		"name": "Prince hema",
+		"vocation": "Elite Knight",
+		"world": "Antica",
+		"level": 1150,
+		"value": 2502
+	},
+	{
+		"rank": 11,
 		"name": "Sedik",
 		"vocation": "Elder Druid",
 		"world": "Antica",
 		"level": 1316,
 		"value": 2501
-	},
-	{
-		"rank": 11,
-		"name": "Prince hema",
-		"vocation": "Elite Knight",
-		"world": "Antica",
-		"level": 1150,
-		"value": 2488
 	},
 	{
 		"rank": 12,
@@ -140,8 +140,8 @@
 		"name": "Holidays on Roshamuul",
 		"vocation": "Elite Knight",
 		"world": "Vunira",
-		"level": 1311,
-		"value": 2137
+		"level": 1312,
+		"value": 2150
 	},
 	{
 		"rank": 19,
@@ -353,6 +353,14 @@
 	},
 	{
 		"rank": 45,
+		"name": "True Hayder",
+		"vocation": "Elder Druid",
+		"world": "Vunira",
+		"level": 1168,
+		"value": 1471
+	},
+	{
+		"rank": 46,
 		"name": "Jenemczs",
 		"vocation": "Elder Druid",
 		"world": "Thyria",
@@ -360,19 +368,11 @@
 		"value": 1466
 	},
 	{
-		"rank": 46,
+		"rank": 47,
 		"name": "Hecks Leads",
 		"vocation": "Elder Druid",
 		"world": "Luminera",
 		"level": 1476,
-		"value": 1458
-	},
-	{
-		"rank": 46,
-		"name": "True Hayder",
-		"vocation": "Elder Druid",
-		"world": "Vunira",
-		"level": 1168,
 		"value": 1458
 	},
 	{
@@ -452,7 +452,7 @@
 		"name": "Niime",
 		"vocation": "Elder Druid",
 		"world": "Inabra",
-		"level": 1435,
+		"level": 1436,
 		"value": 1390
 	},
 	{
@@ -473,6 +473,14 @@
 	},
 	{
 		"rank": 60,
+		"name": "Feedy",
+		"vocation": "Elder Druid",
+		"world": "Gentebra",
+		"level": 1755,
+		"value": 1364
+	},
+	{
+		"rank": 61,
 		"name": "Little Gornn",
 		"vocation": "Elite Knight",
 		"world": "Antica",
@@ -480,20 +488,12 @@
 		"value": 1363
 	},
 	{
-		"rank": 61,
+		"rank": 62,
 		"name": "Medyc",
 		"vocation": "Elder Druid",
 		"world": "Celesta",
 		"level": 1609,
 		"value": 1359
-	},
-	{
-		"rank": 62,
-		"name": "Feedy",
-		"vocation": "Elder Druid",
-		"world": "Gentebra",
-		"level": 1755,
-		"value": 1349
 	},
 	{
 		"rank": 63,
@@ -588,8 +588,8 @@
 		"name": "Pistoleiro Giga",
 		"vocation": "Master Sorcerer",
 		"world": "Inabra",
-		"level": 1451,
-		"value": 1286
+		"level": 1452,
+		"value": 1288
 	},
 	{
 		"rank": 75,
@@ -612,7 +612,7 @@
 		"name": "Ezudux",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
-		"level": 1544,
+		"level": 1545,
 		"value": 1276
 	},
 	{
@@ -628,7 +628,7 @@
 		"name": "Haarin",
 		"vocation": "Elder Druid",
 		"world": "Monza",
-		"level": 1576,
+		"level": 1577,
 		"value": 1266
 	},
 	{
@@ -844,7 +844,7 @@
 		"name": "Gudrak Quatroevinteum",
 		"vocation": "Royal Paladin",
 		"world": "Quelibra",
-		"level": 1603,
+		"level": 1604,
 		"value": 1172
 	},
 	{
@@ -852,7 +852,7 @@
 		"name": "Rzeznik Wedliniarz",
 		"vocation": "Elite Knight",
 		"world": "Secura",
-		"level": 1239,
+		"level": 1240,
 		"value": 1169
 	},
 	{
@@ -1100,7 +1100,7 @@
 		"name": "King Deadmaw",
 		"vocation": "Elder Druid",
 		"world": "Zunera",
-		"level": 1222,
+		"level": 1223,
 		"value": 1016
 	},
 	{
@@ -1117,10 +1117,10 @@
 		"vocation": "Elder Druid",
 		"world": "Refugia",
 		"level": 1423,
-		"value": 1014
+		"value": 1015
 	},
 	{
-		"rank": 140,
+		"rank": 141,
 		"name": "Sir Gibeusz",
 		"vocation": "Master Sorcerer",
 		"world": "Secura",
@@ -1173,7 +1173,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Astera",
 		"level": 1572,
-		"value": 997
+		"value": 998
 	},
 	{
 		"rank": 148,
@@ -1468,7 +1468,7 @@
 		"name": "Abs Lilozin",
 		"vocation": "Elite Knight",
 		"world": "Guerribra",
-		"level": 1454,
+		"level": 1455,
 		"value": 893
 	},
 	{
@@ -1564,7 +1564,7 @@
 		"name": "Dart Dronix",
 		"vocation": "Elder Druid",
 		"world": "Lobera",
-		"level": 901,
+		"level": 902,
 		"value": 875
 	},
 	{
@@ -1572,7 +1572,7 @@
 		"name": "Rafa Soulwar",
 		"vocation": "Elder Druid",
 		"world": "Guerribra",
-		"level": 1345,
+		"level": 1346,
 		"value": 875
 	},
 	{
@@ -1612,7 +1612,7 @@
 		"name": "Neto Tryagain",
 		"vocation": "Master Sorcerer",
 		"world": "Guerribra",
-		"level": 1581,
+		"level": 1582,
 		"value": 849
 	},
 	{
@@ -1649,6 +1649,14 @@
 	},
 	{
 		"rank": 207,
+		"name": "Rayo Legacy",
+		"vocation": "Royal Paladin",
+		"world": "Gentebra",
+		"level": 1708,
+		"value": 834
+	},
+	{
+		"rank": 208,
 		"name": "Veyllor",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -1656,7 +1664,7 @@
 		"value": 833
 	},
 	{
-		"rank": 208,
+		"rank": 209,
 		"name": "Rockstacker Cleve",
 		"vocation": "Elder Druid",
 		"world": "Nevia",
@@ -1664,7 +1672,7 @@
 		"value": 830
 	},
 	{
-		"rank": 209,
+		"rank": 210,
 		"name": "Vale Kideam",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -1672,7 +1680,7 @@
 		"value": 829
 	},
 	{
-		"rank": 210,
+		"rank": 211,
 		"name": "Dondaada",
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
@@ -1680,7 +1688,7 @@
 		"value": 826
 	},
 	{
-		"rank": 210,
+		"rank": 211,
 		"name": "Heyz zer",
 		"vocation": "Master Sorcerer",
 		"world": "Inabra",
@@ -1688,7 +1696,7 @@
 		"value": 826
 	},
 	{
-		"rank": 212,
+		"rank": 213,
 		"name": "Floky Monkey",
 		"vocation": "Master Sorcerer",
 		"world": "Thyria",
@@ -1696,20 +1704,12 @@
 		"value": 825
 	},
 	{
-		"rank": 213,
-		"name": "Rayo Legacy",
-		"vocation": "Royal Paladin",
-		"world": "Gentebra",
-		"level": 1708,
-		"value": 819
-	},
-	{
 		"rank": 214,
 		"name": "Gutierrezs",
 		"vocation": "Elder Druid",
 		"world": "Gentebra",
 		"level": 1691,
-		"value": 818
+		"value": 820
 	},
 	{
 		"rank": 215,
@@ -1864,19 +1864,19 @@
 		"value": 787
 	},
 	{
-		"rank": 234,
-		"name": "Noflam Corporation",
-		"vocation": "Master Sorcerer",
-		"world": "Collabra",
-		"level": 1014,
-		"value": 786
-	},
-	{
-		"rank": 234,
+		"rank": 233,
 		"name": "Vangogh",
 		"vocation": "Royal Paladin",
 		"world": "Inabra",
 		"level": 1260,
+		"value": 787
+	},
+	{
+		"rank": 235,
+		"name": "Noflam Corporation",
+		"vocation": "Master Sorcerer",
+		"world": "Collabra",
+		"level": 1014,
 		"value": 786
 	},
 	{
@@ -1892,7 +1892,7 @@
 		"name": "Geramoo",
 		"vocation": "Elite Knight",
 		"world": "Havera",
-		"level": 1582,
+		"level": 1583,
 		"value": 784
 	},
 	{
@@ -1956,7 +1956,7 @@
 		"name": "Meevi",
 		"vocation": "Royal Paladin",
 		"world": "Descubra",
-		"level": 1298,
+		"level": 1299,
 		"value": 770
 	},
 	{
