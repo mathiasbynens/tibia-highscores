@@ -9,7 +9,7 @@ const readJsonFile = async (fileName) => {
 
 const MAX_ENTRIES = 100;
 
-const MAX_ACHIEVEMENT_POINTS = 1302; // TODO: Add points for "The Rule of Raccool" once known.
+const MAX_ACHIEVEMENT_POINTS = 1304;
 const MAX_CHARM_POINTS = 24275;
 const MAX_BOSS_POINTS = 24950;
 
