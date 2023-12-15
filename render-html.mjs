@@ -117,6 +117,7 @@ export const updateHtml = async (id) => {
 
 const ids = new Set([
 	'achievements',
+	'achievements-filtered',
 	'achievements-unfair',
 	'axe-fighting',
 	'boss-points',
