@@ -59,14 +59,26 @@
 	}
 	th, td {
 		border: 1px solid var(--table-border);
-		padding: .5em 1em;
+	}
+	th:not(:has(a)), td {
+		padding: 0.5em 1em;
 	}
 	tbody tr:nth-child(odd) {
 		background-color: var(--alt-table-row-background);
 	}
 	tbody tr:hover {
-    background-color: var(--link-hover-background);
-    color: var(--link-color-alt);
+		background-color: var(--link-hover-background);
+		color: var(--link-color-alt);
+	}
+	th a {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0.5em 1em;
+		color: var(--link-color);
+	}
+	tbody tr:hover a, th a:hover, th a:focus {
+		color: var(--link-color-alt);
 	}
 	td {
 		text-align: right;

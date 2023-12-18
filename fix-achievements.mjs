@@ -38,7 +38,6 @@ export const removeUnfairAchievementsHighscoreEntries = (_unfairAchievementsHigh
 
 export const adjustUnfairAchievementsHighscoreEntries = (_unfairAchievementsHighscores) => {
 	const unfairAchievementsHighscores = structuredClone(_unfairAchievementsHighscores);
-	let delta = 0;
 	for (const entry of unfairAchievementsHighscores) {
 		if (CHARACTER_BLOCKLIST.has(entry.name)) {
 			entry.value -= UNFAIR_ACHIEVEMENT_POINTS;

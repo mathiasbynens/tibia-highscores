@@ -3,6 +3,10 @@ import fs from 'node:fs/promises';
 import { escape as escapeHtml } from 'lodash-es';
 import { minify as minifyHtml } from 'html-minifier-terser';
 
+import { generateWorldHtml } from './worlds-utils.mjs';
+
+import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
+
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');
 	const data = JSON.parse(json);
@@ -22,6 +26,11 @@ const percentageFormatter = new Intl.NumberFormat('en', {
 });
 const formatPercentage = (number) => {
 	return percentageFormatter.format(number) + '%';
+};
+
+const linkCharacter = (characterName) => {
+	const encoded = encodeURIComponent(characterName).replaceAll('%20', '+');
+	return `https://www.tibia.com/community/?subtopic=characters&name=${encoded}`;
 };
 
 const isoDate = (date) => {
@@ -59,21 +68,21 @@ const renderHtml = (highscores, categoryId) => {
 			table.push(`
 				<tr>
 					<th scope=row>${escapeHtml(entry.rank)}
-					<th scope=row>${escapeHtml(entry.name)}
+					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
-					<td>${escapeHtml(entry.world)}
-					<td>${escapeHtml(formatInt(entry.achievementPoints))}
-					<td>${escapeHtml(formatInt(entry.charmPoints))}
-					<td>${escapeHtml(formatInt(entry.bossPoints))}
-					<td>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${entry.overallPercentage}"></progress>
+					<td>${generateWorldHtml(entry.world)}
+					<td title="${escapeHtml(formatInt(entry.achievementPoints))} out of ${escapeHtml(formatInt(MAX_ACHIEVEMENT_POINTS))} ≈ ${escapeHtml(formatPercentage(entry.achievementPointsPercentage))}">${escapeHtml(formatInt(entry.achievementPoints))} <progress max="100" value="${escapeHtml(entry.achievementPointsPercentage)}"></progress>
+					<td title="${escapeHtml(formatInt(entry.charmPoints))} out of ${escapeHtml(formatInt(MAX_CHARM_POINTS))} ≈ ${escapeHtml(formatPercentage(entry.charmPointsPercentage))}">${escapeHtml(formatInt(entry.charmPoints))} <progress max="100" value="${escapeHtml(entry.charmPointsPercentage)}"></progress>
+					<td title="${escapeHtml(formatInt(entry.bossPoints))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} ≈ ${escapeHtml(formatPercentage(entry.bossPointsPercentage))}">${escapeHtml(formatInt(entry.bossPoints))} <progress max="100" value="${escapeHtml(entry.bossPointsPercentage)}"></progress>
+					<td>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${escapeHtml(entry.overallPercentage)}"></progress>
 			`);
 		} else {
 			table.push(`
 				<tr>
 					<th scope=row>${escapeHtml(entry.rank)}
-					<th scope=row>${escapeHtml(entry.name)}
+					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
-					<td>${escapeHtml(entry.world)}
+					<td>${generateWorldHtml(entry.world)}
 					<td>${escapeHtml(formatInt(entry.value))}
 			`);
 		}

@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {CHARACTER_BLOCKLIST, UNFAIR_ACHIEVEMENT_POINTS} from './fix-achievements.mjs';
+import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
 
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');
@@ -8,10 +9,6 @@ const readJsonFile = async (fileName) => {
 };
 
 const MAX_ENTRIES = 100;
-
-const MAX_ACHIEVEMENT_POINTS = 1304;
-const MAX_CHARM_POINTS = 24275;
-const MAX_BOSS_POINTS = 24950;
 
 export const computeCompletionists = async () => {
 
