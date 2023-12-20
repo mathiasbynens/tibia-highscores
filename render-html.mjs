@@ -1,9 +1,9 @@
 import fs from 'node:fs/promises';
 
-import { escape as escapeHtml } from 'lodash-es';
-import { minify as minifyHtml } from 'html-minifier-terser';
+import {escape as escapeHtml} from 'lodash-es';
+import {minify as minifyHtml} from 'html-minifier-terser';
 
-import { generateWorldHtml } from './worlds-utils.mjs';
+import {getCategoryMetaData} from './categories.mjs';import {generateWorldHtml} from './worlds-utils.mjs';
 
 import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
 
@@ -96,8 +96,11 @@ const renderHtml = (highscores, categoryId) => {
 const HTML_TEMPLATE = (await fs.readFile('./templates/index.html', 'utf8')).toString();
 export const updateHtml = async (id) => {
 	const highscores = await readJsonFile(`./data/${id}.json`);
+	const meta = getCategoryMetaData(id);
+	if (!meta) console.log(id);
 	const html = HTML_TEMPLATE
-		.replaceAll('%%%CATEGORY%%%', id)
+		.replaceAll('%%%CATEGORY%%%', escapeHtml(meta.name))
+		.replaceAll('%%%DESCRIPTION%%%', escapeHtml(meta.description))
 		.replace('%%%DATA%%%', renderHtml(highscores, id));
 	const minifiedHtml = await minifyHtml(html, {
 		collapseBooleanAttributes: true,
