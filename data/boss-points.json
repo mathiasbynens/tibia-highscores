@@ -177,18 +177,18 @@
 	},
 	{
 		"rank": 23,
-		"name": "Offf Liiineee",
-		"vocation": "Royal Paladin",
-		"world": "Wintera",
-		"level": 649,
-		"value": 20255
-	},
-	{
-		"rank": 23,
 		"name": "Wingboy",
 		"vocation": "Master Sorcerer",
 		"world": "Bombra",
 		"level": 1203,
+		"value": 20265
+	},
+	{
+		"rank": 24,
+		"name": "Offf Liiineee",
+		"vocation": "Royal Paladin",
+		"world": "Wintera",
+		"level": 649,
 		"value": 20255
 	},
 	{
@@ -248,7 +248,15 @@
 		"value": 20000
 	},
 	{
-		"rank": 32,
+		"rank": 31,
+		"name": "Mozenako",
+		"vocation": "Elite Knight",
+		"world": "Kalibra",
+		"level": 565,
+		"value": 20000
+	},
+	{
+		"rank": 33,
 		"name": "Arinth",
 		"vocation": "Elite Knight",
 		"world": "Monza",
@@ -256,7 +264,7 @@
 		"value": 19940
 	},
 	{
-		"rank": 32,
+		"rank": 33,
 		"name": "Picture",
 		"vocation": "Elite Knight",
 		"world": "Antica",
@@ -264,7 +272,7 @@
 		"value": 19940
 	},
 	{
-		"rank": 34,
+		"rank": 35,
 		"name": "Suguimoto",
 		"vocation": "Elder Druid",
 		"world": "Descubra",
@@ -272,7 +280,7 @@
 		"value": 19930
 	},
 	{
-		"rank": 35,
+		"rank": 36,
 		"name": "Kik Firmot",
 		"vocation": "Master Sorcerer",
 		"world": "Menera",
@@ -280,20 +288,12 @@
 		"value": 19920
 	},
 	{
-		"rank": 35,
+		"rank": 36,
 		"name": "Myrkz",
 		"vocation": "Royal Paladin",
 		"world": "Lobera",
 		"level": 1109,
 		"value": 19920
-	},
-	{
-		"rank": 37,
-		"name": "Mozenako",
-		"vocation": "Elite Knight",
-		"world": "Kalibra",
-		"level": 565,
-		"value": 19880
 	},
 	{
 		"rank": 38,
@@ -433,19 +433,19 @@
 	},
 	{
 		"rank": 55,
+		"name": "Fanas",
+		"vocation": "Elder Druid",
+		"world": "Lobera",
+		"level": 1080,
+		"value": 19370
+	},
+	{
+		"rank": 56,
 		"name": "Laniboi",
 		"vocation": "Royal Paladin",
 		"world": "Nevia",
 		"level": 1128,
 		"value": 19355
-	},
-	{
-		"rank": 56,
-		"name": "Fanas",
-		"vocation": "Elder Druid",
-		"world": "Lobera",
-		"level": 1080,
-		"value": 19340
 	},
 	{
 		"rank": 57,
@@ -524,7 +524,7 @@
 		"name": "Averlo",
 		"vocation": "Elder Druid",
 		"world": "Bona",
-		"level": 902,
+		"level": 903,
 		"value": 19150
 	},
 	{
@@ -553,19 +553,19 @@
 	},
 	{
 		"rank": 70,
+		"name": "Shidden",
+		"vocation": "Royal Paladin",
+		"world": "Guerribra",
+		"level": 983,
+		"value": 18975
+	},
+	{
+		"rank": 71,
 		"name": "Cornus Mass",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
 		"level": 700,
 		"value": 18955
-	},
-	{
-		"rank": 71,
-		"name": "Shidden",
-		"vocation": "Royal Paladin",
-		"world": "Guerribra",
-		"level": 983,
-		"value": 18945
 	},
 	{
 		"rank": 72,
@@ -636,7 +636,7 @@
 		"name": "Benedicto De Amorim",
 		"vocation": "Royal Paladin",
 		"world": "Inabra",
-		"level": 570,
+		"level": 571,
 		"value": 18775
 	},
 	{
@@ -676,7 +676,7 @@
 		"name": "Uriel Simacek",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
-		"level": 643,
+		"level": 644,
 		"value": 18725
 	},
 	{
@@ -836,7 +836,7 @@
 		"name": "Szympkovsky",
 		"vocation": "Elite Knight",
 		"world": "Antica",
-		"level": 678,
+		"level": 679,
 		"value": 18340
 	},
 	{
@@ -864,7 +864,23 @@
 		"value": 18330
 	},
 	{
-		"rank": 109,
+		"rank": 107,
+		"name": "Sujazip",
+		"vocation": "Elder Druid",
+		"world": "Rasteibra",
+		"level": 1029,
+		"value": 18330
+	},
+	{
+		"rank": 110,
+		"name": "Thraphik",
+		"vocation": "Elder Druid",
+		"world": "Kalibra",
+		"level": 588,
+		"value": 18315
+	},
+	{
+		"rank": 111,
 		"name": "Kairos Knight",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
@@ -872,31 +888,23 @@
 		"value": 18305
 	},
 	{
-		"rank": 109,
-		"name": "Thraphik",
-		"vocation": "Elder Druid",
-		"world": "Kalibra",
-		"level": 587,
+		"rank": 111,
+		"name": "Qoda",
+		"vocation": "Elite Knight",
+		"world": "Secura",
+		"level": 921,
 		"value": 18305
 	},
 	{
-		"rank": 111,
+		"rank": 113,
 		"name": "Petitlapine",
 		"vocation": "Royal Paladin",
 		"world": "Nadora",
-		"level": 1126,
+		"level": 1127,
 		"value": 18290
 	},
 	{
-		"rank": 112,
-		"name": "Sujazip",
-		"vocation": "Elder Druid",
-		"world": "Rasteibra",
-		"level": 1029,
-		"value": 18270
-	},
-	{
-		"rank": 112,
+		"rank": 114,
 		"name": "Theron guard",
 		"vocation": "Royal Paladin",
 		"world": "Astera",
@@ -904,7 +912,7 @@
 		"value": 18270
 	},
 	{
-		"rank": 114,
+		"rank": 115,
 		"name": "Kado Leads",
 		"vocation": "Master Sorcerer",
 		"world": "Celebra",
@@ -912,7 +920,7 @@
 		"value": 18260
 	},
 	{
-		"rank": 115,
+		"rank": 116,
 		"name": "Tankov",
 		"vocation": "Elite Knight",
 		"world": "Premia",
@@ -920,7 +928,7 @@
 		"value": 18255
 	},
 	{
-		"rank": 116,
+		"rank": 117,
 		"name": "Troxas Sagus",
 		"vocation": "Elder Druid",
 		"world": "Secura",
@@ -928,19 +936,11 @@
 		"value": 18250
 	},
 	{
-		"rank": 117,
+		"rank": 118,
 		"name": "Kainne",
 		"vocation": "Elite Knight",
 		"world": "Gentebra",
 		"level": 610,
-		"value": 18245
-	},
-	{
-		"rank": 117,
-		"name": "Qoda",
-		"vocation": "Elite Knight",
-		"world": "Secura",
-		"level": 921,
 		"value": 18245
 	},
 	{
@@ -1025,6 +1025,14 @@
 	},
 	{
 		"rank": 129,
+		"name": "Brenaorush La Ele",
+		"vocation": "Elite Knight",
+		"world": "Bombra",
+		"level": 1174,
+		"value": 18065
+	},
+	{
+		"rank": 129,
 		"name": "Royal Radekx",
 		"vocation": "Elite Knight",
 		"world": "Thyria",
@@ -1032,7 +1040,7 @@
 		"value": 18065
 	},
 	{
-		"rank": 130,
+		"rank": 131,
 		"name": "Aszur Askara",
 		"vocation": "Royal Paladin",
 		"world": "Antica",
@@ -1040,7 +1048,7 @@
 		"value": 18060
 	},
 	{
-		"rank": 131,
+		"rank": 132,
 		"name": "Aretax Naza",
 		"vocation": "Elite Knight",
 		"world": "Belobra",
@@ -1048,7 +1056,7 @@
 		"value": 18045
 	},
 	{
-		"rank": 132,
+		"rank": 133,
 		"name": "Popolos Paladino",
 		"vocation": "Royal Paladin",
 		"world": "Harmonia",
@@ -1056,7 +1064,7 @@
 		"value": 18040
 	},
 	{
-		"rank": 133,
+		"rank": 134,
 		"name": "Lady van Mave",
 		"vocation": "Elder Druid",
 		"world": "Antica",
@@ -1064,23 +1072,15 @@
 		"value": 18025
 	},
 	{
-		"rank": 134,
+		"rank": 135,
 		"name": "Libi",
 		"vocation": "Elite Knight",
 		"world": "Lobera",
-		"level": 976,
+		"level": 977,
 		"value": 18015
 	},
 	{
-		"rank": 135,
-		"name": "Brenaorush La Ele",
-		"vocation": "Elite Knight",
-		"world": "Bombra",
-		"level": 1174,
-		"value": 18005
-	},
-	{
-		"rank": 135,
+		"rank": 136,
 		"name": "Shinai",
 		"vocation": "Elite Knight",
 		"world": "Refugia",
@@ -1089,6 +1089,14 @@
 	},
 	{
 		"rank": 137,
+		"name": "Gutzim",
+		"vocation": "Elite Knight",
+		"world": "Inabra",
+		"level": 695,
+		"value": 18000
+	},
+	{
+		"rank": 138,
 		"name": "Lord Ovthe Depths",
 		"vocation": "Elder Druid",
 		"world": "Serdebra",
@@ -1096,7 +1104,7 @@
 		"value": 17990
 	},
 	{
-		"rank": 138,
+		"rank": 139,
 		"name": "Fully",
 		"vocation": "Royal Paladin",
 		"world": "Secura",
@@ -1104,19 +1112,11 @@
 		"value": 17985
 	},
 	{
-		"rank": 138,
-		"name": "Gutzim",
-		"vocation": "Elite Knight",
-		"world": "Inabra",
-		"level": 695,
-		"value": 17985
-	},
-	{
 		"rank": 140,
 		"name": "Kisiel Grillowany",
 		"vocation": "Elite Knight",
 		"world": "Premia",
-		"level": 998,
+		"level": 999,
 		"value": 17980
 	},
 	{
@@ -1188,7 +1188,7 @@
 		"name": "Aurora Lily",
 		"vocation": "Elite Knight",
 		"world": "Wintera",
-		"level": 853,
+		"level": 854,
 		"value": 17775
 	},
 	{
@@ -1260,7 +1260,7 @@
 		"name": "Fizoleczek",
 		"vocation": "Elite Knight",
 		"world": "Antica",
-		"level": 607,
+		"level": 606,
 		"value": 17660
 	},
 	{
@@ -1348,7 +1348,7 @@
 		"name": "Hymura",
 		"vocation": "Elder Druid",
 		"world": "Lobera",
-		"level": 997,
+		"level": 998,
 		"value": 17600
 	},
 	{
@@ -1393,6 +1393,14 @@
 	},
 	{
 		"rank": 175,
+		"name": "Seth Gleim",
+		"vocation": "Elite Knight",
+		"world": "Ustebra",
+		"level": 807,
+		"value": 17530
+	},
+	{
+		"rank": 175,
 		"name": "Tsu Tsu",
 		"vocation": "Elite Knight",
 		"world": "Bona",
@@ -1400,7 +1408,7 @@
 		"value": 17530
 	},
 	{
-		"rank": 176,
+		"rank": 177,
 		"name": "Awnmin",
 		"vocation": "Elite Knight",
 		"world": "Honbra",
@@ -1408,7 +1416,7 @@
 		"value": 17525
 	},
 	{
-		"rank": 177,
+		"rank": 178,
 		"name": "Berfor",
 		"vocation": "Elder Druid",
 		"world": "Celesta",
@@ -1416,7 +1424,7 @@
 		"value": 17520
 	},
 	{
-		"rank": 178,
+		"rank": 179,
 		"name": "Askandar",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
@@ -1424,7 +1432,7 @@
 		"value": 17515
 	},
 	{
-		"rank": 179,
+		"rank": 180,
 		"name": "Lombrado Rush",
 		"vocation": "Royal Paladin",
 		"world": "Ferobra",
@@ -1432,7 +1440,7 @@
 		"value": 17490
 	},
 	{
-		"rank": 180,
+		"rank": 181,
 		"name": "John the Developer",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
@@ -1440,7 +1448,7 @@
 		"value": 17485
 	},
 	{
-		"rank": 181,
+		"rank": 182,
 		"name": "Drizzz",
 		"vocation": "Royal Paladin",
 		"world": "Quintera",
@@ -1448,20 +1456,12 @@
 		"value": 17475
 	},
 	{
-		"rank": 182,
-		"name": "Seth Gleim",
-		"vocation": "Elite Knight",
-		"world": "Ustebra",
-		"level": 807,
-		"value": 17470
-	},
-	{
 		"rank": 183,
 		"name": "Mallowana Ksiezniczka",
 		"vocation": "Elite Knight",
 		"world": "Celesta",
 		"level": 1154,
-		"value": 17465
+		"value": 17470
 	},
 	{
 		"rank": 184,
@@ -1540,7 +1540,7 @@
 		"name": "Baronkz",
 		"vocation": "Royal Paladin",
 		"world": "Bona",
-		"level": 905,
+		"level": 906,
 		"value": 17325
 	},
 	{
@@ -1580,7 +1580,7 @@
 		"name": "Diana kina",
 		"vocation": "Elite Knight",
 		"world": "Serdebra",
-		"level": 772,
+		"level": 773,
 		"value": 17275
 	},
 	{
@@ -1593,6 +1593,14 @@
 	},
 	{
 		"rank": 200,
+		"name": "Slodka Ulcia",
+		"vocation": "Royal Paladin",
+		"world": "Secura",
+		"level": 636,
+		"value": 17230
+	},
+	{
+		"rank": 201,
 		"name": "Royal Raczkoo",
 		"vocation": "Royal Paladin",
 		"world": "Thyria",
@@ -1600,15 +1608,15 @@
 		"value": 17225
 	},
 	{
-		"rank": 201,
+		"rank": 202,
 		"name": "Aritmancia",
 		"vocation": "Elder Druid",
 		"world": "Wintera",
-		"level": 1156,
+		"level": 1157,
 		"value": 17215
 	},
 	{
-		"rank": 201,
+		"rank": 202,
 		"name": "Lakohutt",
 		"vocation": "Master Sorcerer",
 		"world": "Calmera",
@@ -1616,7 +1624,7 @@
 		"value": 17215
 	},
 	{
-		"rank": 203,
+		"rank": 204,
 		"name": "Dedeh Zica",
 		"vocation": "Elder Druid",
 		"world": "Obscubra",
@@ -1624,7 +1632,7 @@
 		"value": 17210
 	},
 	{
-		"rank": 203,
+		"rank": 204,
 		"name": "Palestinin",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -1632,20 +1640,12 @@
 		"value": 17210
 	},
 	{
-		"rank": 205,
+		"rank": 206,
 		"name": "Kecaara Pally",
 		"vocation": "Royal Paladin",
 		"world": "Ustebra",
 		"level": 707,
 		"value": 17205
-	},
-	{
-		"rank": 206,
-		"name": "Slodka Ulcia",
-		"vocation": "Royal Paladin",
-		"world": "Secura",
-		"level": 636,
-		"value": 17200
 	},
 	{
 		"rank": 207,
@@ -1692,7 +1692,7 @@
 		"name": "Surskallen",
 		"vocation": "Elite Knight",
 		"world": "Secura",
-		"level": 925,
+		"level": 926,
 		"value": 17100
 	},
 	{
@@ -1905,6 +1905,14 @@
 	},
 	{
 		"rank": 239,
+		"name": "Ominae Yu",
+		"vocation": "Elite Knight",
+		"world": "Yonabra",
+		"level": 1326,
+		"value": 16770
+	},
+	{
+		"rank": 239,
 		"name": "Walder Martz",
 		"vocation": "Royal Paladin",
 		"world": "Nefera",
@@ -1912,7 +1920,7 @@
 		"value": 16770
 	},
 	{
-		"rank": 240,
+		"rank": 241,
 		"name": "Atryan",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -1920,7 +1928,7 @@
 		"value": 16765
 	},
 	{
-		"rank": 241,
+		"rank": 242,
 		"name": "Padre Invierno",
 		"vocation": "Elder Druid",
 		"world": "Gladera",
@@ -1928,7 +1936,7 @@
 		"value": 16760
 	},
 	{
-		"rank": 242,
+		"rank": 243,
 		"name": "Chodzacy zduchami tanno",
 		"vocation": "Elder Druid",
 		"world": "Damora",
@@ -1936,7 +1944,7 @@
 		"value": 16735
 	},
 	{
-		"rank": 242,
+		"rank": 243,
 		"name": "Konii Tuptii",
 		"vocation": "Elder Druid",
 		"world": "Monza",
@@ -1944,7 +1952,7 @@
 		"value": 16735
 	},
 	{
-		"rank": 244,
+		"rank": 245,
 		"name": "Prostaczek",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -1952,7 +1960,7 @@
 		"value": 16730
 	},
 	{
-		"rank": 245,
+		"rank": 246,
 		"name": "Paladino Randel",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
@@ -1960,7 +1968,7 @@
 		"value": 16715
 	},
 	{
-		"rank": 245,
+		"rank": 246,
 		"name": "Suuper-Till",
 		"vocation": "Elder Druid",
 		"world": "Yonabra",
@@ -1968,7 +1976,7 @@
 		"value": 16715
 	},
 	{
-		"rank": 245,
+		"rank": 246,
 		"name": "Woo Dy",
 		"vocation": "Elite Knight",
 		"world": "Lutabra",
@@ -1976,7 +1984,7 @@
 		"value": 16715
 	},
 	{
-		"rank": 248,
+		"rank": 249,
 		"name": "Attsuyah",
 		"vocation": "Elder Druid",
 		"world": "Wintera",
@@ -1985,6 +1993,14 @@
 	},
 	{
 		"rank": 249,
+		"name": "Montilla Slayer",
+		"vocation": "Royal Paladin",
+		"world": "Obscubra",
+		"level": 879,
+		"value": 16710
+	},
+	{
+		"rank": 251,
 		"name": "Kinsz",
 		"vocation": "Master Sorcerer",
 		"world": "Serdebra",
@@ -1992,15 +2008,7 @@
 		"value": 16680
 	},
 	{
-		"rank": 249,
-		"name": "Montilla Slayer",
-		"vocation": "Royal Paladin",
-		"world": "Obscubra",
-		"level": 879,
-		"value": 16680
-	},
-	{
-		"rank": 249,
+		"rank": 251,
 		"name": "Tore Laki",
 		"vocation": "Elite Knight",
 		"world": "Nadora",
@@ -2008,7 +2016,7 @@
 		"value": 16680
 	},
 	{
-		"rank": 252,
+		"rank": 253,
 		"name": "Zaku Palladyn",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -2016,7 +2024,7 @@
 		"value": 16675
 	},
 	{
-		"rank": 253,
+		"rank": 254,
 		"name": "Hakob",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
@@ -2024,7 +2032,7 @@
 		"value": 16660
 	},
 	{
-		"rank": 254,
+		"rank": 255,
 		"name": "Andy Chrono",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
@@ -2032,7 +2040,7 @@
 		"value": 16655
 	},
 	{
-		"rank": 254,
+		"rank": 255,
 		"name": "Krwiopalczasty",
 		"vocation": "Elite Knight",
 		"world": "Quintera",
@@ -2040,20 +2048,12 @@
 		"value": 16655
 	},
 	{
-		"rank": 254,
+		"rank": 255,
 		"name": "Queen Liss",
 		"vocation": "Elder Druid",
 		"world": "Lutabra",
 		"level": 1214,
 		"value": 16655
-	},
-	{
-		"rank": 257,
-		"name": "Ominae Yu",
-		"vocation": "Elite Knight",
-		"world": "Yonabra",
-		"level": 1326,
-		"value": 16650
 	},
 	{
 		"rank": 258,
@@ -2068,7 +2068,7 @@
 		"name": "Lord Lanister",
 		"vocation": "Royal Paladin",
 		"world": "Celebra",
-		"level": 703,
+		"level": 704,
 		"value": 16645
 	},
 	{
@@ -2225,6 +2225,14 @@
 	},
 	{
 		"rank": 279,
+		"name": "David in Panic",
+		"vocation": "Elder Druid",
+		"world": "Inabra",
+		"level": 700,
+		"value": 16405
+	},
+	{
+		"rank": 280,
 		"name": "Lejmipol",
 		"vocation": "Royal Paladin",
 		"world": "Celesta",
@@ -2232,20 +2240,12 @@
 		"value": 16385
 	},
 	{
-		"rank": 280,
+		"rank": 281,
 		"name": "Rimen do Cerrado",
 		"vocation": "Elder Druid",
 		"world": "Gentebra",
 		"level": 863,
 		"value": 16380
-	},
-	{
-		"rank": 281,
-		"name": "David in Panic",
-		"vocation": "Elder Druid",
-		"world": "Inabra",
-		"level": 700,
-		"value": 16375
 	},
 	{
 		"rank": 282,
@@ -2308,7 +2308,7 @@
 		"name": "Lorcasarch",
 		"vocation": "Royal Paladin",
 		"world": "Wintera",
-		"level": 723,
+		"level": 724,
 		"value": 16255
 	},
 	{
@@ -2332,7 +2332,7 @@
 		"name": "Ploft Pluft",
 		"vocation": "Elder Druid",
 		"world": "Celebra",
-		"level": 987,
+		"level": 988,
 		"value": 16240
 	},
 	{
@@ -2361,6 +2361,14 @@
 	},
 	{
 		"rank": 296,
+		"name": "Mage Sunmi",
+		"vocation": "Master Sorcerer",
+		"world": "Venebra",
+		"level": 1118,
+		"value": 16220
+	},
+	{
+		"rank": 297,
 		"name": "Alfadur Druid",
 		"vocation": "Elder Druid",
 		"world": "Menera",
@@ -2368,7 +2376,7 @@
 		"value": 16210
 	},
 	{
-		"rank": 297,
+		"rank": 298,
 		"name": "Kod Zapp",
 		"vocation": "Elite Knight",
 		"world": "Lutabra",
@@ -2376,7 +2384,7 @@
 		"value": 16205
 	},
 	{
-		"rank": 298,
+		"rank": 299,
 		"name": "Pulppzerah",
 		"vocation": "Royal Paladin",
 		"world": "Quelibra",
@@ -2384,7 +2392,7 @@
 		"value": 16190
 	},
 	{
-		"rank": 299,
+		"rank": 300,
 		"name": "Saro Saroh",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -2392,7 +2400,7 @@
 		"value": 16175
 	},
 	{
-		"rank": 300,
+		"rank": 301,
 		"name": "Kaxarax",
 		"vocation": "Royal Paladin",
 		"world": "Premia",
@@ -2400,28 +2408,20 @@
 		"value": 16170
 	},
 	{
-		"rank": 301,
-		"name": "Mage Sunmi",
-		"vocation": "Master Sorcerer",
-		"world": "Venebra",
-		"level": 1118,
-		"value": 16160
+		"rank": 302,
+		"name": "Crazy of Knight",
+		"vocation": "Elite Knight",
+		"world": "Kalibra",
+		"level": 688,
+		"value": 16165
 	},
 	{
-		"rank": 302,
+		"rank": 303,
 		"name": "Galiazzi",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
 		"level": 1152,
 		"value": 16155
-	},
-	{
-		"rank": 303,
-		"name": "Crazy of Knight",
-		"vocation": "Elite Knight",
-		"world": "Kalibra",
-		"level": 688,
-		"value": 16135
 	},
 	{
 		"rank": 304,
@@ -2452,7 +2452,7 @@
 		"name": "Dirrego",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
-		"level": 900,
+		"level": 901,
 		"value": 16095
 	},
 	{
@@ -2600,7 +2600,15 @@
 		"value": 15885
 	},
 	{
-		"rank": 326,
+		"rank": 325,
+		"name": "Mya Kayy",
+		"vocation": "Royal Paladin",
+		"world": "Astera",
+		"level": 668,
+		"value": 15885
+	},
+	{
+		"rank": 327,
 		"name": "Teczowy Ede",
 		"vocation": "Elder Druid",
 		"world": "Kendria",
@@ -2608,7 +2616,7 @@
 		"value": 15875
 	},
 	{
-		"rank": 327,
+		"rank": 328,
 		"name": "Zathroths",
 		"vocation": "Elite Knight",
 		"world": "Ombra",
@@ -2616,7 +2624,7 @@
 		"value": 15870
 	},
 	{
-		"rank": 328,
+		"rank": 329,
 		"name": "Cris Damora",
 		"vocation": "Royal Paladin",
 		"world": "Damora",
@@ -2624,7 +2632,7 @@
 		"value": 15860
 	},
 	{
-		"rank": 329,
+		"rank": 330,
 		"name": "Igok Sorceck",
 		"vocation": "Master Sorcerer",
 		"world": "Quelibra",
@@ -2632,20 +2640,12 @@
 		"value": 15855
 	},
 	{
-		"rank": 330,
+		"rank": 331,
 		"name": "Anovix Zklanu",
 		"vocation": "Elder Druid",
 		"world": "Retalia",
 		"level": 1165,
 		"value": 15840
-	},
-	{
-		"rank": 331,
-		"name": "Mya Kayy",
-		"vocation": "Royal Paladin",
-		"world": "Astera",
-		"level": 668,
-		"value": 15825
 	},
 	{
 		"rank": 332,
@@ -2892,7 +2892,7 @@
 		"name": "Madai",
 		"vocation": "Elder Druid",
 		"world": "Vunira",
-		"level": 793,
+		"level": 794,
 		"value": 15650
 	},
 	{
@@ -2985,6 +2985,14 @@
 	},
 	{
 		"rank": 374,
+		"name": "Skyllaw",
+		"vocation": "Elite Knight",
+		"world": "Honbra",
+		"level": 895,
+		"value": 15520
+	},
+	{
+		"rank": 375,
 		"name": "Definitely Not Vatty",
 		"vocation": "Elder Druid",
 		"world": "Kendria",
@@ -2992,7 +3000,7 @@
 		"value": 15510
 	},
 	{
-		"rank": 375,
+		"rank": 376,
 		"name": "Armin the Turtle",
 		"vocation": "Elite Knight",
 		"world": "Nadora",
@@ -3000,7 +3008,7 @@
 		"value": 15500
 	},
 	{
-		"rank": 375,
+		"rank": 376,
 		"name": "Druzum",
 		"vocation": "Elder Druid",
 		"world": "Wintera",
@@ -3008,7 +3016,7 @@
 		"value": 15500
 	},
 	{
-		"rank": 377,
+		"rank": 378,
 		"name": "Zipper Soul Shade",
 		"vocation": "Master Sorcerer",
 		"world": "Nadora",
@@ -3016,7 +3024,7 @@
 		"value": 15495
 	},
 	{
-		"rank": 378,
+		"rank": 379,
 		"name": "Nakayo",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -3024,15 +3032,7 @@
 		"value": 15490
 	},
 	{
-		"rank": 378,
-		"name": "Skyllaw",
-		"vocation": "Elite Knight",
-		"world": "Honbra",
-		"level": 895,
-		"value": 15490
-	},
-	{
-		"rank": 378,
+		"rank": 379,
 		"name": "Sorceror King",
 		"vocation": "Master Sorcerer",
 		"world": "Antica",
@@ -3113,6 +3113,14 @@
 	},
 	{
 		"rank": 390,
+		"name": "Kekw Kok",
+		"vocation": "Royal Paladin",
+		"world": "Inabra",
+		"level": 810,
+		"value": 15445
+	},
+	{
+		"rank": 390,
 		"name": "Rhoger",
 		"vocation": "Royal Paladin",
 		"world": "Talera",
@@ -3128,19 +3136,11 @@
 		"value": 15445
 	},
 	{
-		"rank": 392,
+		"rank": 393,
 		"name": "Jerko the unconscious",
 		"vocation": "Elite Knight",
 		"world": "Guerribra",
 		"level": 1106,
-		"value": 15440
-	},
-	{
-		"rank": 392,
-		"name": "Kekw Kok",
-		"vocation": "Royal Paladin",
-		"world": "Inabra",
-		"level": 810,
 		"value": 15440
 	},
 	{
@@ -3304,7 +3304,15 @@
 		"value": 15300
 	},
 	{
-		"rank": 414,
+		"rank": 413,
+		"name": "Keruk",
+		"vocation": "Elite Knight",
+		"world": "Yonabra",
+		"level": 1033,
+		"value": 15300
+	},
+	{
+		"rank": 415,
 		"name": "Distancehunter",
 		"vocation": "Royal Paladin",
 		"world": "Antica",
@@ -3312,7 +3320,7 @@
 		"value": 15275
 	},
 	{
-		"rank": 415,
+		"rank": 416,
 		"name": "Kekw Kure",
 		"vocation": "Elder Druid",
 		"world": "Inabra",
@@ -3320,7 +3328,7 @@
 		"value": 15270
 	},
 	{
-		"rank": 416,
+		"rank": 417,
 		"name": "Brown Wood",
 		"vocation": "Elite Knight",
 		"world": "Nefera",
@@ -3328,7 +3336,7 @@
 		"value": 15265
 	},
 	{
-		"rank": 417,
+		"rank": 418,
 		"name": "Dagor Zomi",
 		"vocation": "Royal Paladin",
 		"world": "Premia",
@@ -3336,7 +3344,7 @@
 		"value": 15260
 	},
 	{
-		"rank": 418,
+		"rank": 419,
 		"name": "Morbios",
 		"vocation": "Royal Paladin",
 		"world": "Menera",
@@ -3344,7 +3352,7 @@
 		"value": 15255
 	},
 	{
-		"rank": 418,
+		"rank": 419,
 		"name": "Rapa Dura",
 		"vocation": "Elite Knight",
 		"world": "Collabra",
@@ -3352,7 +3360,7 @@
 		"value": 15255
 	},
 	{
-		"rank": 420,
+		"rank": 421,
 		"name": "Gohanzito Zica",
 		"vocation": "Elder Druid",
 		"world": "Thyria",
@@ -3360,7 +3368,7 @@
 		"value": 15250
 	},
 	{
-		"rank": 420,
+		"rank": 421,
 		"name": "Vampiro Marc",
 		"vocation": "Elder Druid",
 		"world": "Yonabra",
@@ -3368,15 +3376,7 @@
 		"value": 15250
 	},
 	{
-		"rank": 422,
-		"name": "Keruk",
-		"vocation": "Elite Knight",
-		"world": "Yonabra",
-		"level": 1033,
-		"value": 15240
-	},
-	{
-		"rank": 422,
+		"rank": 423,
 		"name": "Kronek",
 		"vocation": "Royal Paladin",
 		"world": "Firmera",
@@ -3513,6 +3513,14 @@
 	},
 	{
 		"rank": 440,
+		"name": "Megell",
+		"vocation": "Royal Paladin",
+		"world": "Nefera",
+		"level": 789,
+		"value": 15090
+	},
+	{
+		"rank": 441,
 		"name": "Daemon gizmo",
 		"vocation": "Elder Druid",
 		"world": "Firmera",
@@ -3520,7 +3528,7 @@
 		"value": 15075
 	},
 	{
-		"rank": 440,
+		"rank": 441,
 		"name": "Nobsile",
 		"vocation": "Elder Druid",
 		"world": "Guerribra",
@@ -3528,7 +3536,7 @@
 		"value": 15075
 	},
 	{
-		"rank": 442,
+		"rank": 443,
 		"name": "Dakota",
 		"vocation": "Elite Knight",
 		"world": "Esmera",
@@ -3536,7 +3544,7 @@
 		"value": 15070
 	},
 	{
-		"rank": 443,
+		"rank": 444,
 		"name": "Cavots",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
@@ -3544,7 +3552,7 @@
 		"value": 15065
 	},
 	{
-		"rank": 444,
+		"rank": 445,
 		"name": "Max Fleury",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
@@ -3552,7 +3560,7 @@
 		"value": 15055
 	},
 	{
-		"rank": 445,
+		"rank": 446,
 		"name": "Wicked Rauros",
 		"vocation": "Knight",
 		"world": "Belobra",
@@ -3560,23 +3568,23 @@
 		"value": 15030
 	},
 	{
-		"rank": 446,
+		"rank": 447,
 		"name": "Aquro Cacox",
 		"vocation": "Royal Paladin",
 		"world": "Descubra",
 		"level": 884,
-		"value": 15015
+		"value": 15025
 	},
 	{
-		"rank": 447,
+		"rank": 448,
 		"name": "Joker Dtonao",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
-		"level": 1020,
+		"level": 1021,
 		"value": 15010
 	},
 	{
-		"rank": 447,
+		"rank": 448,
 		"name": "Ulmo Blackfyre",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
@@ -3584,7 +3592,7 @@
 		"value": 15010
 	},
 	{
-		"rank": 449,
+		"rank": 450,
 		"name": "Lekarz Zagubionych Dusz",
 		"vocation": "Elder Druid",
 		"world": "Secura",
@@ -3592,7 +3600,7 @@
 		"value": 15005
 	},
 	{
-		"rank": 450,
+		"rank": 451,
 		"name": "Aahk",
 		"vocation": "Master Sorcerer",
 		"world": "Impulsa",
@@ -3600,15 +3608,7 @@
 		"value": 15000
 	},
 	{
-		"rank": 450,
-		"name": "Megell",
-		"vocation": "Royal Paladin",
-		"world": "Nefera",
-		"level": 789,
-		"value": 15000
-	},
-	{
-		"rank": 450,
+		"rank": 451,
 		"name": "Trotuska",
 		"vocation": "Elite Knight",
 		"world": "Gladera",
@@ -3617,6 +3617,14 @@
 	},
 	{
 		"rank": 453,
+		"name": "Gin Toffana",
+		"vocation": "Royal Paladin",
+		"world": "Monza",
+		"level": 1680,
+		"value": 14995
+	},
+	{
+		"rank": 454,
 		"name": "Joao Bronco",
 		"vocation": "Royal Paladin",
 		"world": "Rasteibra",
@@ -3624,7 +3632,7 @@
 		"value": 14990
 	},
 	{
-		"rank": 453,
+		"rank": 454,
 		"name": "Nohni Ryan",
 		"vocation": "Elder Druid",
 		"world": "Astera",
@@ -3632,7 +3640,7 @@
 		"value": 14990
 	},
 	{
-		"rank": 455,
+		"rank": 456,
 		"name": "Soxiikggwp",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -3640,7 +3648,7 @@
 		"value": 14985
 	},
 	{
-		"rank": 456,
+		"rank": 457,
 		"name": "Sabaum Pacaba",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
@@ -3648,7 +3656,7 @@
 		"value": 14975
 	},
 	{
-		"rank": 457,
+		"rank": 458,
 		"name": "Cinek Lubon",
 		"vocation": "Royal Paladin",
 		"world": "Harmonia",
@@ -3656,7 +3664,7 @@
 		"value": 14965
 	},
 	{
-		"rank": 458,
+		"rank": 459,
 		"name": "Knighthowler",
 		"vocation": "Elite Knight",
 		"world": "Refugia",
@@ -3664,7 +3672,7 @@
 		"value": 14950
 	},
 	{
-		"rank": 459,
+		"rank": 460,
 		"name": "Mauser Karabiner",
 		"vocation": "Master Sorcerer",
 		"world": "Venebra",
@@ -3672,7 +3680,7 @@
 		"value": 14940
 	},
 	{
-		"rank": 459,
+		"rank": 460,
 		"name": "Neno Neversleep",
 		"vocation": "Royal Paladin",
 		"world": "Utobra",
@@ -3680,7 +3688,7 @@
 		"value": 14940
 	},
 	{
-		"rank": 459,
+		"rank": 460,
 		"name": "Ricardo Infiltradao",
 		"vocation": "Elite Knight",
 		"world": "Inabra",
@@ -3688,27 +3696,19 @@
 		"value": 14940
 	},
 	{
-		"rank": 462,
+		"rank": 463,
 		"name": "Apex Elexis",
 		"vocation": "Royal Paladin",
 		"world": "Nadora",
-		"level": 1426,
+		"level": 1427,
 		"value": 14935
 	},
 	{
-		"rank": 462,
+		"rank": 463,
 		"name": "Cynitha the Unholy",
 		"vocation": "Elite Knight",
 		"world": "Monza",
 		"level": 1137,
-		"value": 14935
-	},
-	{
-		"rank": 462,
-		"name": "Gin Toffana",
-		"vocation": "Royal Paladin",
-		"world": "Monza",
-		"level": 1680,
 		"value": 14935
 	},
 	{
@@ -3884,11 +3884,19 @@
 		"name": "Zyro'flame",
 		"vocation": "Master Sorcerer",
 		"world": "Pacera",
-		"level": 1267,
+		"level": 1268,
 		"value": 14720
 	},
 	{
 		"rank": 487,
+		"name": "Kayylicious",
+		"vocation": "Elder Druid",
+		"world": "Astera",
+		"level": 873,
+		"value": 14715
+	},
+	{
+		"rank": 488,
 		"name": "Anarchy Destroyer",
 		"vocation": "Knight",
 		"world": "Gentebra",
@@ -3896,7 +3904,7 @@
 		"value": 14710
 	},
 	{
-		"rank": 487,
+		"rank": 488,
 		"name": "Bekx Dragonborn",
 		"vocation": "Elite Knight",
 		"world": "Guerribra",
@@ -3904,7 +3912,7 @@
 		"value": 14710
 	},
 	{
-		"rank": 487,
+		"rank": 488,
 		"name": "Lazy Venom",
 		"vocation": "Master Sorcerer",
 		"world": "Kalibra",
@@ -3912,7 +3920,7 @@
 		"value": 14710
 	},
 	{
-		"rank": 490,
+		"rank": 491,
 		"name": "Kaos Boss",
 		"vocation": "Elite Knight",
 		"world": "Nefera",
@@ -3920,7 +3928,7 @@
 		"value": 14705
 	},
 	{
-		"rank": 490,
+		"rank": 491,
 		"name": "Xag The Archer",
 		"vocation": "Royal Paladin",
 		"world": "Calmera",
@@ -3928,7 +3936,7 @@
 		"value": 14705
 	},
 	{
-		"rank": 492,
+		"rank": 493,
 		"name": "Belintina",
 		"vocation": "Master Sorcerer",
 		"world": "Refugia",
@@ -3936,7 +3944,7 @@
 		"value": 14700
 	},
 	{
-		"rank": 493,
+		"rank": 494,
 		"name": "Chaviitoh",
 		"vocation": "Royal Paladin",
 		"world": "Talera",
@@ -3944,7 +3952,7 @@
 		"value": 14690
 	},
 	{
-		"rank": 493,
+		"rank": 494,
 		"name": "Idefiks",
 		"vocation": "Elder Druid",
 		"world": "Antica",
@@ -3952,7 +3960,7 @@
 		"value": 14690
 	},
 	{
-		"rank": 493,
+		"rank": 494,
 		"name": "Majster Skower",
 		"vocation": "Elder Druid",
 		"world": "Bona",
@@ -3960,7 +3968,7 @@
 		"value": 14690
 	},
 	{
-		"rank": 493,
+		"rank": 494,
 		"name": "Sedik",
 		"vocation": "Elder Druid",
 		"world": "Antica",
@@ -3968,7 +3976,7 @@
 		"value": 14690
 	},
 	{
-		"rank": 497,
+		"rank": 498,
 		"name": "Shiddenzinho",
 		"vocation": "Royal Paladin",
 		"world": "Guerribra",
@@ -3976,7 +3984,7 @@
 		"value": 14670
 	},
 	{
-		"rank": 498,
+		"rank": 499,
 		"name": "Yeborn",
 		"vocation": "Elder Druid",
 		"world": "Nadora",
@@ -3984,7 +3992,7 @@
 		"value": 14665
 	},
 	{
-		"rank": 499,
+		"rank": 500,
 		"name": "Polly Rockt Knight",
 		"vocation": "Elite Knight",
 		"world": "Calmera",
@@ -3992,19 +4000,11 @@
 		"value": 14660
 	},
 	{
-		"rank": 500,
+		"rank": 501,
 		"name": "Dhoko'Vicious",
 		"vocation": "Royal Paladin",
 		"world": "Calmera",
 		"level": 386,
-		"value": 14655
-	},
-	{
-		"rank": 500,
-		"name": "Kayylicious",
-		"vocation": "Elder Druid",
-		"world": "Astera",
-		"level": 873,
 		"value": 14655
 	},
 	{
@@ -4092,7 +4092,7 @@
 		"name": "Uman The Legend Shanigami",
 		"vocation": "Elite Knight",
 		"world": "Yonabra",
-		"level": 559,
+		"level": 560,
 		"value": 14610
 	},
 	{
@@ -4108,7 +4108,7 @@
 		"name": "Baby dont hurtme",
 		"vocation": "Elder Druid",
 		"world": "Venebra",
-		"level": 1006,
+		"level": 1007,
 		"value": 14585
 	},
 	{
@@ -4196,11 +4196,19 @@
 		"name": "Galo do Diabo",
 		"vocation": "Elder Druid",
 		"world": "Lutabra",
-		"level": 675,
+		"level": 676,
 		"value": 14500
 	},
 	{
-		"rank": 526,
+		"rank": 525,
+		"name": "Lizard Racoon",
+		"vocation": "Master Sorcerer",
+		"world": "Quintera",
+		"level": 619,
+		"value": 14500
+	},
+	{
+		"rank": 527,
 		"name": "Rui Chapeu Archer",
 		"vocation": "Royal Paladin",
 		"world": "Serdebra",
@@ -4208,7 +4216,7 @@
 		"value": 14495
 	},
 	{
-		"rank": 527,
+		"rank": 528,
 		"name": "Necro Knight",
 		"vocation": "Elite Knight",
 		"world": "Menera",
@@ -4216,7 +4224,7 @@
 		"value": 14490
 	},
 	{
-		"rank": 528,
+		"rank": 529,
 		"name": "Vermeio do Dianho",
 		"vocation": "Elite Knight",
 		"world": "Lutabra",
@@ -4224,7 +4232,15 @@
 		"value": 14480
 	},
 	{
-		"rank": 529,
+		"rank": 530,
+		"name": "Libarkwin",
+		"vocation": "Elder Druid",
+		"world": "Belobra",
+		"level": 934,
+		"value": 14475
+	},
+	{
+		"rank": 531,
 		"name": "Duec",
 		"vocation": "Elite Knight",
 		"world": "Pacera",
@@ -4232,7 +4248,7 @@
 		"value": 14470
 	},
 	{
-		"rank": 529,
+		"rank": 531,
 		"name": "Jee Bunny Shop",
 		"vocation": "Royal Paladin",
 		"world": "Thyria",
@@ -4240,15 +4256,7 @@
 		"value": 14470
 	},
 	{
-		"rank": 529,
-		"name": "Lizard Racoon",
-		"vocation": "Master Sorcerer",
-		"world": "Quintera",
-		"level": 619,
-		"value": 14470
-	},
-	{
-		"rank": 532,
+		"rank": 533,
 		"name": "Waszkag",
 		"vocation": "Elder Druid",
 		"world": "Monza",
@@ -4256,7 +4264,7 @@
 		"value": 14460
 	},
 	{
-		"rank": 533,
+		"rank": 534,
 		"name": "Augusto Carpe",
 		"vocation": "Master Sorcerer",
 		"world": "Menera",
@@ -4264,7 +4272,7 @@
 		"value": 14450
 	},
 	{
-		"rank": 534,
+		"rank": 535,
 		"name": "Linda'inluv",
 		"vocation": "Elite Knight",
 		"world": "Inabra",
@@ -4272,7 +4280,7 @@
 		"value": 14440
 	},
 	{
-		"rank": 534,
+		"rank": 535,
 		"name": "Warmort",
 		"vocation": "Elite Knight",
 		"world": "Nefera",
@@ -4280,7 +4288,7 @@
 		"value": 14440
 	},
 	{
-		"rank": 536,
+		"rank": 537,
 		"name": "Krueger",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
@@ -4288,7 +4296,7 @@
 		"value": 14425
 	},
 	{
-		"rank": 537,
+		"rank": 538,
 		"name": "Elbulkoo",
 		"vocation": "Elite Knight",
 		"world": "Antica",
@@ -4296,20 +4304,12 @@
 		"value": 14420
 	},
 	{
-		"rank": 537,
+		"rank": 538,
 		"name": "Xura",
 		"vocation": "Elder Druid",
 		"world": "Quintera",
 		"level": 735,
 		"value": 14420
-	},
-	{
-		"rank": 539,
-		"name": "Libarkwin",
-		"vocation": "Elder Druid",
-		"world": "Belobra",
-		"level": 934,
-		"value": 14415
 	},
 	{
 		"rank": 540,
@@ -4452,7 +4452,7 @@
 		"name": "Lonan Druidastico",
 		"vocation": "Elder Druid",
 		"world": "Honbra",
-		"level": 997,
+		"level": 998,
 		"value": 14310
 	},
 	{
@@ -4588,7 +4588,7 @@
 		"name": "Fillevandrell",
 		"vocation": "Royal Paladin",
 		"world": "Celesta",
-		"level": 916,
+		"level": 917,
 		"value": 14240
 	},
 	{
@@ -4628,7 +4628,7 @@
 		"name": "Blyndadinho",
 		"vocation": "Royal Paladin",
 		"world": "Serdebra",
-		"level": 720,
+		"level": 721,
 		"value": 14220
 	},
 	{
@@ -4721,6 +4721,14 @@
 	},
 	{
 		"rank": 591,
+		"name": "Grisam",
+		"vocation": "Elite Knight",
+		"world": "Wildera",
+		"level": 1184,
+		"value": 14140
+	},
+	{
+		"rank": 592,
 		"name": "Frodoox",
 		"vocation": "Royal Paladin",
 		"world": "Thyria",
@@ -4728,7 +4736,7 @@
 		"value": 14135
 	},
 	{
-		"rank": 591,
+		"rank": 592,
 		"name": "Gunnar Ragnarsson",
 		"vocation": "Elite Knight",
 		"world": "Jadebra",
@@ -4736,7 +4744,7 @@
 		"value": 14135
 	},
 	{
-		"rank": 593,
+		"rank": 594,
 		"name": "Fannrond",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -4744,12 +4752,12 @@
 		"value": 14130
 	},
 	{
-		"rank": 593,
-		"name": "Grisam",
+		"rank": 595,
+		"name": "Nagolasek",
 		"vocation": "Elite Knight",
-		"world": "Wildera",
-		"level": 1184,
-		"value": 14130
+		"world": "Damora",
+		"level": 821,
+		"value": 14125
 	},
 	{
 		"rank": 595,
@@ -4760,7 +4768,15 @@
 		"value": 14125
 	},
 	{
-		"rank": 596,
+		"rank": 597,
+		"name": "Opanowany Paladynek",
+		"vocation": "Royal Paladin",
+		"world": "Nevia",
+		"level": 705,
+		"value": 14115
+	},
+	{
+		"rank": 597,
 		"name": "Ronda Rush",
 		"vocation": "Royal Paladin",
 		"world": "Nefera",
@@ -4768,15 +4784,15 @@
 		"value": 14115
 	},
 	{
-		"rank": 597,
+		"rank": 599,
 		"name": "Veckna",
 		"vocation": "Master Sorcerer",
 		"world": "Celebra",
-		"level": 1055,
+		"level": 1053,
 		"value": 14110
 	},
 	{
-		"rank": 598,
+		"rank": 600,
 		"name": "Jidernith Mard",
 		"vocation": "Elite Knight",
 		"world": "Yovera",
@@ -4784,7 +4800,7 @@
 		"value": 14100
 	},
 	{
-		"rank": 599,
+		"rank": 601,
 		"name": "Ambassing",
 		"vocation": "Elder Druid",
 		"world": "Nevia",
@@ -4792,15 +4808,7 @@
 		"value": 14090
 	},
 	{
-		"rank": 599,
-		"name": "Opanowany Paladynek",
-		"vocation": "Royal Paladin",
-		"world": "Nevia",
-		"level": 705,
-		"value": 14090
-	},
-	{
-		"rank": 599,
+		"rank": 601,
 		"name": "Ronan Mago Branco",
 		"vocation": "Elder Druid",
 		"world": "Descubra",
@@ -4808,7 +4816,7 @@
 		"value": 14090
 	},
 	{
-		"rank": 602,
+		"rank": 603,
 		"name": "Amy Winehousse",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
@@ -4816,7 +4824,7 @@
 		"value": 14085
 	},
 	{
-		"rank": 603,
+		"rank": 604,
 		"name": "Big Boss Esha",
 		"vocation": "Elite Knight",
 		"world": "Premia",
@@ -4824,20 +4832,12 @@
 		"value": 14075
 	},
 	{
-		"rank": 603,
+		"rank": 604,
 		"name": "Dreams",
 		"vocation": "Elder Druid",
 		"world": "Yonabra",
 		"level": 1213,
 		"value": 14075
-	},
-	{
-		"rank": 605,
-		"name": "Nagolasek",
-		"vocation": "Elite Knight",
-		"world": "Damora",
-		"level": 821,
-		"value": 14065
 	},
 	{
 		"rank": 606,
@@ -4956,7 +4956,7 @@
 		"name": "Tava Dur",
 		"vocation": "Royal Paladin",
 		"world": "Celesta",
-		"level": 891,
+		"level": 892,
 		"value": 14000
 	},
 	{
@@ -5072,7 +5072,15 @@
 		"value": 13945
 	},
 	{
-		"rank": 635,
+		"rank": 634,
+		"name": "Witthen",
+		"vocation": "Elite Knight",
+		"world": "Calmera",
+		"level": 770,
+		"value": 13945
+	},
+	{
+		"rank": 636,
 		"name": "Eternal Guardian",
 		"vocation": "Master Sorcerer",
 		"world": "Menera",
@@ -5080,7 +5088,7 @@
 		"value": 13940
 	},
 	{
-		"rank": 636,
+		"rank": 637,
 		"name": "Delazeri",
 		"vocation": "Elite Knight",
 		"world": "Ferobra",
@@ -5088,7 +5096,7 @@
 		"value": 13925
 	},
 	{
-		"rank": 637,
+		"rank": 638,
 		"name": "Fany Lobo",
 		"vocation": "Elite Knight",
 		"world": "Gladera",
@@ -5096,7 +5104,7 @@
 		"value": 13920
 	},
 	{
-		"rank": 637,
+		"rank": 638,
 		"name": "Inexpert",
 		"vocation": "Master Sorcerer",
 		"world": "Retalia",
@@ -5104,7 +5112,7 @@
 		"value": 13920
 	},
 	{
-		"rank": 637,
+		"rank": 638,
 		"name": "Maajek",
 		"vocation": "Royal Paladin",
 		"world": "Refugia",
@@ -5112,7 +5120,7 @@
 		"value": 13920
 	},
 	{
-		"rank": 637,
+		"rank": 638,
 		"name": "Tom Flamenguista",
 		"vocation": "Elite Knight",
 		"world": "Inabra",
@@ -5120,7 +5128,7 @@
 		"value": 13920
 	},
 	{
-		"rank": 641,
+		"rank": 642,
 		"name": "Ibeck Semsio",
 		"vocation": "Elder Druid",
 		"world": "Serdebra",
@@ -5128,7 +5136,7 @@
 		"value": 13915
 	},
 	{
-		"rank": 641,
+		"rank": 642,
 		"name": "Seymour Blood",
 		"vocation": "Master Sorcerer",
 		"world": "Nevia",
@@ -5136,7 +5144,7 @@
 		"value": 13915
 	},
 	{
-		"rank": 643,
+		"rank": 644,
 		"name": "Kim Belcher",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -5144,23 +5152,23 @@
 		"value": 13910
 	},
 	{
-		"rank": 644,
+		"rank": 645,
 		"name": "Serkowski",
 		"vocation": "Master Sorcerer",
 		"world": "Celesta",
-		"level": 1287,
+		"level": 1288,
 		"value": 13905
 	},
 	{
-		"rank": 644,
+		"rank": 645,
 		"name": "Wojjtekk",
 		"vocation": "Royal Paladin",
 		"world": "Vunira",
-		"level": 843,
+		"level": 844,
 		"value": 13905
 	},
 	{
-		"rank": 646,
+		"rank": 647,
 		"name": "Cornelio",
 		"vocation": "Elite Knight",
 		"world": "Gladera",
@@ -5168,7 +5176,7 @@
 		"value": 13900
 	},
 	{
-		"rank": 646,
+		"rank": 647,
 		"name": "Cuttelo",
 		"vocation": "Royal Paladin",
 		"world": "Ferobra",
@@ -5176,7 +5184,7 @@
 		"value": 13900
 	},
 	{
-		"rank": 648,
+		"rank": 649,
 		"name": "Bazam Maloka",
 		"vocation": "Elite Knight",
 		"world": "Ferobra",
@@ -5184,7 +5192,7 @@
 		"value": 13890
 	},
 	{
-		"rank": 648,
+		"rank": 649,
 		"name": "Insanity Bolt Isback",
 		"vocation": "Royal Paladin",
 		"world": "Quintera",
@@ -5192,20 +5200,12 @@
 		"value": 13890
 	},
 	{
-		"rank": 648,
+		"rank": 649,
 		"name": "Warfoxs",
 		"vocation": "Royal Paladin",
 		"world": "Utobra",
-		"level": 537,
+		"level": 538,
 		"value": 13890
-	},
-	{
-		"rank": 651,
-		"name": "Witthen",
-		"vocation": "Elite Knight",
-		"world": "Calmera",
-		"level": 770,
-		"value": 13885
 	},
 	{
 		"rank": 652,
@@ -5316,7 +5316,7 @@
 		"name": "Yamaanek",
 		"vocation": "Elder Druid",
 		"world": "Monza",
-		"level": 1654,
+		"level": 1655,
 		"value": 13825
 	},
 	{
@@ -5496,7 +5496,23 @@
 		"value": 13665
 	},
 	{
-		"rank": 688,
+		"rank": 687,
+		"name": "Brobanana",
+		"vocation": "Elite Knight",
+		"world": "Peloria",
+		"level": 646,
+		"value": 13665
+	},
+	{
+		"rank": 687,
+		"name": "Bullfat Dog",
+		"vocation": "Elite Knight",
+		"world": "Descubra",
+		"level": 534,
+		"value": 13665
+	},
+	{
+		"rank": 690,
 		"name": "Kelix Boss",
 		"vocation": "Elder Druid",
 		"world": "Rasteibra",
@@ -5504,23 +5520,15 @@
 		"value": 13650
 	},
 	{
-		"rank": 689,
-		"name": "Brobanana",
+		"rank": 691,
+		"name": "Old Rabugento",
 		"vocation": "Elite Knight",
-		"world": "Peloria",
-		"level": 646,
-		"value": 13635
+		"world": "Secura",
+		"level": 826,
+		"value": 13645
 	},
 	{
-		"rank": 689,
-		"name": "Bullfat Dog",
-		"vocation": "Elite Knight",
-		"world": "Descubra",
-		"level": 534,
-		"value": 13635
-	},
-	{
-		"rank": 689,
+		"rank": 692,
 		"name": "Psychozaa",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -5528,7 +5536,7 @@
 		"value": 13635
 	},
 	{
-		"rank": 692,
+		"rank": 693,
 		"name": "Diego Dragon Furious",
 		"vocation": "Royal Paladin",
 		"world": "Serdebra",
@@ -5536,7 +5544,7 @@
 		"value": 13625
 	},
 	{
-		"rank": 692,
+		"rank": 693,
 		"name": "Paul Hellscream",
 		"vocation": "Elite Knight",
 		"world": "Wintera",
@@ -5544,7 +5552,7 @@
 		"value": 13625
 	},
 	{
-		"rank": 694,
+		"rank": 695,
 		"name": "Fake Boyszz",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
@@ -5552,7 +5560,7 @@
 		"value": 13615
 	},
 	{
-		"rank": 694,
+		"rank": 695,
 		"name": "Hyper Diver",
 		"vocation": "Elder Druid",
 		"world": "Secura",
@@ -5560,7 +5568,7 @@
 		"value": 13615
 	},
 	{
-		"rank": 694,
+		"rank": 695,
 		"name": "Koko Kalle",
 		"vocation": "Master Sorcerer",
 		"world": "Nevia",
@@ -5568,7 +5576,7 @@
 		"value": 13615
 	},
 	{
-		"rank": 694,
+		"rank": 695,
 		"name": "Testn",
 		"vocation": "Master Sorcerer",
 		"world": "Yonabra",
@@ -5576,7 +5584,7 @@
 		"value": 13615
 	},
 	{
-		"rank": 698,
+		"rank": 699,
 		"name": "Lunatic Princess",
 		"vocation": "Elite Knight",
 		"world": "Celesta",
@@ -5584,7 +5592,7 @@
 		"value": 13610
 	},
 	{
-		"rank": 699,
+		"rank": 700,
 		"name": "Elite Diabeu",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -5592,7 +5600,7 @@
 		"value": 13600
 	},
 	{
-		"rank": 700,
+		"rank": 701,
 		"name": "Akeyooshi",
 		"vocation": "Royal Paladin",
 		"world": "Nevia",
@@ -5600,7 +5608,7 @@
 		"value": 13595
 	},
 	{
-		"rank": 700,
+		"rank": 701,
 		"name": "Teczowa Emeska",
 		"vocation": "Master Sorcerer",
 		"world": "Kendria",
@@ -5608,7 +5616,15 @@
 		"value": 13595
 	},
 	{
-		"rank": 702,
+		"rank": 703,
+		"name": "Alatsuvia Haeravaga",
+		"vocation": "Elite Knight",
+		"world": "Ustebra",
+		"level": 822,
+		"value": 13590
+	},
+	{
+		"rank": 703,
 		"name": "Deverox",
 		"vocation": "Elder Druid",
 		"world": "Menera",
@@ -5616,7 +5632,7 @@
 		"value": 13590
 	},
 	{
-		"rank": 703,
+		"rank": 705,
 		"name": "Gandalf Sombrio",
 		"vocation": "Elder Druid",
 		"world": "Venebra",
@@ -5624,7 +5640,7 @@
 		"value": 13565
 	},
 	{
-		"rank": 703,
+		"rank": 705,
 		"name": "Rogerin Gelintekin",
 		"vocation": "Master Sorcerer",
 		"world": "Honbra",
@@ -5632,15 +5648,15 @@
 		"value": 13565
 	},
 	{
-		"rank": 705,
+		"rank": 707,
 		"name": "Davi Thanksgod",
 		"vocation": "Elite Knight",
 		"world": "Serdebra",
-		"level": 980,
+		"level": 981,
 		"value": 13560
 	},
 	{
-		"rank": 705,
+		"rank": 707,
 		"name": "Luke Lockdown",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
@@ -5648,7 +5664,7 @@
 		"value": 13560
 	},
 	{
-		"rank": 705,
+		"rank": 707,
 		"name": "Sarys Sire",
 		"vocation": "Elder Druid",
 		"world": "Secura",
@@ -5656,7 +5672,7 @@
 		"value": 13560
 	},
 	{
-		"rank": 708,
+		"rank": 710,
 		"name": "Ultimate Eric Legend",
 		"vocation": "Elder Druid",
 		"world": "Menera",
@@ -5664,7 +5680,7 @@
 		"value": 13555
 	},
 	{
-		"rank": 709,
+		"rank": 711,
 		"name": "Ma Sativ",
 		"vocation": "Elder Druid",
 		"world": "Epoca",
@@ -5672,7 +5688,7 @@
 		"value": 13550
 	},
 	{
-		"rank": 709,
+		"rank": 711,
 		"name": "Vangogh",
 		"vocation": "Royal Paladin",
 		"world": "Inabra",
@@ -5680,7 +5696,7 @@
 		"value": 13550
 	},
 	{
-		"rank": 711,
+		"rank": 713,
 		"name": "Kirevor",
 		"vocation": "Master Sorcerer",
 		"world": "Kalibra",
@@ -5688,15 +5704,7 @@
 		"value": 13535
 	},
 	{
-		"rank": 712,
-		"name": "Alatsuvia Haeravaga",
-		"vocation": "Elite Knight",
-		"world": "Ustebra",
-		"level": 822,
-		"value": 13530
-	},
-	{
-		"rank": 712,
+		"rank": 714,
 		"name": "Driftmoon",
 		"vocation": "Royal Paladin",
 		"world": "Secura",
@@ -5704,7 +5712,7 @@
 		"value": 13530
 	},
 	{
-		"rank": 712,
+		"rank": 714,
 		"name": "Pila Paladina",
 		"vocation": "Elite Knight",
 		"world": "Pacera",
@@ -5712,15 +5720,7 @@
 		"value": 13530
 	},
 	{
-		"rank": 715,
-		"name": "Old Rabugento",
-		"vocation": "Elite Knight",
-		"world": "Secura",
-		"level": 826,
-		"value": 13525
-	},
-	{
-		"rank": 715,
+		"rank": 716,
 		"name": "Toddzera Armstrong",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
@@ -5728,7 +5728,7 @@
 		"value": 13525
 	},
 	{
-		"rank": 715,
+		"rank": 716,
 		"name": "Warrior'Ricky",
 		"vocation": "Elite Knight",
 		"world": "Peloria",
@@ -5769,6 +5769,14 @@
 	},
 	{
 		"rank": 722,
+		"name": "Mestre Matematico",
+		"vocation": "Master Sorcerer",
+		"world": "Ustebra",
+		"level": 954,
+		"value": 13465
+	},
+	{
+		"rank": 722,
 		"name": "Vatty",
 		"vocation": "Elite Knight",
 		"world": "Kendria",
@@ -5776,7 +5784,7 @@
 		"value": 13465
 	},
 	{
-		"rank": 723,
+		"rank": 724,
 		"name": "Poseidons Hope",
 		"vocation": "Elite Knight",
 		"world": "Vunira",
@@ -5784,7 +5792,7 @@
 		"value": 13460
 	},
 	{
-		"rank": 724,
+		"rank": 725,
 		"name": "Hipnotic Archer",
 		"vocation": "Royal Paladin",
 		"world": "Havera",
@@ -5792,7 +5800,7 @@
 		"value": 13440
 	},
 	{
-		"rank": 725,
+		"rank": 726,
 		"name": "Knilk",
 		"vocation": "Elder Druid",
 		"world": "Harmonia",
@@ -5800,7 +5808,7 @@
 		"value": 13420
 	},
 	{
-		"rank": 726,
+		"rank": 727,
 		"name": "Imitex",
 		"vocation": "Master Sorcerer",
 		"world": "Vunira",
@@ -5808,7 +5816,7 @@
 		"value": 13415
 	},
 	{
-		"rank": 726,
+		"rank": 727,
 		"name": "Koschei",
 		"vocation": "Elite Knight",
 		"world": "Gentebra",
@@ -5816,7 +5824,7 @@
 		"value": 13415
 	},
 	{
-		"rank": 726,
+		"rank": 727,
 		"name": "Nathanzito",
 		"vocation": "Elite Knight",
 		"world": "Lutabra",
@@ -5824,7 +5832,7 @@
 		"value": 13415
 	},
 	{
-		"rank": 726,
+		"rank": 727,
 		"name": "Sacros Arturt",
 		"vocation": "Royal Paladin",
 		"world": "Quintera",
@@ -5832,7 +5840,7 @@
 		"value": 13415
 	},
 	{
-		"rank": 726,
+		"rank": 727,
 		"name": "Sioy",
 		"vocation": "Master Sorcerer",
 		"world": "Ustebra",
@@ -5840,7 +5848,7 @@
 		"value": 13415
 	},
 	{
-		"rank": 731,
+		"rank": 732,
 		"name": "Lololordini",
 		"vocation": "Elder Druid",
 		"world": "Kendria",
@@ -5848,7 +5856,7 @@
 		"value": 13410
 	},
 	{
-		"rank": 731,
+		"rank": 732,
 		"name": "Mistiki",
 		"vocation": "Elder Druid",
 		"world": "Obscubra",
@@ -5856,7 +5864,7 @@
 		"value": 13410
 	},
 	{
-		"rank": 733,
+		"rank": 734,
 		"name": "Sara Cross",
 		"vocation": "Elite Knight",
 		"world": "Bona",
@@ -5864,7 +5872,7 @@
 		"value": 13405
 	},
 	{
-		"rank": 733,
+		"rank": 734,
 		"name": "Tiger Backwoods",
 		"vocation": "Master Sorcerer",
 		"world": "Pulsera",
@@ -5872,7 +5880,7 @@
 		"value": 13405
 	},
 	{
-		"rank": 735,
+		"rank": 736,
 		"name": "Sendart",
 		"vocation": "Elite Knight",
 		"world": "Havera",
@@ -5880,15 +5888,7 @@
 		"value": 13400
 	},
 	{
-		"rank": 736,
-		"name": "Mestre Matematico",
-		"vocation": "Master Sorcerer",
-		"world": "Ustebra",
-		"level": 954,
-		"value": 13395
-	},
-	{
-		"rank": 736,
+		"rank": 737,
 		"name": "Vicaor",
 		"vocation": "Elder Druid",
 		"world": "Honbra",
@@ -5905,6 +5905,14 @@
 	},
 	{
 		"rank": 739,
+		"name": "Leonel Royalheart",
+		"vocation": "Royal Paladin",
+		"world": "Yonabra",
+		"level": 535,
+		"value": 13380
+	},
+	{
+		"rank": 740,
 		"name": "Druidzinn Hur",
 		"vocation": "Elder Druid",
 		"world": "Yovera",
@@ -5913,6 +5921,14 @@
 	},
 	{
 		"rank": 740,
+		"name": "Rotondo Fenris",
+		"vocation": "Elite Knight",
+		"world": "Ustebra",
+		"level": 600,
+		"value": 13375
+	},
+	{
+		"rank": 742,
 		"name": "Apthia",
 		"vocation": "Royal Paladin",
 		"world": "Ustebra",
@@ -5920,7 +5936,7 @@
 		"value": 13370
 	},
 	{
-		"rank": 741,
+		"rank": 743,
 		"name": "Alko Popiool",
 		"vocation": "Elite Knight",
 		"world": "Impulsa",
@@ -5928,7 +5944,7 @@
 		"value": 13355
 	},
 	{
-		"rank": 741,
+		"rank": 743,
 		"name": "Ampur",
 		"vocation": "Elite Knight",
 		"world": "Wildera",
@@ -5936,7 +5952,7 @@
 		"value": 13355
 	},
 	{
-		"rank": 741,
+		"rank": 743,
 		"name": "Infernus'Sniper",
 		"vocation": "Royal Paladin",
 		"world": "Havera",
@@ -5944,7 +5960,7 @@
 		"value": 13355
 	},
 	{
-		"rank": 741,
+		"rank": 743,
 		"name": "Laloszk",
 		"vocation": "Elder Druid",
 		"world": "Esmera",
@@ -5952,7 +5968,7 @@
 		"value": 13355
 	},
 	{
-		"rank": 745,
+		"rank": 747,
 		"name": "Cubbii",
 		"vocation": "Royal Paladin",
 		"world": "Celesta",
@@ -5960,7 +5976,7 @@
 		"value": 13350
 	},
 	{
-		"rank": 746,
+		"rank": 748,
 		"name": "Bino Oldschool",
 		"vocation": "Elder Druid",
 		"world": "Ombra",
@@ -5968,7 +5984,7 @@
 		"value": 13345
 	},
 	{
-		"rank": 747,
+		"rank": 749,
 		"name": "Fraanck",
 		"vocation": "Master Sorcerer",
 		"world": "Ustebra",
@@ -5976,7 +5992,7 @@
 		"value": 13340
 	},
 	{
-		"rank": 747,
+		"rank": 749,
 		"name": "Migmaii",
 		"vocation": "Elite Knight",
 		"world": "Guerribra",
@@ -5984,7 +6000,7 @@
 		"value": 13340
 	},
 	{
-		"rank": 747,
+		"rank": 749,
 		"name": "Miini Adus",
 		"vocation": "Elder Druid",
 		"world": "Impulsa",
@@ -5992,28 +6008,12 @@
 		"value": 13340
 	},
 	{
-		"rank": 750,
+		"rank": 752,
 		"name": "Chronus Legacy",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
 		"level": 1216,
 		"value": 13335
-	},
-	{
-		"rank": 751,
-		"name": "Leonel Royalheart",
-		"vocation": "Royal Paladin",
-		"world": "Yonabra",
-		"level": 535,
-		"value": 13320
-	},
-	{
-		"rank": 752,
-		"name": "Rotondo Fenris",
-		"vocation": "Elite Knight",
-		"world": "Ustebra",
-		"level": 600,
-		"value": 13315
 	},
 	{
 		"rank": 753,
@@ -6061,7 +6061,7 @@
 		"vocation": "Royal Paladin",
 		"world": "Kalibra",
 		"level": 583,
-		"value": 13275
+		"value": 13285
 	},
 	{
 		"rank": 759,
@@ -6097,6 +6097,14 @@
 	},
 	{
 		"rank": 763,
+		"name": "Cohenzor",
+		"vocation": "Master Sorcerer",
+		"world": "Yonabra",
+		"level": 1100,
+		"value": 13240
+	},
+	{
+		"rank": 763,
 		"name": "Nisom",
 		"vocation": "Royal Paladin",
 		"world": "Premia",
@@ -6104,7 +6112,7 @@
 		"value": 13240
 	},
 	{
-		"rank": 764,
+		"rank": 765,
 		"name": "Incredibly Old Witch",
 		"vocation": "Master Sorcerer",
 		"world": "Descubra",
@@ -6112,7 +6120,7 @@
 		"value": 13235
 	},
 	{
-		"rank": 765,
+		"rank": 766,
 		"name": "Froken",
 		"vocation": "Royal Paladin",
 		"world": "Descubra",
@@ -6120,7 +6128,7 @@
 		"value": 13220
 	},
 	{
-		"rank": 765,
+		"rank": 766,
 		"name": "Solid Nazgul",
 		"vocation": "Elite Knight",
 		"world": "Obscubra",
@@ -6128,7 +6136,7 @@
 		"value": 13220
 	},
 	{
-		"rank": 767,
+		"rank": 768,
 		"name": "Griftwood",
 		"vocation": "Master Sorcerer",
 		"world": "Damora",
@@ -6136,7 +6144,7 @@
 		"value": 13215
 	},
 	{
-		"rank": 767,
+		"rank": 768,
 		"name": "Paladino Monte",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -6144,15 +6152,15 @@
 		"value": 13215
 	},
 	{
-		"rank": 769,
+		"rank": 770,
 		"name": "Abstract",
 		"vocation": "Master Sorcerer",
 		"world": "Quintera",
-		"level": 700,
+		"level": 701,
 		"value": 13200
 	},
 	{
-		"rank": 769,
+		"rank": 770,
 		"name": "Lazy Samurai",
 		"vocation": "Elite Knight",
 		"world": "Antica",
@@ -6160,7 +6168,7 @@
 		"value": 13200
 	},
 	{
-		"rank": 771,
+		"rank": 772,
 		"name": "Patry czek Picasso",
 		"vocation": "Royal Paladin",
 		"world": "Refugia",
@@ -6168,7 +6176,7 @@
 		"value": 13195
 	},
 	{
-		"rank": 772,
+		"rank": 773,
 		"name": "Piatka",
 		"vocation": "Royal Paladin",
 		"world": "Harmonia",
@@ -6176,7 +6184,7 @@
 		"value": 13190
 	},
 	{
-		"rank": 773,
+		"rank": 774,
 		"name": "Aner Elot",
 		"vocation": "Elite Knight",
 		"world": "Talera",
@@ -6184,7 +6192,7 @@
 		"value": 13185
 	},
 	{
-		"rank": 773,
+		"rank": 774,
 		"name": "Invencible Drakaryus",
 		"vocation": "Master Sorcerer",
 		"world": "Obscubra",
@@ -6192,7 +6200,7 @@
 		"value": 13185
 	},
 	{
-		"rank": 773,
+		"rank": 774,
 		"name": "Mekeko the Almighty",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -6200,7 +6208,7 @@
 		"value": 13185
 	},
 	{
-		"rank": 776,
+		"rank": 777,
 		"name": "Ashia Igna",
 		"vocation": "Royal Paladin",
 		"world": "Nadora",
@@ -6208,7 +6216,7 @@
 		"value": 13180
 	},
 	{
-		"rank": 777,
+		"rank": 778,
 		"name": "Rhandy Sawyer",
 		"vocation": "Royal Paladin",
 		"world": "Yonabra",
@@ -6216,7 +6224,7 @@
 		"value": 13175
 	},
 	{
-		"rank": 778,
+		"rank": 779,
 		"name": "Theuzikat",
 		"vocation": "Elder Druid",
 		"world": "Inabra",
@@ -6224,7 +6232,7 @@
 		"value": 13170
 	},
 	{
-		"rank": 779,
+		"rank": 780,
 		"name": "Queen Winterheart",
 		"vocation": "Elite Knight",
 		"world": "Ferobra",
@@ -6232,23 +6240,15 @@
 		"value": 13165
 	},
 	{
-		"rank": 780,
+		"rank": 781,
 		"name": "Quixada Weysk",
 		"vocation": "Elite Knight",
 		"world": "Jadebra",
-		"level": 844,
+		"level": 846,
 		"value": 13160
 	},
 	{
-		"rank": 781,
-		"name": "Cohenzor",
-		"vocation": "Master Sorcerer",
-		"world": "Yonabra",
-		"level": 1100,
-		"value": 13150
-	},
-	{
-		"rank": 781,
+		"rank": 782,
 		"name": "Torkel Ironman",
 		"vocation": "Elite Knight",
 		"world": "Yovera",
@@ -6337,6 +6337,14 @@
 	},
 	{
 		"rank": 793,
+		"name": "Maalyka",
+		"vocation": "Royal Paladin",
+		"world": "Quelibra",
+		"level": 565,
+		"value": 13095
+	},
+	{
+		"rank": 794,
 		"name": "Almiroow",
 		"vocation": "Elite Knight",
 		"world": "Rasteibra",
@@ -6344,7 +6352,7 @@
 		"value": 13090
 	},
 	{
-		"rank": 793,
+		"rank": 794,
 		"name": "Elipe Street",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
@@ -6352,7 +6360,7 @@
 		"value": 13090
 	},
 	{
-		"rank": 795,
+		"rank": 796,
 		"name": "Mage Barker",
 		"vocation": "Elder Druid",
 		"world": "Quintera",
@@ -6360,7 +6368,7 @@
 		"value": 13085
 	},
 	{
-		"rank": 795,
+		"rank": 796,
 		"name": "Utrek",
 		"vocation": "Elder Druid",
 		"world": "Menera",
@@ -6368,7 +6376,7 @@
 		"value": 13085
 	},
 	{
-		"rank": 797,
+		"rank": 798,
 		"name": "Anti Druid",
 		"vocation": "Elder Druid",
 		"world": "Nevia",
@@ -6376,7 +6384,7 @@
 		"value": 13075
 	},
 	{
-		"rank": 798,
+		"rank": 799,
 		"name": "Awesome siko",
 		"vocation": "Royal Paladin",
 		"world": "Inabra",
@@ -6384,15 +6392,7 @@
 		"value": 13070
 	},
 	{
-		"rank": 799,
-		"name": "Maalyka",
-		"vocation": "Royal Paladin",
-		"world": "Quelibra",
-		"level": 565,
-		"value": 13065
-	},
-	{
-		"rank": 799,
+		"rank": 800,
 		"name": "Rodr iigo",
 		"vocation": "Master Sorcerer",
 		"world": "Honbra",
@@ -6440,7 +6440,15 @@
 		"value": 13020
 	},
 	{
-		"rank": 806,
+		"rank": 804,
+		"name": "Vorrak Paladino Hostil",
+		"vocation": "Royal Paladin",
+		"world": "Rasteibra",
+		"level": 716,
+		"value": 13020
+	},
+	{
+		"rank": 807,
 		"name": "Gustazor",
 		"vocation": "Master Sorcerer",
 		"world": "Lutabra",
@@ -6448,7 +6456,7 @@
 		"value": 13000
 	},
 	{
-		"rank": 806,
+		"rank": 807,
 		"name": "Tyrann Undead",
 		"vocation": "Elite Knight",
 		"world": "Nevia",
@@ -6456,7 +6464,7 @@
 		"value": 13000
 	},
 	{
-		"rank": 808,
+		"rank": 809,
 		"name": "Arbels",
 		"vocation": "Elite Knight",
 		"world": "Monza",
@@ -6464,7 +6472,7 @@
 		"value": 12985
 	},
 	{
-		"rank": 808,
+		"rank": 809,
 		"name": "Ya su",
 		"vocation": "Elite Knight",
 		"world": "Ferobra",
@@ -6472,7 +6480,7 @@
 		"value": 12985
 	},
 	{
-		"rank": 810,
+		"rank": 811,
 		"name": "Old Thoris",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -6480,7 +6488,7 @@
 		"value": 12980
 	},
 	{
-		"rank": 811,
+		"rank": 812,
 		"name": "Ikrixx",
 		"vocation": "Elder Druid",
 		"world": "Honbra",
@@ -6488,7 +6496,7 @@
 		"value": 12975
 	},
 	{
-		"rank": 812,
+		"rank": 813,
 		"name": "Caahsz Charlovinha",
 		"vocation": "Elder Druid",
 		"world": "Rasteibra",
@@ -6496,19 +6504,11 @@
 		"value": 12970
 	},
 	{
-		"rank": 813,
+		"rank": 814,
 		"name": "Kwasny Cukier",
 		"vocation": "Elder Druid",
 		"world": "Refugia",
 		"level": 1430,
-		"value": 12960
-	},
-	{
-		"rank": 813,
-		"name": "Vorrak Paladino Hostil",
-		"vocation": "Royal Paladin",
-		"world": "Rasteibra",
-		"level": 716,
 		"value": 12960
 	},
 	{
@@ -6529,6 +6529,14 @@
 	},
 	{
 		"rank": 817,
+		"name": "Dressaa Lindsei",
+		"vocation": "Elite Knight",
+		"world": "Quelibra",
+		"level": 808,
+		"value": 12935
+	},
+	{
+		"rank": 817,
 		"name": "Itz Uva",
 		"vocation": "Master Sorcerer",
 		"world": "Refugia",
@@ -6544,20 +6552,12 @@
 		"value": 12935
 	},
 	{
-		"rank": 819,
+		"rank": 820,
 		"name": "Themonio Dtonao",
 		"vocation": "Master Sorcerer",
 		"world": "Ustebra",
 		"level": 961,
 		"value": 12930
-	},
-	{
-		"rank": 820,
-		"name": "Dressaa Lindsei",
-		"vocation": "Elite Knight",
-		"world": "Quelibra",
-		"level": 808,
-		"value": 12925
 	},
 	{
 		"rank": 821,
@@ -6580,7 +6580,7 @@
 		"name": "Cow Rods",
 		"vocation": "Elder Druid",
 		"world": "Gentebra",
-		"level": 595,
+		"level": 596,
 		"value": 12910
 	},
 	{
@@ -6676,7 +6676,7 @@
 		"name": "Bacrolol",
 		"vocation": "Royal Paladin",
 		"world": "Secura",
-		"level": 849,
+		"level": 851,
 		"value": 12855
 	},
 	{
@@ -6705,6 +6705,14 @@
 	},
 	{
 		"rank": 838,
+		"name": "Rykzar",
+		"vocation": "Elder Druid",
+		"world": "Pacera",
+		"level": 1111,
+		"value": 12850
+	},
+	{
+		"rank": 838,
 		"name": "Vincent'Dra",
 		"vocation": "Master Sorcerer",
 		"world": "Antica",
@@ -6712,7 +6720,7 @@
 		"value": 12850
 	},
 	{
-		"rank": 840,
+		"rank": 841,
 		"name": "Gien",
 		"vocation": "Royal Paladin",
 		"world": "Monza",
@@ -6720,7 +6728,7 @@
 		"value": 12845
 	},
 	{
-		"rank": 840,
+		"rank": 841,
 		"name": "Metths",
 		"vocation": "Elite Knight",
 		"world": "Wintera",
@@ -6728,7 +6736,7 @@
 		"value": 12845
 	},
 	{
-		"rank": 842,
+		"rank": 843,
 		"name": "Archangel Thamyka",
 		"vocation": "Royal Paladin",
 		"world": "Utobra",
@@ -6736,15 +6744,15 @@
 		"value": 12840
 	},
 	{
-		"rank": 843,
+		"rank": 844,
 		"name": "Engenheiro do Hetai",
 		"vocation": "Master Sorcerer",
 		"world": "Obscubra",
-		"level": 564,
+		"level": 565,
 		"value": 12825
 	},
 	{
-		"rank": 843,
+		"rank": 844,
 		"name": "Rei Ajuste",
 		"vocation": "Elder Druid",
 		"world": "Ustebra",
@@ -6752,7 +6760,7 @@
 		"value": 12825
 	},
 	{
-		"rank": 845,
+		"rank": 846,
 		"name": "Engineer Luks",
 		"vocation": "Elite Knight",
 		"world": "Quelibra",
@@ -6760,7 +6768,7 @@
 		"value": 12820
 	},
 	{
-		"rank": 845,
+		"rank": 846,
 		"name": "Godius Bous",
 		"vocation": "Elder Druid",
 		"world": "Gentebra",
@@ -6768,7 +6776,7 @@
 		"value": 12820
 	},
 	{
-		"rank": 847,
+		"rank": 848,
 		"name": "Lothala",
 		"vocation": "Elite Knight",
 		"world": "Nevia",
@@ -6776,7 +6784,7 @@
 		"value": 12815
 	},
 	{
-		"rank": 847,
+		"rank": 848,
 		"name": "Smartguy",
 		"vocation": "Royal Paladin",
 		"world": "Secura",
@@ -6784,7 +6792,7 @@
 		"value": 12815
 	},
 	{
-		"rank": 849,
+		"rank": 850,
 		"name": "Toja Massa",
 		"vocation": "Elder Druid",
 		"world": "Vunira",
@@ -6792,7 +6800,7 @@
 		"value": 12805
 	},
 	{
-		"rank": 850,
+		"rank": 851,
 		"name": "Caranguejo atomico",
 		"vocation": "Royal Paladin",
 		"world": "Ombra",
@@ -6800,7 +6808,7 @@
 		"value": 12800
 	},
 	{
-		"rank": 850,
+		"rank": 851,
 		"name": "Szyszek Milord Black",
 		"vocation": "Elder Druid",
 		"world": "Antica",
@@ -6808,7 +6816,15 @@
 		"value": 12800
 	},
 	{
-		"rank": 852,
+		"rank": 851,
+		"name": "Wubuu",
+		"vocation": "Elder Druid",
+		"world": "Nadora",
+		"level": 615,
+		"value": 12800
+	},
+	{
+		"rank": 854,
 		"name": "Haishen",
 		"vocation": "Master Sorcerer",
 		"world": "Celesta",
@@ -6816,15 +6832,7 @@
 		"value": 12790
 	},
 	{
-		"rank": 852,
-		"name": "Rykzar",
-		"vocation": "Elder Druid",
-		"world": "Pacera",
-		"level": 1111,
-		"value": 12790
-	},
-	{
-		"rank": 854,
+		"rank": 855,
 		"name": "The Nooob",
 		"vocation": "Master Sorcerer",
 		"world": "Peloria",
@@ -6832,7 +6840,7 @@
 		"value": 12785
 	},
 	{
-		"rank": 854,
+		"rank": 855,
 		"name": "Tiuilzerah Ondeta Temconfusao",
 		"vocation": "Elder Druid",
 		"world": "Guerribra",
@@ -6840,7 +6848,7 @@
 		"value": 12785
 	},
 	{
-		"rank": 856,
+		"rank": 857,
 		"name": "Niix Insanity",
 		"vocation": "Master Sorcerer",
 		"world": "Jadebra",
@@ -6848,7 +6856,7 @@
 		"value": 12780
 	},
 	{
-		"rank": 857,
+		"rank": 858,
 		"name": "Imperator Haraster",
 		"vocation": "Elite Knight",
 		"world": "Refugia",
@@ -6856,7 +6864,7 @@
 		"value": 12770
 	},
 	{
-		"rank": 858,
+		"rank": 859,
 		"name": "Chivolli",
 		"vocation": "Elite Knight",
 		"world": "Nevia",
@@ -6864,15 +6872,23 @@
 		"value": 12765
 	},
 	{
-		"rank": 859,
+		"rank": 860,
+		"name": "Luconn",
+		"vocation": "Elite Knight",
+		"world": "Secura",
+		"level": 1052,
+		"value": 12760
+	},
+	{
+		"rank": 861,
 		"name": "Goduxin",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
-		"level": 1110,
+		"level": 1111,
 		"value": 12755
 	},
 	{
-		"rank": 860,
+		"rank": 862,
 		"name": "Estireno",
 		"vocation": "Royal Paladin",
 		"world": "Solidera",
@@ -6880,7 +6896,7 @@
 		"value": 12750
 	},
 	{
-		"rank": 861,
+		"rank": 863,
 		"name": "Tha",
 		"vocation": "Master Sorcerer",
 		"world": "Menera",
@@ -6888,15 +6904,7 @@
 		"value": 12745
 	},
 	{
-		"rank": 862,
-		"name": "Wubuu",
-		"vocation": "Elder Druid",
-		"world": "Nadora",
-		"level": 615,
-		"value": 12740
-	},
-	{
-		"rank": 863,
+		"rank": 864,
 		"name": "Garlek",
 		"vocation": "Elite Knight",
 		"world": "Calmera",
@@ -6904,7 +6912,7 @@
 		"value": 12735
 	},
 	{
-		"rank": 863,
+		"rank": 864,
 		"name": "Mateusz Wesoly Muchomorek",
 		"vocation": "Elite Knight",
 		"world": "Impulsa",
@@ -6912,15 +6920,7 @@
 		"value": 12735
 	},
 	{
-		"rank": 865,
-		"name": "Luconn",
-		"vocation": "Elite Knight",
-		"world": "Secura",
-		"level": 1051,
-		"value": 12730
-	},
-	{
-		"rank": 865,
+		"rank": 866,
 		"name": "Quick scopee",
 		"vocation": "Knight",
 		"world": "Yovera",
@@ -7036,7 +7036,7 @@
 		"name": "Ale Tenebrosu",
 		"vocation": "Elite Knight",
 		"world": "Wintera",
-		"level": 1112,
+		"level": 1113,
 		"value": 12655
 	},
 	{
@@ -7116,7 +7116,7 @@
 		"name": "Druid Kontrat",
 		"vocation": "Elder Druid",
 		"world": "Nevia",
-		"level": 967,
+		"level": 968,
 		"value": 12600
 	},
 	{
@@ -7548,7 +7548,7 @@
 		"name": "Elder Cornflakes",
 		"vocation": "Royal Paladin",
 		"world": "Thyria",
-		"level": 474,
+		"level": 475,
 		"value": 12325
 	},
 	{
@@ -7732,7 +7732,7 @@
 		"name": "Stiingu",
 		"vocation": "Elite Knight",
 		"world": "Harmonia",
-		"level": 653,
+		"level": 655,
 		"value": 12235
 	},
 	{
@@ -7844,7 +7844,7 @@
 		"name": "Vulituri",
 		"vocation": "Royal Paladin",
 		"world": "Secura",
-		"level": 646,
+		"level": 647,
 		"value": 12185
 	},
 	{
@@ -7884,7 +7884,7 @@
 		"name": "Lermadc",
 		"vocation": "Royal Paladin",
 		"world": "Lobera",
-		"level": 518,
+		"level": 519,
 		"value": 12155
 	},
 	{
@@ -7977,6 +7977,14 @@
 	},
 	{
 		"rank": 997,
+		"name": "Koperkowy Louis",
+		"vocation": "Royal Paladin",
+		"world": "Nevia",
+		"level": 486,
+		"value": 12110
+	},
+	{
+		"rank": 997,
 		"name": "Larnfar",
 		"vocation": "Master Sorcerer",
 		"world": "Yovera",
@@ -7990,13 +7998,5 @@
 		"world": "Kalibra",
 		"level": 1744,
 		"value": 12110
-	},
-	{
-		"rank": 1000,
-		"name": "San winchestery",
-		"vocation": "Royal Paladin",
-		"world": "Yonabra",
-		"level": 556,
-		"value": 12105
 	}
 ]
