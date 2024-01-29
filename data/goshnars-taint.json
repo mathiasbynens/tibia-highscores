@@ -37,7 +37,7 @@
 		"vocation": "Elite Knight",
 		"world": "Monza",
 		"level": 1747,
-		"value": 3026
+		"value": 3041
 	},
 	{
 		"rank": 6,
@@ -156,8 +156,8 @@
 		"name": "Zapecao",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
-		"level": 1651,
-		"value": 2106
+		"level": 1652,
+		"value": 2107
 	},
 	{
 		"rank": 21,
@@ -172,8 +172,8 @@
 		"name": "Radizao",
 		"vocation": "Elite Knight",
 		"world": "Collabra",
-		"level": 1685,
-		"value": 1971
+		"level": 1686,
+		"value": 1972
 	},
 	{
 		"rank": 23,
@@ -353,6 +353,14 @@
 	},
 	{
 		"rank": 45,
+		"name": "Anakurawk Dafalasu",
+		"vocation": "Elite Knight",
+		"world": "Gentebra",
+		"level": 1557,
+		"value": 1517
+	},
+	{
+		"rank": 46,
 		"name": "Daark",
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
@@ -360,15 +368,7 @@
 		"value": 1515
 	},
 	{
-		"rank": 46,
-		"name": "Anakurawk Dafalasu",
-		"vocation": "Elite Knight",
-		"world": "Gentebra",
-		"level": 1557,
-		"value": 1514
-	},
-	{
-		"rank": 46,
+		"rank": 47,
 		"name": "Ezudux",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -724,11 +724,11 @@
 		"name": "Cloudini",
 		"vocation": "Master Sorcerer",
 		"world": "Harmonia",
-		"level": 1824,
-		"value": 1255
+		"level": 1825,
+		"value": 1256
 	},
 	{
-		"rank": 91,
+		"rank": 92,
 		"name": "Highping Destroy Fielder",
 		"vocation": "Elite Knight",
 		"world": "Bona",
@@ -740,7 +740,7 @@
 		"name": "Luix Corporation",
 		"vocation": "Elder Druid",
 		"world": "Collabra",
-		"level": 1848,
+		"level": 1849,
 		"value": 1247
 	},
 	{
@@ -916,11 +916,11 @@
 		"name": "Ancora Camisadez",
 		"vocation": "Elite Knight",
 		"world": "Honbra",
-		"level": 1265,
-		"value": 1170
+		"level": 1266,
+		"value": 1172
 	},
 	{
-		"rank": 115,
+		"rank": 116,
 		"name": "Dinoco Druid",
 		"vocation": "Elder Druid",
 		"world": "Gentebra",
@@ -933,7 +933,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Refugia",
 		"level": 1738,
-		"value": 1162
+		"value": 1163
 	},
 	{
 		"rank": 118,
@@ -1092,7 +1092,7 @@
 		"name": "Sorserer",
 		"vocation": "Elder Druid",
 		"world": "Yonabra",
-		"level": 1231,
+		"level": 1232,
 		"value": 1066
 	},
 	{
@@ -1156,7 +1156,7 @@
 		"name": "Dolerozs",
 		"vocation": "Elder Druid",
 		"world": "Collabra",
-		"level": 1567,
+		"level": 1568,
 		"value": 1022
 	},
 	{
@@ -1204,7 +1204,7 @@
 		"name": "Blaze Acalix",
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
-		"level": 1566,
+		"level": 1567,
 		"value": 1014
 	},
 	{
@@ -1260,11 +1260,11 @@
 		"name": "Luke no San",
 		"vocation": "Royal Paladin",
 		"world": "Collabra",
-		"level": 1537,
-		"value": 992
+		"level": 1538,
+		"value": 993
 	},
 	{
-		"rank": 158,
+		"rank": 159,
 		"name": "Rising Akamaga",
 		"vocation": "Elder Druid",
 		"world": "Damora",
@@ -1332,7 +1332,7 @@
 		"name": "Wingboy",
 		"vocation": "Master Sorcerer",
 		"world": "Bombra",
-		"level": 1206,
+		"level": 1207,
 		"value": 982
 	},
 	{
@@ -1357,10 +1357,10 @@
 		"vocation": "Elite Knight",
 		"world": "Refugia",
 		"level": 1712,
-		"value": 971
+		"value": 972
 	},
 	{
-		"rank": 170,
+		"rank": 171,
 		"name": "Estebad",
 		"vocation": "Elder Druid",
 		"world": "Lobera",
@@ -1380,8 +1380,16 @@
 		"name": "Skayfox",
 		"vocation": "Elite Knight",
 		"world": "Inabra",
-		"level": 1267,
+		"level": 1268,
 		"value": 951
+	},
+	{
+		"rank": 174,
+		"name": "Glymodee",
+		"vocation": "Elder Druid",
+		"world": "Monza",
+		"level": 1239,
+		"value": 950
 	},
 	{
 		"rank": 174,
@@ -1390,14 +1398,6 @@
 		"world": "Issobra",
 		"level": 1551,
 		"value": 950
-	},
-	{
-		"rank": 175,
-		"name": "Glymodee",
-		"vocation": "Elder Druid",
-		"world": "Monza",
-		"level": 1238,
-		"value": 949
 	},
 	{
 		"rank": 176,
@@ -1489,6 +1489,14 @@
 	},
 	{
 		"rank": 187,
+		"name": "Thor Fin Camisadez",
+		"vocation": "Master Sorcerer",
+		"world": "Honbra",
+		"level": 1340,
+		"value": 921
+	},
+	{
+		"rank": 188,
 		"name": "Dextro Kogz",
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
@@ -1496,19 +1504,11 @@
 		"value": 920
 	},
 	{
-		"rank": 188,
+		"rank": 189,
 		"name": "Surrkaam",
 		"vocation": "Elder Druid",
 		"world": "Bona",
 		"level": 1533,
-		"value": 919
-	},
-	{
-		"rank": 188,
-		"name": "Thor Fin Camisadez",
-		"vocation": "Master Sorcerer",
-		"world": "Honbra",
-		"level": 1339,
 		"value": 919
 	},
 	{
@@ -1652,8 +1652,8 @@
 		"name": "Thiago Camisadez",
 		"vocation": "Elder Druid",
 		"world": "Honbra",
-		"level": 1252,
-		"value": 860
+		"level": 1253,
+		"value": 862
 	},
 	{
 		"rank": 208,
@@ -1661,7 +1661,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
 		"level": 1613,
-		"value": 858
+		"value": 859
 	},
 	{
 		"rank": 209,
@@ -1817,6 +1817,14 @@
 	},
 	{
 		"rank": 228,
+		"name": "Toshiii",
+		"vocation": "Master Sorcerer",
+		"world": "Gentebra",
+		"level": 1500,
+		"value": 823
+	},
+	{
+		"rank": 229,
 		"name": "Atnoz Aditivado",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
@@ -1824,7 +1832,7 @@
 		"value": 820
 	},
 	{
-		"rank": 228,
+		"rank": 229,
 		"name": "Davidzinhow",
 		"vocation": "Elder Druid",
 		"world": "Guerribra",
@@ -1832,19 +1840,11 @@
 		"value": 820
 	},
 	{
-		"rank": 228,
+		"rank": 229,
 		"name": "Liphium",
 		"vocation": "Elder Druid",
 		"world": "Kalibra",
 		"level": 1701,
-		"value": 820
-	},
-	{
-		"rank": 228,
-		"name": "Toshiii",
-		"vocation": "Master Sorcerer",
-		"world": "Gentebra",
-		"level": 1499,
 		"value": 820
 	},
 	{
@@ -1884,7 +1884,7 @@
 		"name": "Lord Valeta",
 		"vocation": "Master Sorcerer",
 		"world": "Celebra",
-		"level": 1993,
+		"level": 1994,
 		"value": 811
 	},
 	{
@@ -1945,6 +1945,14 @@
 	},
 	{
 		"rank": 244,
+		"name": "Leoon The Bloker",
+		"vocation": "Elite Knight",
+		"world": "Wintera",
+		"level": 1074,
+		"value": 803
+	},
+	{
+		"rank": 245,
 		"name": "Showks",
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
@@ -1952,7 +1960,7 @@
 		"value": 799
 	},
 	{
-		"rank": 245,
+		"rank": 246,
 		"name": "Stormy Man",
 		"vocation": "Master Sorcerer",
 		"world": "Secura",
@@ -1960,7 +1968,7 @@
 		"value": 797
 	},
 	{
-		"rank": 246,
+		"rank": 247,
 		"name": "Warlord Leonny",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
@@ -1968,7 +1976,7 @@
 		"value": 796
 	},
 	{
-		"rank": 247,
+		"rank": 248,
 		"name": "Bielzinhow Rei Delas",
 		"vocation": "Elite Knight",
 		"world": "Guerribra",
@@ -1976,7 +1984,7 @@
 		"value": 794
 	},
 	{
-		"rank": 247,
+		"rank": 248,
 		"name": "Liiis",
 		"vocation": "Royal Paladin",
 		"world": "Gentebra",
@@ -1984,19 +1992,11 @@
 		"value": 794
 	},
 	{
-		"rank": 249,
+		"rank": 250,
 		"name": "Kennerly",
 		"vocation": "Royal Paladin",
 		"world": "Nefera",
 		"level": 873,
 		"value": 793
-	},
-	{
-		"rank": 250,
-		"name": "Meskz",
-		"vocation": "Elder Druid",
-		"world": "Yonabra",
-		"level": 1070,
-		"value": 792
 	}
 ]
