@@ -20,7 +20,7 @@ const getWorldsData = async () => {
 		return getWorldsData();
 	}
 
-	if (data.information.status.error || !data.worlds) {
+	if (data.status.error || !data.worlds) {
 		console.log('Error in API response. Retrying…');
 		return getHighscoreData(categoryId, vocationId, page, results);
 	}
