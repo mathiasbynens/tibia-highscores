@@ -58,7 +58,7 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 		return getHighscoreData(categoryId, vocationId, page, results);
 	}
 
-	if (data.status.error || !data.highscores) {
+	if (data.information.status.error || !data.highscores) {
 		console.log('Error in API response. Retrying…');
 		return getHighscoreData(categoryId, vocationId, page, results);
 	}
