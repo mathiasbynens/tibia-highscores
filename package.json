@@ -3,7 +3,8 @@
 	"scripts": {
 		"build": "npm run fetch && npm run render",
 		"fetch": "node --no-warnings get-highscores-data.mjs",
-		"render": "node render-html.mjs"
+		"render": "node render-html.mjs",
+		"test": "TEST=true node character-blocklist.mjs"
 	},
 	"devDependencies": {
 		"glob": "^10.3.10",

@@ -1,21 +1,4 @@
-// Characters confirmed to have been rooked in order to obtain coinciding
-// achievements that are otherwise impossible to get.
-export const CHARACTER_BLOCKLIST = new Set([
-	'Annie Arelluf',
-	'Elyrea',
-	'Firdeso',
-	'Garoto Do Sorriso',
-	'Horon Aoldas',
-	'Inge Naning',
-	'Kapunia',
-	'Lord Strikee',
-	'Luther Hargreeves',
-	'Marcus Eon',
-	'Niix Insanity',
-	'Offf Liiineee',
-	'Rei Davi Benyishai',
-	'Vinicius Shocks',
-]);
+import {CHARACTER_BLOCKLIST} from './character-blocklist.mjs';
 
 // Characters that rook themselves can unlock a number of coinciding
 // achievements, resulting in some additional points. Since this is
