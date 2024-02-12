@@ -1,9 +1,9 @@
-name: 'Update data'
+name: 'Check character blocklist'
 
 on:
   schedule:
-    # “Run at minute :05 past hour 0, 4, 8, 12, 16, and 20.”
-    - cron: '5 0,4,8,12,16,20 * * *'
+    # “Run at 00:00 on day-of-month 1.”
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:
@@ -24,11 +24,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Update data
-        run: |
-          npm run build
-          git config user.name 'Tibia highscores bot'
-          git config user.email 'highscores@tibiamaps.io'
-          git add data
-          git commit data -m "Update highscores data" || true
-          git push
+      - name: Test
+        run: npm test
