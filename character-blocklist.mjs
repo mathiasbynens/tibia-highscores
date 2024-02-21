@@ -13,7 +13,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Marcus Eon',
 	'Niix Insanity',
 	'Offf Liiineee',
-	'Rei Davi Benyishai',
+	'Rei Davi Benyhwh',
 	'The Monho',
 	'Vinicius shocks',
 ]);
