@@ -43,5 +43,8 @@ const generateBattleEyeHtml = (battleEyeType) => {
 }
 export const generateWorldHtml = (worldName) => {
 	const entry = worldMap.get(worldName);
-	return `${worldName} ${generateFlagHtml(entry.location)} ${generateBattleEyeHtml(entry.battleEye)}`;
+	if (entry) {
+		return `${worldName} ${generateFlagHtml(entry.location)} ${generateBattleEyeHtml(entry.battleEye)}`;
+	}
+	return `${worldName}`;
 };

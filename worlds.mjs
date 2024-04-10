@@ -283,6 +283,12 @@ export const worldMap = new Map([
 		'pvp': 'Retro Hardcore PvP',
 		'location': 'South America'
 	}],
+	['Oceanis', {
+		'name': 'Oceanis',
+		'battleEye': 'yellow',
+		'pvp': 'Optional PvP',
+		'location': 'Oceania'
+	}],
 	['Ombra', {
 		'name': 'Ombra',
 		'battleEye': 'green',
@@ -373,6 +379,12 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
+	['Stralis', {
+		'name': 'Stralis',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'Oceania'
+	}],
 	['Syrena', {
 		'name': 'Syrena',
 		'battleEye': 'green',
@@ -397,6 +409,12 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
+	['Ulera', {
+		'name': 'Ulera',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'North America'
+	}],
 	['Ustebra', {
 		'name': 'Ustebra',
 		'battleEye': 'green',
@@ -414,6 +432,12 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Optional PvP',
 		'location': 'South America'
+	}],
+	['Victoris', {
+		'name': 'Victoris',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'Oceania'
 	}],
 	['Vitera', {
 		'name': 'Vitera',
@@ -456,6 +480,18 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Optional PvP',
 		'location': 'North America'
+	}],
+	['Yubra', {
+		'name': 'Yubra',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'South America'
+	}],
+	['Zephyra', {
+		'name': 'Zephyra',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'Europe'
 	}],
 	['Zuna', {
 		'name': 'Zuna',

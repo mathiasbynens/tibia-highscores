@@ -1,7 +1,8 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "npm run fetch && npm run render",
+		"build": "npm run fetch && npm run worlds && npm run render",
+		"worlds": "node get-worlds-data.mjs",
 		"fetch": "node --no-warnings get-highscores-data.mjs",
 		"render": "node render-html.mjs",
 		"test": "TEST=true node character-blocklist.mjs"
