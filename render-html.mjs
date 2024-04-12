@@ -6,7 +6,7 @@ import {minify as minifyHtml} from 'html-minifier-terser';
 import {getCategoryMetaData} from './categories.mjs';
 import {generateWorldHtml} from './worlds-utils.mjs';
 
-import {MAX_ACHIEVEMENT_POINTS, UNFAIR_ACHIEVEMENT_POINTS, MAX_ACHIEVEMENT_POINTS_UNFAIR, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
+import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
 
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');
@@ -53,7 +53,7 @@ const abbreviateVocation = (vocation) => {
 	return vocationMap.get(vocation) || vocation;
 };
 
-const renderHtml = (highscores, categoryId) => {
+const renderHtml = (highscores, categoryId, maxValue = false) => {
 	const output = [
 		`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`,
 	];
@@ -62,7 +62,7 @@ const renderHtml = (highscores, categoryId) => {
 	if (isCompletionists) {
 		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Completion percentage<tbody>');
 	} else {
-		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Value<tbody>');
+		table.push(`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>${maxValue ? 'Points' : 'Value'}<tbody>`);
 	}
 	for (const entry of highscores) {
 		if (isCompletionists) {
@@ -78,13 +78,15 @@ const renderHtml = (highscores, categoryId) => {
 					<td${entry.isTopOverallPercentage ? ' class="top"' : ''}${entry.isBottomOverallPercentage ? ' class="bottom"' : ''}>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${escapeHtml(entry.overallPercentage)}"></progress>
 			`);
 		} else {
+			const points = entry.value;
+			const percentage = maxValue ? (Math.round(10_000 * entry.value / maxValue) / 100) : 0;
 			table.push(`
 				<tr>
 					<th scope=row>${escapeHtml(entry.rank)}
 					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
 					<td>${generateWorldHtml(entry.world)}
-					<td>${escapeHtml(formatInt(entry.value))}
+					<td${maxValue ? ` title="${escapeHtml(formatInt(points))} out of ${escapeHtml(formatInt(maxValue))} points ≈ ${escapeHtml(formatPercentage(percentage))}"` : ''}${maxValue === points ? ' class="top"' : ''}>${escapeHtml(formatInt(points))}${maxValue ? ` <progress max="100" value="${escapeHtml(percentage)}"></progress>` : ''}
 			`);
 		}
 	}
@@ -102,7 +104,7 @@ export const updateHtml = async (id) => {
 	const html = HTML_TEMPLATE
 		.replaceAll('%%%CATEGORY%%%', escapeHtml(meta.name))
 		.replaceAll('%%%DESCRIPTION%%%', escapeHtml(meta.description))
-		.replace('%%%DATA%%%', renderHtml(highscores, id));
+		.replace('%%%DATA%%%', renderHtml(highscores, id, meta.max));
 	const minifiedHtml = await minifyHtml(html, {
 		collapseBooleanAttributes: true,
 		collapseInlineTagWhitespace: false,

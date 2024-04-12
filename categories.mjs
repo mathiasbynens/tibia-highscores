@@ -10,14 +10,17 @@ const map = new Map([
 	['achievements-filtered', {
 		name: 'achievements (filtered)',
 		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) removed. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
+		max: MAX_ACHIEVEMENT_POINTS,
 	}],
 	['achievements-unfair', {
 		name: 'achievements (unfair)',
 		description: 'Achievement highscores including “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total). Characters created before the introduction of achievements are unfairly disadvantaged in these rankings. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%% points.',
+		max: MAX_ACHIEVEMENT_POINTS_UNFAIR,
 	}],
 	['achievements', {
 		name: 'achievements (adjusted)',
 		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) adjusted by deducting those points. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
+		max: MAX_ACHIEVEMENT_POINTS,
 	}],
 	['axe-fighting', {
 		name: 'axe fighting',
@@ -26,10 +29,12 @@ const map = new Map([
 	['boss-points', {
 		name: 'boss points',
 		description: 'Highest possible score: %%%MAX_BOSS_POINTS%%% points.',
+		max: MAX_BOSS_POINTS,
 	}],
 	['charm-points', {
 		name: 'charm points',
 		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% points.',
+		max: MAX_CHARM_POINTS,
 	}],
 	['club-fighting', {
 		name: 'club fighting',
