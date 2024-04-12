@@ -1,11 +1,5 @@
 import {CHARACTER_BLOCKLIST} from './character-blocklist.mjs';
-
-// Characters that rook themselves can unlock a number of coinciding
-// achievements, resulting in some additional points. Since this is
-// feasible for new characters but not feasible for characters that
-// already existed when achievements were introduced, this is considered
-// to be unfair overall.
-export const UNFAIR_ACHIEVEMENT_POINTS = 45;
+import {UNFAIR_ACHIEVEMENT_POINTS} from './max.mjs';
 
 export const removeUnfairAchievementsHighscoreEntries = (_unfairAchievementsHighscores) => {
 	const unfairAchievementsHighscores = structuredClone(_unfairAchievementsHighscores);

@@ -6,7 +6,7 @@ import {minify as minifyHtml} from 'html-minifier-terser';
 import {getCategoryMetaData} from './categories.mjs';
 import {generateWorldHtml} from './worlds-utils.mjs';
 
-import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
+import {MAX_ACHIEVEMENT_POINTS, UNFAIR_ACHIEVEMENT_POINTS, MAX_ACHIEVEMENT_POINTS_UNFAIR, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
 
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');

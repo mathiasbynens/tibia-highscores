@@ -1,15 +1,23 @@
+import {
+	MAX_ACHIEVEMENT_POINTS,
+	MAX_CHARM_POINTS,
+	MAX_BOSS_POINTS,
+	UNFAIR_ACHIEVEMENT_POINTS,
+	MAX_ACHIEVEMENT_POINTS_UNFAIR,
+} from './max.mjs';
+
 const map = new Map([
 	['achievements-filtered', {
 		name: 'achievements (filtered)',
-		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) removed.',
+		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) removed. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
 	}],
 	['achievements-unfair', {
 		name: 'achievements (unfair)',
-		description: 'Achievement highscores including “unfair” entries (involving coinciding achievements due to rooking characters). Characters created before the introduction of achievements are unfairly disadvantaged in these rankings.',
+		description: 'Achievement highscores including “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total). Characters created before the introduction of achievements are unfairly disadvantaged in these rankings. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%% points.',
 	}],
 	['achievements', {
 		name: 'achievements (adjusted)',
-		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) adjusted by deducting those points.',
+		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) adjusted by deducting those points. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
 	}],
 	['axe-fighting', {
 		name: 'axe fighting',
@@ -17,11 +25,11 @@ const map = new Map([
 	}],
 	['boss-points', {
 		name: 'boss points',
-		description: '',
+		description: 'Highest possible score: %%%MAX_BOSS_POINTS%%% points.',
 	}],
 	['charm-points', {
 		name: 'charm points',
-		description: '',
+		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% points.',
 	}],
 	['club-fighting', {
 		name: 'club fighting',
@@ -29,7 +37,7 @@ const map = new Map([
 	}],
 	['completionists', {
 		name: 'completionists',
-		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by seeing how many achievement points, charm points, and boss points it has, based on the maximum amount of these points that can be obtained in the game.',
+		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game.',
 	}],
 	['distance-fighting', {
 		name: 'distance fighting',
@@ -121,6 +129,26 @@ const map = new Map([
 	}],
 ]);
 
+const intFormatter = new Intl.NumberFormat('en', {
+	maximumFractionDigits: 0,
+});
+const formatInt = (number) => {
+	return intFormatter.format(number);
+};
+
+const populateDescription = (description) => {
+	return (
+		description
+			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS%%%', formatInt(MAX_ACHIEVEMENT_POINTS))
+			.replaceAll('%%%MAX_CHARM_POINTS%%%', formatInt(MAX_CHARM_POINTS))
+			.replaceAll('%%%MAX_BOSS_POINTS%%%', formatInt(MAX_BOSS_POINTS))
+			.replaceAll('%%%UNFAIR_ACHIEVEMENT_POINTS%%%', formatInt(UNFAIR_ACHIEVEMENT_POINTS))
+			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%%', formatInt(MAX_ACHIEVEMENT_POINTS_UNFAIR))
+	);
+};
+
 export const getCategoryMetaData = (id) => {
-	return map.get(id);
+	const metaData = map.get(id);
+	metaData.description = populateDescription(metaData.description);
+	return metaData;
 };
