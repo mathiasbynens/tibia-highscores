@@ -22,7 +22,7 @@ const getWorldsData = async () => {
 
 	if (data.information.status.error || !data.worlds) {
 		console.log('Error in API response. Retrying…');
-		return getHighscoreData(categoryId, vocationId, page, results);
+		return getWorldsData();
 	}
 
 	const map = new Map();
