@@ -10,6 +10,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Kapunia',
 	'Lord Strikee',
 	'Luther Hargreeves',
+	'Madroox',
 	'Marcus Eon',
 	'Niix Insanity',
 	'Offf Liiineee',
