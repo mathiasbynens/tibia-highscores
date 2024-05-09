@@ -65,14 +65,6 @@
 	},
 	{
 		"rank": 9,
-		"name": "Dukz Mago",
-		"vocation": "Master Sorcerer",
-		"world": "Kalibra",
-		"level": 2038,
-		"value": 140852109974
-	},
-	{
-		"rank": 10,
 		"name": "Samuka Corporation",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
@@ -80,12 +72,20 @@
 		"value": 140744690474
 	},
 	{
-		"rank": 11,
+		"rank": 10,
 		"name": "Rift Duken",
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
 		"level": 2038,
 		"value": 140743612598
+	},
+	{
+		"rank": 11,
+		"name": "Dukz Mago",
+		"vocation": "Master Sorcerer",
+		"world": "Kalibra",
+		"level": 2036,
+		"value": 140255306001
 	},
 	{
 		"rank": 12,
@@ -332,8 +332,8 @@
 		"name": "Bellizze",
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
-		"level": 1778,
-		"value": 93480565302
+		"level": 1779,
+		"value": 93566550278
 	},
 	{
 		"rank": 43,
@@ -405,7 +405,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
 		"level": 1729,
-		"value": 85891815932
+		"value": 85972230160
 	},
 	{
 		"rank": 52,
@@ -437,7 +437,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
 		"level": 1726,
-		"value": 85461344382
+		"value": 85485639904
 	},
 	{
 		"rank": 56,
@@ -596,8 +596,8 @@
 		"name": "Albus Vraudamort",
 		"vocation": "Master Sorcerer",
 		"world": "Inabra",
-		"level": 1669,
-		"value": 77311667903
+		"level": 1670,
+		"value": 77395979910
 	},
 	{
 		"rank": 76,
@@ -701,7 +701,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Rasteibra",
 		"level": 1638,
-		"value": 73007292850
+		"value": 73040996828
 	},
 	{
 		"rank": 89,
@@ -733,7 +733,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
 		"level": 1633,
-		"value": 72368571137
+		"value": 72403666931
 	},
 	{
 		"rank": 93,
@@ -741,7 +741,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Premia",
 		"level": 1630,
-		"value": 71996540425
+		"value": 72028849908
 	},
 	{
 		"rank": 94,
@@ -869,7 +869,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Ombra",
 		"level": 1588,
-		"value": 66590915398
+		"value": 66591175928
 	},
 	{
 		"rank": 110,
@@ -925,7 +925,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Yonabra",
 		"level": 1580,
-		"value": 65605831145
+		"value": 65605831181
 	},
 	{
 		"rank": 117,
@@ -1017,6 +1017,14 @@
 	},
 	{
 		"rank": 128,
+		"name": "Banks Benevolente",
+		"vocation": "Master Sorcerer",
+		"world": "Collabra",
+		"level": 1557,
+		"value": 62726078249
+	},
+	{
+		"rank": 129,
 		"name": "Sir Wendoza",
 		"vocation": "Master Sorcerer",
 		"world": "Rasteibra",
@@ -1024,20 +1032,12 @@
 		"value": 62620598256
 	},
 	{
-		"rank": 129,
+		"rank": 130,
 		"name": "Cande labro Bom",
 		"vocation": "Master Sorcerer",
 		"world": "Ustebra",
 		"level": 1556,
 		"value": 62600781273
-	},
-	{
-		"rank": 130,
-		"name": "Banks Benevolente",
-		"vocation": "Master Sorcerer",
-		"world": "Collabra",
-		"level": 1556,
-		"value": 62586781433
 	},
 	{
 		"rank": 131,
@@ -1101,7 +1101,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
 		"level": 1540,
-		"value": 60719054545
+		"value": 60719054546
 	},
 	{
 		"rank": 139,
@@ -1117,7 +1117,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Castela",
 		"level": 1535,
-		"value": 60122061246
+		"value": 60122089446
 	},
 	{
 		"rank": 141,
@@ -1269,7 +1269,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Solidera",
 		"level": 1494,
-		"value": 55380456207
+		"value": 55380464256
 	},
 	{
 		"rank": 160,
@@ -1357,7 +1357,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Menera",
 		"level": 1479,
-		"value": 53723894470
+		"value": 53724123895
 	},
 	{
 		"rank": 171,
@@ -1557,7 +1557,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Luminera",
 		"level": 1443,
-		"value": 49962746544
+		"value": 49962747084
 	},
 	{
 		"rank": 196,
@@ -1629,7 +1629,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Thyria",
 		"level": 1434,
-		"value": 49036363086
+		"value": 49036391286
 	},
 	{
 		"rank": 205,
@@ -1717,7 +1717,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Descubra",
 		"level": 1421,
-		"value": 47628841627
+		"value": 47710916116
 	},
 	{
 		"rank": 216,
@@ -1749,7 +1749,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Ferobra",
 		"level": 1415,
-		"value": 47081452729
+		"value": 47095693073
 	},
 	{
 		"rank": 220,
@@ -1757,7 +1757,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Venebra",
 		"level": 1412,
-		"value": 46734536787
+		"value": 46734545599
 	},
 	{
 		"rank": 221,
@@ -1821,7 +1821,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Refugia",
 		"level": 1408,
-		"value": 46347675288
+		"value": 46347675529
 	},
 	{
 		"rank": 229,
@@ -1913,14 +1913,6 @@
 	},
 	{
 		"rank": 240,
-		"name": "Evil Balinha",
-		"vocation": "Master Sorcerer",
-		"world": "Collabra",
-		"level": 1388,
-		"value": 44405364933
-	},
-	{
-		"rank": 241,
 		"name": "Riva Arrogante",
 		"vocation": "Master Sorcerer",
 		"world": "Rasteibra",
@@ -1928,7 +1920,7 @@
 		"value": 44354055721
 	},
 	{
-		"rank": 242,
+		"rank": 241,
 		"name": "Toddzera Armstrong",
 		"vocation": "Master Sorcerer",
 		"world": "Collabra",
@@ -1936,12 +1928,20 @@
 		"value": 44291510110
 	},
 	{
-		"rank": 243,
+		"rank": 242,
 		"name": "Sagamage Pacificador",
 		"vocation": "Master Sorcerer",
 		"world": "Rasteibra",
 		"level": 1386,
 		"value": 44263393048
+	},
+	{
+		"rank": 243,
+		"name": "Evil Balinha",
+		"vocation": "Master Sorcerer",
+		"world": "Collabra",
+		"level": 1386,
+		"value": 44218132501
 	},
 	{
 		"rank": 244,
@@ -1997,6 +1997,6 @@
 		"vocation": "Master Sorcerer",
 		"world": "Antica",
 		"level": 1382,
-		"value": 43837883970
+		"value": 43841025319
 	}
 ]
