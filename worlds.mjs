@@ -505,4 +505,4 @@ export const worldMap = new Map([
 		'pvp': 'Hardcore PvP',
 		'location': 'North America'
 	}]
-])
+]);

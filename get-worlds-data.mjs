@@ -45,5 +45,5 @@ const getWorldsData = async () => {
 const worldMap = await getWorldsData();
 const sourceCode = `// Auto-generated using \`get-worlds-data.mjs\`. Do not edit.\n\nexport const worldMap = ${jsesc(worldMap, {
 	compact: false,
-})}\n`;
+})};\n`;
 await fs.writeFile('./worlds.mjs', sourceCode);
