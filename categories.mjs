@@ -42,7 +42,7 @@ const map = new Map([
 	}],
 	['completionists', {
 		name: 'completionists',
-		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game.',
+		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game. Only achievement points, charm points, and boss points that are reflected in the global top 1000 are considered.',
 	}],
 	['distance-fighting', {
 		name: 'distance fighting',
