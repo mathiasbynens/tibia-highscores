@@ -415,6 +415,12 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'North America'
 	}],
+	['Unebra', {
+		'name': 'Unebra',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'South America'
+	}],
 	['Ustebra', {
 		'name': 'Ustebra',
 		'battleEye': 'green',
@@ -426,6 +432,12 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Open PvP',
 		'location': 'South America'
+	}],
+	['Vandera', {
+		'name': 'Vandera',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'North America'
 	}],
 	['Venebra', {
 		'name': 'Venebra',
@@ -468,6 +480,12 @@ export const worldMap = new Map([
 		'battleEye': 'yellow',
 		'pvp': 'Open PvP',
 		'location': 'North America'
+	}],
+	['Yara', {
+		'name': 'Yara',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'Europe'
 	}],
 	['Yonabra', {
 		'name': 'Yonabra',
