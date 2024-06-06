@@ -1,6 +1,7 @@
 import {worldMap} from './worlds.mjs';
 
 const FLAG_BR = '\u{1F1E7}\u{1F1F7}';
+const FLAG_SG = '\u{1F1F8}\u{1F1EC}';
 const FLAG_UK = '\u{1F1EC}\u{1F1E7}';
 const FLAG_US = '\u{1F1FA}\u{1F1F8}';
 
@@ -15,6 +16,9 @@ const generateFlagHtml = (location) => {
 		}
 		case 'North America': {
 			return `<abbr title="North America">${FLAG_US}</abbr>`;
+		}
+		case 'Oceania': {
+			return `<abbr title="Oceania">${FLAG_SG}</abbr>`;
 		}
 		case 'South America': {
 			return `<abbr title="South America">${FLAG_BR}</abbr>`;
