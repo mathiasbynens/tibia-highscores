@@ -197,7 +197,7 @@
 		"vocation": "Royal Paladin",
 		"world": "Monza",
 		"level": 2172,
-		"value": 170499632858
+		"value": 170499672395
 	},
 	{
 		"rank": 26,
@@ -249,19 +249,19 @@
 	},
 	{
 		"rank": 32,
+		"name": "Wrath Tempest",
+		"vocation": "Royal Paladin",
+		"world": "Nefera",
+		"level": 2102,
+		"value": 154461797568
+	},
+	{
+		"rank": 33,
 		"name": "Marcao Implacavel",
 		"vocation": "Elder Druid",
 		"world": "Kalibra",
 		"level": 2101,
 		"value": 154346425183
-	},
-	{
-		"rank": 33,
-		"name": "Wrath Tempest",
-		"vocation": "Royal Paladin",
-		"world": "Nefera",
-		"level": 2101,
-		"value": 154337368799
 	},
 	{
 		"rank": 34,
@@ -557,7 +557,7 @@
 		"vocation": "Royal Paladin",
 		"world": "Lutabra",
 		"level": 1965,
-		"value": 126167785875
+		"value": 126173011768
 	},
 	{
 		"rank": 71,
@@ -605,7 +605,7 @@
 		"vocation": "Elder Druid",
 		"world": "Secura",
 		"level": 1956,
-		"value": 124345238485
+		"value": 124345541645
 	},
 	{
 		"rank": 77,
@@ -628,8 +628,8 @@
 		"name": "Alxoff",
 		"vocation": "Elder Druid",
 		"world": "Kalibra",
-		"level": 1946,
-		"value": 122585203323
+		"level": 1947,
+		"value": 122767828555
 	},
 	{
 		"rank": 80,
@@ -644,8 +644,8 @@
 		"name": "Ativa Paeveio",
 		"vocation": "Elder Druid",
 		"world": "Rasteibra",
-		"level": 1944,
-		"value": 122079026075
+		"level": 1945,
+		"value": 122256903721
 	},
 	{
 		"rank": 82,
@@ -653,7 +653,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Thyria",
 		"level": 1933,
-		"value": 120092320255
+		"value": 120106085281
 	},
 	{
 		"rank": 83,
@@ -737,6 +737,14 @@
 	},
 	{
 		"rank": 93,
+		"name": "Soriin Enterprise",
+		"vocation": "Royal Paladin",
+		"world": "Rasteibra",
+		"level": 1905,
+		"value": 114950038455
+	},
+	{
+		"rank": 94,
 		"name": "Almighty Nov",
 		"vocation": "Royal Paladin",
 		"world": "Wintera",
@@ -744,23 +752,7 @@
 		"value": 114845664513
 	},
 	{
-		"rank": 94,
-		"name": "Soriin Enterprise",
-		"vocation": "Royal Paladin",
-		"world": "Rasteibra",
-		"level": 1904,
-		"value": 114823378021
-	},
-	{
 		"rank": 95,
-		"name": "Lynuux",
-		"vocation": "Elder Druid",
-		"world": "Celebra",
-		"level": 1903,
-		"value": 114643202104
-	},
-	{
-		"rank": 96,
 		"name": "Vitiinn",
 		"vocation": "Royal Paladin",
 		"world": "Belobra",
@@ -768,7 +760,7 @@
 		"value": 114564434347
 	},
 	{
-		"rank": 97,
+		"rank": 96,
 		"name": "Canadian Paladin",
 		"vocation": "Royal Paladin",
 		"world": "Celebra",
@@ -776,12 +768,20 @@
 		"value": 114456048853
 	},
 	{
-		"rank": 98,
+		"rank": 97,
 		"name": "Luix Corporation",
 		"vocation": "Elder Druid",
 		"world": "Ustebra",
 		"level": 1901,
 		"value": 114265767824
+	},
+	{
+		"rank": 98,
+		"name": "Lynuux",
+		"vocation": "Elder Druid",
+		"world": "Celebra",
+		"level": 1901,
+		"value": 114212463807
 	},
 	{
 		"rank": 99,
@@ -884,8 +884,8 @@
 		"name": "Zion Tokes",
 		"vocation": "Elder Druid",
 		"world": "Nefera",
-		"level": 1879,
-		"value": 110297036187
+		"level": 1880,
+		"value": 110438210415
 	},
 	{
 		"rank": 112,
@@ -916,8 +916,8 @@
 		"name": "Max Fleury",
 		"vocation": "Elite Knight",
 		"world": "Celebra",
-		"level": 1864,
-		"value": 107720770076
+		"level": 1865,
+		"value": 107802063621
 	},
 	{
 		"rank": 116,
@@ -925,15 +925,15 @@
 		"vocation": "Master Sorcerer",
 		"world": "Harmonia",
 		"level": 1862,
-		"value": 107254878157
+		"value": 107360156650
 	},
 	{
 		"rank": 117,
 		"name": "Nevrop Cansado",
 		"vocation": "Royal Paladin",
 		"world": "Kalibra",
-		"level": 1859,
-		"value": 106885830163
+		"level": 1860,
+		"value": 107038832480
 	},
 	{
 		"rank": 118,
@@ -965,7 +965,7 @@
 		"vocation": "Elder Druid",
 		"world": "Celesta",
 		"level": 1858,
-		"value": 106593685087
+		"value": 106593715522
 	},
 	{
 		"rank": 122,
@@ -1036,8 +1036,8 @@
 		"name": "Cirokz",
 		"vocation": "Master Sorcerer",
 		"world": "Kalibra",
-		"level": 1844,
-		"value": 104246672855
+		"level": 1845,
+		"value": 104413656541
 	},
 	{
 		"rank": 131,
@@ -1065,19 +1065,19 @@
 	},
 	{
 		"rank": 134,
+		"name": "Ja co",
+		"vocation": "Elite Knight",
+		"world": "Refugia",
+		"level": 1836,
+		"value": 102880701672
+	},
+	{
+		"rank": 135,
 		"name": "Kharsek",
 		"vocation": "Elite Knight",
 		"world": "Gladera",
 		"level": 1835,
 		"value": 102777618548
-	},
-	{
-		"rank": 135,
-		"name": "Ja co",
-		"vocation": "Elite Knight",
-		"world": "Refugia",
-		"level": 1835,
-		"value": 102765219830
 	},
 	{
 		"rank": 136,
@@ -1133,7 +1133,7 @@
 		"vocation": "Elite Knight",
 		"world": "Kalibra",
 		"level": 1828,
-		"value": 101494304640
+		"value": 101531407063
 	},
 	{
 		"rank": 143,
@@ -1181,7 +1181,7 @@
 		"vocation": "Royal Paladin",
 		"world": "Issobra",
 		"level": 1823,
-		"value": 100741811586
+		"value": 100797561795
 	},
 	{
 		"rank": 149,
@@ -1313,6 +1313,14 @@
 	},
 	{
 		"rank": 165,
+		"name": "Macho Tokes",
+		"vocation": "Elite Knight",
+		"world": "Nefera",
+		"level": 1808,
+		"value": 98248916314
+	},
+	{
+		"rank": 166,
 		"name": "Junkz",
 		"vocation": "Master Sorcerer",
 		"world": "Kalibra",
@@ -1320,7 +1328,7 @@
 		"value": 98204714183
 	},
 	{
-		"rank": 166,
+		"rank": 167,
 		"name": "Baanksz",
 		"vocation": "Master Sorcerer",
 		"world": "Descubra",
@@ -1328,7 +1336,7 @@
 		"value": 98195772361
 	},
 	{
-		"rank": 167,
+		"rank": 168,
 		"name": "Xi Vii",
 		"vocation": "Elite Knight",
 		"world": "Refugia",
@@ -1336,20 +1344,12 @@
 		"value": 98176070526
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Allfaa",
 		"vocation": "Elder Druid",
 		"world": "Bona",
 		"level": 1807,
 		"value": 98166863594
-	},
-	{
-		"rank": 169,
-		"name": "Macho Tokes",
-		"vocation": "Elite Knight",
-		"world": "Nefera",
-		"level": 1807,
-		"value": 98127810725
 	},
 	{
 		"rank": 170,
@@ -1388,8 +1388,8 @@
 		"name": "Seju Primetime",
 		"vocation": "Master Sorcerer",
 		"world": "Venebra",
-		"level": 1800,
-		"value": 97004012349
+		"level": 1801,
+		"value": 97100589791
 	},
 	{
 		"rank": 175,
@@ -1485,7 +1485,7 @@
 		"vocation": "Master Sorcerer",
 		"world": "Gentebra",
 		"level": 1793,
-		"value": 95775662548
+		"value": 95836295375
 	},
 	{
 		"rank": 187,
@@ -1693,7 +1693,7 @@
 		"vocation": "Elite Knight",
 		"world": "Rasteibra",
 		"level": 1759,
-		"value": 90537925733
+		"value": 90537932448
 	},
 	{
 		"rank": 213,
@@ -1857,6 +1857,14 @@
 	},
 	{
 		"rank": 233,
+		"name": "Sheng",
+		"vocation": "Elder Druid",
+		"world": "Yonabra",
+		"level": 1742,
+		"value": 87836948035
+	},
+	{
+		"rank": 234,
 		"name": "Zmuts",
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
@@ -1864,20 +1872,12 @@
 		"value": 87814168402
 	},
 	{
-		"rank": 234,
+		"rank": 235,
 		"name": "Ghzzord Corporation",
 		"vocation": "Master Sorcerer",
 		"world": "Issobra",
 		"level": 1742,
 		"value": 87805084899
-	},
-	{
-		"rank": 235,
-		"name": "Sheng",
-		"vocation": "Elder Druid",
-		"world": "Yonabra",
-		"level": 1741,
-		"value": 87716583816
 	},
 	{
 		"rank": 236,
