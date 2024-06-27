@@ -24,6 +24,9 @@ const map = new Map([
 		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total) adjusted by deducting those points. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
 		max: MAX_ACHIEVEMENT_POINTS,
 		relatedPrefix: 'achievements',
+		related: [
+			'completionists',
+		],
 	}],
 	['axe-fighting', {
 		name: 'axe fighting',
@@ -165,12 +168,16 @@ const map = new Map([
 const categoryIds = Array.from(map.keys());
 // Expand `relatedPrefix` into `related` entries.
 for (const [categoryId, metaData] of map) {
-	if (!Object.hasOwn(metaData, 'relatedPrefix')) continue;
 	const prefix = metaData.relatedPrefix;
+	if (!prefix) continue;
 	const relatedIds = categoryIds.filter((id) => {
 		return id !== categoryId && id.startsWith(prefix);
 	});
-	metaData.related = relatedIds;
+	if (metaData.related) {
+		metaData.related.unshift(...relatedIds);
+	} else {
+		metaData.related = relatedIds;
+	}
 }
 
 const intFormatter = new Intl.NumberFormat('en', {
