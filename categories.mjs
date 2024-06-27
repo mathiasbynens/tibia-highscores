@@ -8,19 +8,22 @@ import {
 
 const map = new Map([
 	['achievements-filtered', {
-		name: 'achievements (filtered)',
-		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) removed. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
+		name: 'achievement points (filtered)',
+		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total) removed. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
 		max: MAX_ACHIEVEMENT_POINTS,
+		relatedPrefix: 'achievements',
 	}],
 	['achievements-unfair', {
-		name: 'achievements (unfair)',
+		name: 'achievement points (unfair)',
 		description: 'Achievement highscores including “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total). Characters created before the introduction of achievements are unfairly disadvantaged in these rankings. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%% points.',
 		max: MAX_ACHIEVEMENT_POINTS_UNFAIR,
+		relatedPrefix: 'achievements',
 	}],
 	['achievements', {
-		name: 'achievements (adjusted)',
-		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters) adjusted by deducting those points. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
+		name: 'achievement points (adjusted)',
+		description: 'Achievement highscores with “unfair” entries (involving coinciding achievements due to rooking characters, worth %%%UNFAIR_ACHIEVEMENT_POINTS%%% points in total) adjusted by deducting those points. Highest possible score: %%%MAX_ACHIEVEMENT_POINTS%%% points.',
 		max: MAX_ACHIEVEMENT_POINTS,
+		relatedPrefix: 'achievements',
 	}],
 	['axe-fighting', {
 		name: 'axe fighting',
@@ -30,11 +33,17 @@ const map = new Map([
 		name: 'boss points',
 		description: 'Highest possible score: %%%MAX_BOSS_POINTS%%% points.',
 		max: MAX_BOSS_POINTS,
+		related: [
+			'completionists',
+		],
 	}],
 	['charm-points', {
 		name: 'charm points',
 		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% points.',
 		max: MAX_CHARM_POINTS,
+		related: [
+			'completionists',
+		],
 	}],
 	['club-fighting', {
 		name: 'club fighting',
@@ -43,6 +52,11 @@ const map = new Map([
 	['completionists', {
 		name: 'completionists',
 		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game. Only achievement points, charm points, and boss points that are reflected in the global top 1000 are considered.',
+		related: [
+			'achievements',
+			'charm-points',
+			'boss-points',
+		],
 	}],
 	['distance-fighting', {
 		name: 'distance fighting',
@@ -55,22 +69,27 @@ const map = new Map([
 	['experience-druids', {
 		name: 'experience (druids)',
 		description: '',
+		relatedPrefix: 'experience',
 	}],
 	['experience-knights', {
 		name: 'experience (knights)',
 		description: '',
+		relatedPrefix: 'experience',
 	}],
 	['experience-paladins', {
 		name: 'experience (paladins)',
 		description: '',
+		relatedPrefix: 'experience',
 	}],
 	['experience-sorcerers', {
 		name: 'experience (sorcerers)',
 		description: '',
+		relatedPrefix: 'experience',
 	}],
 	['experience', {
 		name: 'experience (all vocations)',
 		description: '',
+		relatedPrefix: 'experience',
 	}],
 	['fishing', {
 		name: 'fishing',
@@ -91,48 +110,68 @@ const map = new Map([
 	['magic-level-druids', {
 		name: 'magic level (druids)',
 		description: '',
+		relatedPrefix: 'magic-level',
 	}],
 	['magic-level-knights', {
 		name: 'magic level (knights)',
 		description: '',
+		relatedPrefix: 'magic-level',
 	}],
 	['magic-level-paladins', {
 		name: 'magic level (paladins)',
 		description: '',
+		relatedPrefix: 'magic-level',
 	}],
 	['magic-level-sorcerers', {
 		name: 'magic level (sorcerers)',
 		description: '',
+		relatedPrefix: 'magic-level',
 	}],
 	['magic-level', {
 		name: 'magic level (all vocations)',
 		description: '',
+		relatedPrefix: 'magic-level',
 	}],
 	['shielding-druids', {
 		name: 'shielding (druids)',
 		description: '',
+		relatedPrefix: 'shielding',
 	}],
 	['shielding-knights', {
 		name: 'shielding (knights)',
 		description: '',
+		relatedPrefix: 'shielding',
 	}],
 	['shielding-paladins', {
 		name: 'shielding (paladins)',
 		description: '',
+		relatedPrefix: 'shielding',
 	}],
 	['shielding-sorcerers', {
 		name: 'shielding (sorcerers)',
 		description: '',
+		relatedPrefix: 'shielding',
 	}],
 	['shielding', {
 		name: 'shielding (all vocations)',
 		description: '',
+		relatedPrefix: 'shielding',
 	}],
 	['sword-fighting', {
 		name: 'sword fighting',
 		description: '',
 	}],
 ]);
+const categoryIds = Array.from(map.keys());
+// Expand `relatedPrefix` into `related` entries.
+for (const [categoryId, metaData] of map) {
+	if (!Object.hasOwn(metaData, 'relatedPrefix')) continue;
+	const prefix = metaData.relatedPrefix;
+	const relatedIds = categoryIds.filter((id) => {
+		return id !== categoryId && id.startsWith(prefix);
+	});
+	metaData.related = relatedIds;
+}
 
 const intFormatter = new Intl.NumberFormat('en', {
 	maximumFractionDigits: 0,

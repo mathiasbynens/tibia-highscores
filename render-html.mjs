@@ -53,6 +53,18 @@ const abbreviateVocation = (vocation) => {
 	return vocationMap.get(vocation) || vocation;
 };
 
+const listFormatter = new Intl.ListFormat('en');
+const renderRelatedHtml = (related) => {
+	if (!related) return '';
+	const links = [];
+	for (const relatedId of related) {
+		const name = getCategoryMetaData(relatedId).name;
+		links.push(`<a href="${relatedId}">${escapeHtml(name)}</a>`);
+	}
+	const html = `<p>See also: ${listFormatter.format(links)}.`;
+	return html;
+};
+
 const renderHtml = (highscores, categoryId, maxValue = false) => {
 	const output = [
 		`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`,
@@ -104,6 +116,7 @@ export const updateHtml = async (id) => {
 	const html = HTML_TEMPLATE
 		.replaceAll('%%%CATEGORY%%%', escapeHtml(meta.name))
 		.replaceAll('%%%DESCRIPTION%%%', escapeHtml(meta.description))
+		.replaceAll('%%%RELATED%%%', renderRelatedHtml(meta.related))
 		.replace('%%%DATA%%%', renderHtml(highscores, id, meta.max));
 	const minifiedHtml = await minifyHtml(html, {
 		collapseBooleanAttributes: true,

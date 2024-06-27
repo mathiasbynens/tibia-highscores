@@ -70,14 +70,16 @@
 		background-color: var(--link-hover-background);
 		color: var(--link-color-alt);
 	}
+	a {
+		color: var(--link-color);
+	}
 	th a {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 		padding: 0.5em 1em;
-		color: var(--link-color);
 	}
-	tbody tr:hover a, th a:hover, th a:focus {
+	tbody tr:hover a, a:hover, a:focus {
 		color: var(--link-color-alt);
 	}
 	td {
@@ -123,4 +125,5 @@
 <meta name="robots" content="noindex">
 <h1>Tibia highscores: %%%CATEGORY%%%</h1>
 <p>%%%DESCRIPTION%%%</p>
+%%%RELATED%%%
 %%%DATA%%%
