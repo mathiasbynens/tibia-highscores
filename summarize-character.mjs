@@ -11,7 +11,7 @@ const readJsonFile = async (fileName) => {
 	return data;
 };
 
-const CHARACTER_NAME = 'Mathias Bynens';
+const CHARACTER_NAME = process.argv[2] ?? 'Mathias Bynens';
 
 const jsonFiles = await glob('./data/*.json');
 const highScores = [];
@@ -32,8 +32,9 @@ highScores.sort((a, b) => {
 	return a.rank - b.rank;
 });
 
+console.log(`Highscore entries for character ${CHARACTER_NAME}:`);
 for (const highScore of highScores) {
 	const meta = getCategoryMetaData(highScore.type);
 	const name = meta.name;
-	console.log(`${name}: rank #${highScore.rank} (${highScore.value})`);
+	console.log(`- ${name}: rank #${highScore.rank} (${highScore.value})`);
 }
