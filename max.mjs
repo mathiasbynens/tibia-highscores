@@ -1,6 +1,12 @@
-export const MAX_ACHIEVEMENT_POINTS = 1_316;
-export const MAX_CHARM_POINTS = 24_305;
-export const MAX_BOSS_POINTS = 25_000;
+// See https://github.com/mathiasbynens/tibia-json/blob/main/data/max.mjs
+// for auto-updated values.
+
+// TODO: Add “The Rootwalker”.
+export const MAX_ACHIEVEMENT_POINTS = 1_323;
+
+export const MAX_CHARM_POINTS = 24_889;
+
+export const MAX_BOSS_POINTS = 25_200;
 
 // Characters that rook themselves can unlock a number of coinciding
 // achievements, resulting in some additional points. Since this is
