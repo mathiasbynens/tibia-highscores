@@ -37,12 +37,13 @@ const VOCATION_IDS = new Set([
 ]);
 const MAX_PAGE = 5;
 const MAX_PAGE_SPECIAL = 20;
+const MAX_RETRY_COUNT = 5;
 
 const stringify = (data) => {
 	return JSON.stringify(data, null, '\t') + '\n';
 };
 
-const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all', page = 1, results = []) => {
+const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all', page = 1, results = [], retryCount = 0) => {
 	const url = `https://api.tibiadata.com/v4/highscores/all/${categoryId}/${vocationId}/${page}`;
 	console.log(url);
 	const response = await fetch(url, {
@@ -54,13 +55,21 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 	try {
 		data = await response.json();
 	} catch {
+		if (retryCount > MAX_RETRY_COUNT) {
+			console.log('Too many retries. Giving up…');
+			return results;
+		}
 		console.log('Error in API response. Retrying…');
-		return getHighscoreData(categoryId, vocationId, page, results);
+		return getHighscoreData(categoryId, vocationId, page, results, retryCount + 1);
 	}
 
 	if (data.information.status.error || !data.highscores) {
+		if (retryCount > MAX_RETRY_COUNT) {
+			console.log('Too many retries. Giving up…');
+			return results;
+		}
 		console.log('Error in API response. Retrying…');
-		return getHighscoreData(categoryId, vocationId, page, results);
+		return getHighscoreData(categoryId, vocationId, page, results, retryCount + 1);
 	}
 
 	const elements = data.highscores.highscore_list;
