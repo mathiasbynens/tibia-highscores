@@ -101,6 +101,10 @@ for (const combination of combinations) {
 	const normalizedCategory = normalizeCategory(categoryId);
 	const id = vocationId === 'all' ? normalizedCategory : `${normalizedCategory}-${vocationId}`;
 	console.log(`Getting highscore data for category=${normalizedCategory} and vocation=${vocationId}…`);
+	if (vocationId !== 'all') {
+		console.log(`Temporarily skipping requests for vocation-specific highscore data…`);
+		continue;
+	}
 	const highscores = await getHighscoreData(categoryId, vocationId);
 	if (categoryId === 'achievements') {
 		await fs.writeFile(`./data/${id}-unfair.json`, stringify(highscores));
