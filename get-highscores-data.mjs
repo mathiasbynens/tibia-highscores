@@ -57,6 +57,7 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 	} catch {
 		if (retryCount > MAX_RETRY_COUNT) {
 			console.log('Too many retries. Giving up…');
+			process.exit(1);
 			return results;
 		}
 		console.log('Error in API response. Retrying…');
@@ -66,6 +67,7 @@ const getHighscoreData = async (categoryId = 'achievements', vocationId = 'all',
 	if (data.information.status.error || !data.highscores) {
 		if (retryCount > MAX_RETRY_COUNT) {
 			console.log('Too many retries. Giving up…');
+			process.exit(1);
 			return results;
 		}
 		console.log('Error in API response. Retrying…');
