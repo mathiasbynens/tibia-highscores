@@ -2,6 +2,7 @@
 // achievements that are otherwise impossible to get.
 export const CHARACTER_BLOCKLIST = new Set([
 	'Annie Arelluf',
+	'Bil Boladao',
 	'Elyrea',
 	'Firdeso',
 	'Garoto Do Sorriso',
@@ -15,7 +16,6 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Natth Morza',
 	'Niix Insanity',
 	'Offf Liiineee',
-	'Rei Davi Benyhwh',
 	'The Monho',
 	'Vinicius shocks',
 ]);
