@@ -79,7 +79,7 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 	for (const entry of highscores) {
 		if (isCompletionists) {
 			table.push(`
-				<tr>
+				<tr id="${escapeHtml(entry.name)}">
 					<th scope=row>${escapeHtml(entry.rank)}
 					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
@@ -93,7 +93,7 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 			const points = entry.value;
 			const percentage = maxValue ? (Math.round(10_000 * entry.value / maxValue) / 100) : 0;
 			table.push(`
-				<tr>
+				<tr id="${escapeHtml(entry.name)}">
 					<th scope=row>${escapeHtml(entry.rank)}
 					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
