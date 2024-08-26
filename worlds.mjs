@@ -91,6 +91,12 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
+	['Divina', {
+		'name': 'Divina',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'Europe'
+	}],
 	['Epoca', {
 		'name': 'Epoca',
 		'battleEye': 'yellow',
@@ -325,6 +331,12 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
+	['Quebra', {
+		'name': 'Quebra',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'South America'
+	}],
 	['Quelibra', {
 		'name': 'Quelibra',
 		'battleEye': 'yellow',
@@ -395,6 +407,12 @@ export const worldMap = new Map([
 		'name': 'Talera',
 		'battleEye': 'yellow',
 		'pvp': 'Open PvP',
+		'location': 'North America'
+	}],
+	['Temera', {
+		'name': 'Temera',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
 		'location': 'North America'
 	}],
 	['Thyria', {
