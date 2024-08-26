@@ -9,8 +9,6 @@ const readJsonFile = async (fileName) => {
 	return data;
 };
 
-const MAX_ENTRIES = 100;
-
 export const computeCompletionists = async () => {
 	const achievements = await readJsonFile('./data/achievements-unfair.json');
 	const bossPoints = await readJsonFile('./data/boss-points.json');
@@ -122,13 +120,23 @@ export const computeCompletionists = async () => {
 
 	const completionists = Array.from(characters.values()).sort((a, b) => {
 		return b.overallPercentage - a.overallPercentage;
-	}).slice(0, MAX_ENTRIES);
+	}).filter((entry) => {
+		// Only include entries with non-zero `charmPoints`, `bossPoints`, and
+		// `achievementPoints`. As soon as any of these is `0`, we cannot
+		// accurately compute the character’s overall completion percentage.
+		return (
+			entry.charmPoints > 0 &&
+			entry.bossPoints > 0 &&
+			entry.achievementPoints > 0
+		);
+	});
+
 	let rank = 1;
 	for (const entry of completionists) {
 		entry.rank = rank++;
 	}
 
-	// Find the highest scores for each category within the top `MAX_ENTRIES` entries.
+	// Find the highest scores for each category.
 	const top = {
 		achievementPoints: -1,
 		charmPoints: -1,
