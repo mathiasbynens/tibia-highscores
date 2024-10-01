@@ -4,8 +4,6 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Annie Arelluf',
 	'Bil Boladao',
 	'Borzz',
-	'Brucha',
-	'Caokao',
 	'Capitao Athim',
 	'Elyrea',
 	'Encore zjqeueoijqwe Bombinha',
@@ -28,6 +26,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Minerva Morales',
 	'Natth Morza',
 	'Niix Insanity',
+	'Nutri',
 	'Odrixz',
 	'Offf Liiineee',
 	'Ptu',
@@ -54,7 +53,7 @@ const checkCharacter = async (characterName) => {
 
 	if (data.information.status.error || !data.character) {
 		console.log('Error in API response. Retrying…');
-		return getCharacterData(characterName);
+		return checkCharacter(characterName);
 	}
 
 	const currentName = data.character.character.name;
