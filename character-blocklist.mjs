@@ -31,6 +31,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Offf Liiineee',
 	'Ptu',
 	'Sharpeey',
+	'Tavadurr',
 	'The Monho',
 	'Vemon',
 	'Vinicius shocks',
