@@ -9,7 +9,7 @@
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 24090,
 		"isTopBossPoints": false,
@@ -31,7 +31,7 @@
 		"isTopAchievementPoints": true,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 23210,
 		"isTopBossPoints": false,
@@ -119,7 +119,7 @@
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 21125,
 		"isTopBossPoints": false,
@@ -141,7 +141,7 @@
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 20625,
 		"isTopBossPoints": false,
@@ -339,7 +339,7 @@
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 19030,
 		"isTopBossPoints": false,
@@ -514,16 +514,16 @@
 		"achievementPoints": 1288,
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
-		"charmPoints": 24889,
+		"charmPoints": 24939,
 		"isTopCharmPoints": true,
 		"isBottomCharmPoints": false,
 		"bossPoints": 17455,
 		"isTopBossPoints": false,
 		"isBottomBossPoints": false,
 		"achievementPointsPercentage": 96.34,
-		"charmPointsPercentage": 98.81,
+		"charmPointsPercentage": 99.01,
 		"bossPointsPercentage": 68.59,
-		"overallPercentage": 87.91,
+		"overallPercentage": 87.98,
 		"isTopOverallPercentage": false,
 		"isBottomOverallPercentage": false
 	},
@@ -647,7 +647,7 @@
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
 		"charmPoints": 24889,
-		"isTopCharmPoints": true,
+		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
 		"bossPoints": 16265,
 		"isTopBossPoints": false,
@@ -1123,6 +1123,28 @@
 	},
 	{
 		"rank": 52,
+		"name": "The Sauron",
+		"vocation": "Elite Knight",
+		"world": "Vunira",
+		"level": 1126,
+		"achievementPoints": 1311,
+		"isTopAchievementPoints": false,
+		"isBottomAchievementPoints": false,
+		"charmPoints": 19780,
+		"isTopCharmPoints": false,
+		"isBottomCharmPoints": false,
+		"bossPoints": 18080,
+		"isTopBossPoints": false,
+		"isBottomBossPoints": false,
+		"achievementPointsPercentage": 98.06,
+		"charmPointsPercentage": 78.53,
+		"bossPointsPercentage": 71.04,
+		"overallPercentage": 82.54,
+		"isTopOverallPercentage": false,
+		"isBottomOverallPercentage": false
+	},
+	{
+		"rank": 53,
 		"name": "Darkside the ghost",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -1140,28 +1162,6 @@
 		"charmPointsPercentage": 81.74,
 		"bossPointsPercentage": 73.46,
 		"overallPercentage": 82.45,
-		"isTopOverallPercentage": false,
-		"isBottomOverallPercentage": false
-	},
-	{
-		"rank": 53,
-		"name": "The Sauron",
-		"vocation": "Elite Knight",
-		"world": "Vunira",
-		"level": 1126,
-		"achievementPoints": 1306,
-		"isTopAchievementPoints": false,
-		"isBottomAchievementPoints": false,
-		"charmPoints": 19780,
-		"isTopCharmPoints": false,
-		"isBottomCharmPoints": false,
-		"bossPoints": 18080,
-		"isTopBossPoints": false,
-		"isBottomBossPoints": false,
-		"achievementPointsPercentage": 97.68,
-		"charmPointsPercentage": 78.53,
-		"bossPointsPercentage": 71.04,
-		"overallPercentage": 82.42,
 		"isTopOverallPercentage": false,
 		"isBottomOverallPercentage": false
 	},
@@ -1859,13 +1859,13 @@
 		"charmPoints": 17560,
 		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
-		"bossPoints": 18245,
+		"bossPoints": 18275,
 		"isTopBossPoints": false,
 		"isBottomBossPoints": false,
 		"achievementPointsPercentage": 92.82,
 		"charmPointsPercentage": 69.71,
-		"bossPointsPercentage": 71.69,
-		"overallPercentage": 78.07,
+		"bossPointsPercentage": 71.81,
+		"overallPercentage": 78.11,
 		"isTopOverallPercentage": false,
 		"isBottomOverallPercentage": false
 	},
@@ -1984,7 +1984,7 @@
 		"name": "Knoubzorr",
 		"vocation": "Elite Knight",
 		"world": "Venebra",
-		"level": 1767,
+		"level": 1768,
 		"achievementPoints": 1213,
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
@@ -2362,16 +2362,16 @@
 		"achievementPoints": 1221,
 		"isTopAchievementPoints": false,
 		"isBottomAchievementPoints": false,
-		"charmPoints": 15514,
+		"charmPoints": 15564,
 		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
-		"bossPoints": 18585,
+		"bossPoints": 18645,
 		"isTopBossPoints": false,
 		"isBottomBossPoints": false,
 		"achievementPointsPercentage": 91.32,
-		"charmPointsPercentage": 61.59,
-		"bossPointsPercentage": 73.03,
-		"overallPercentage": 75.31,
+		"charmPointsPercentage": 61.79,
+		"bossPointsPercentage": 73.26,
+		"overallPercentage": 75.46,
 		"isTopOverallPercentage": false,
 		"isBottomOverallPercentage": false
 	},
@@ -2666,10 +2666,10 @@
 		"name": "Prizs",
 		"vocation": "Royal Paladin",
 		"world": "Kalibra",
-		"level": 1272,
+		"level": 1273,
 		"achievementPoints": 1056,
 		"isTopAchievementPoints": false,
-		"isBottomAchievementPoints": true,
+		"isBottomAchievementPoints": false,
 		"charmPoints": 16914,
 		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
@@ -2751,6 +2751,28 @@
 	},
 	{
 		"rank": 126,
+		"name": "Kubul",
+		"vocation": "Royal Paladin",
+		"world": "Peloria",
+		"level": 613,
+		"achievementPoints": 1053,
+		"isTopAchievementPoints": false,
+		"isBottomAchievementPoints": true,
+		"charmPoints": 17214,
+		"isTopCharmPoints": false,
+		"isBottomCharmPoints": false,
+		"bossPoints": 18170,
+		"isTopBossPoints": false,
+		"isBottomBossPoints": false,
+		"achievementPointsPercentage": 78.76,
+		"charmPointsPercentage": 68.34,
+		"bossPointsPercentage": 71.39,
+		"overallPercentage": 72.83,
+		"isTopOverallPercentage": false,
+		"isBottomOverallPercentage": false
+	},
+	{
+		"rank": 127,
 		"name": "Gaby Astim",
 		"vocation": "Elder Druid",
 		"world": "Yonabra",
@@ -2772,7 +2794,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 127,
+		"rank": 128,
 		"name": "Galiazzi",
 		"vocation": "Elite Knight",
 		"world": "Ustebra",
@@ -2794,7 +2816,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 128,
+		"rank": 129,
 		"name": "Luanpt",
 		"vocation": "Royal Paladin",
 		"world": "Karmeya",
@@ -2816,7 +2838,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 129,
+		"rank": 130,
 		"name": "Ravor Morxis",
 		"vocation": "Royal Paladin",
 		"world": "Vunira",
@@ -2838,7 +2860,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 130,
+		"rank": 131,
 		"name": "Arcai",
 		"vocation": "Master Sorcerer",
 		"world": "Quidera",
@@ -2860,7 +2882,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 131,
+		"rank": 132,
 		"name": "Dragonidas",
 		"vocation": "Master Sorcerer",
 		"world": "Monza",
@@ -2882,7 +2904,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 132,
+		"rank": 133,
 		"name": "Take the Juicer",
 		"vocation": "Elite Knight",
 		"world": "Nevia",
@@ -2904,7 +2926,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 133,
+		"rank": 134,
 		"name": "Noob Body",
 		"vocation": "Royal Paladin",
 		"world": "Karmeya",
@@ -2926,7 +2948,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 134,
+		"rank": 135,
 		"name": "Old Rabugento",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -2948,7 +2970,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 135,
+		"rank": 136,
 		"name": "Dark Blood Of Honera",
 		"vocation": "Master Sorcerer",
 		"world": "Nefera",
@@ -2970,7 +2992,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 136,
+		"rank": 137,
 		"name": "Kronek",
 		"vocation": "Royal Paladin",
 		"world": "Firmera",
@@ -2992,7 +3014,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 137,
+		"rank": 138,
 		"name": "Leonel Royalheart",
 		"vocation": "Royal Paladin",
 		"world": "Yonabra",
@@ -3014,7 +3036,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 138,
+		"rank": 139,
 		"name": "King Bex",
 		"vocation": "Elder Druid",
 		"world": "Monza",
@@ -3036,7 +3058,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 139,
+		"rank": 140,
 		"name": "Knight do Guga",
 		"vocation": "Elite Knight",
 		"world": "Gentebra",
@@ -3058,7 +3080,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 140,
+		"rank": 141,
 		"name": "Markelito",
 		"vocation": "Elite Knight",
 		"world": "Celesta",
@@ -3080,7 +3102,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 141,
+		"rank": 142,
 		"name": "Shukran Ya",
 		"vocation": "Royal Paladin",
 		"world": "Ferobra",
@@ -3102,7 +3124,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 142,
+		"rank": 143,
 		"name": "Caerbannogh",
 		"vocation": "Elite Knight",
 		"world": "Secura",
@@ -3124,7 +3146,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 143,
+		"rank": 144,
 		"name": "Prof Victor",
 		"vocation": "Druid",
 		"world": "Lutabra",
@@ -3146,7 +3168,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 144,
+		"rank": 145,
 		"name": "Magic Charllie",
 		"vocation": "Master Sorcerer",
 		"world": "Luminera",
@@ -3168,7 +3190,7 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 145,
+		"rank": 146,
 		"name": "Tiger Backwoods",
 		"vocation": "Master Sorcerer",
 		"world": "Quidera",
@@ -3190,14 +3212,14 @@
 		"isBottomOverallPercentage": false
 	},
 	{
-		"rank": 146,
+		"rank": 147,
 		"name": "Raaro",
 		"vocation": "Master Sorcerer",
 		"world": "Ustebra",
 		"level": 1491,
 		"achievementPoints": 1056,
 		"isTopAchievementPoints": false,
-		"isBottomAchievementPoints": true,
+		"isBottomAchievementPoints": false,
 		"charmPoints": 15115,
 		"isTopCharmPoints": false,
 		"isBottomCharmPoints": false,
