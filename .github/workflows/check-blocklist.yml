@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-data:
+  check-blocklist:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
