@@ -11,6 +11,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Firdeso',
 	'Galdrek',
 	'Garoto Do Sorriso',
+	'Gznho',
 	'Hardwave',
 	'Horon Aoldas',
 	'Inge Naning',
