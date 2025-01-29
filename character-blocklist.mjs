@@ -22,6 +22,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Lord Strikee',
 	'Luther Hargreeves',
 	'Madroox',
+	'Magao Evolutions',
 	'Marcus Eon',
 	'Meryona',
 	'Minerva Morales',
