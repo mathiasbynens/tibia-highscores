@@ -1,6 +1,7 @@
 // Characters confirmed to have been rooked in order to obtain coinciding
 // achievements that are otherwise impossible to get.
 export const CHARACTER_BLOCKLIST = new Set([
+	'Alpha Char ly',
 	'Annie Arelluf',
 	'Bil Boladao',
 	'Borzz',
@@ -30,7 +31,6 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Nutri',
 	'Odrixz',
 	'Offf Liiineee',
-	'Omega Charly',
 	'Ptu',
 	'Sharpeey',
 	'The Monho',
