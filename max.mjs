@@ -5,7 +5,7 @@ export const MAX_ACHIEVEMENT_POINTS = 1_338;
 
 export const MAX_CHARM_POINTS = 25_189;
 
-export const MAX_BOSS_POINTS = 25_450;
+export const MAX_BOSS_POINTS = 25_550;
 
 // Characters that rook themselves can unlock a number of coinciding
 // achievements, resulting in some additional points. Since this is
