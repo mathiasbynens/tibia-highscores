@@ -1,7 +1,7 @@
 // See https://github.com/mathiasbynens/tibia-json/blob/main/data/max.json
 // for auto-updated values.
 
-export const MAX_ACHIEVEMENT_POINTS = 1_338;
+export const MAX_ACHIEVEMENT_POINTS = 1_340;
 
 export const MAX_CHARM_POINTS = 25_189;
 
