@@ -6,6 +6,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Bil Boladao',
 	'Borzz',
 	'Capitao Athim',
+	'Clu Eless',
 	'Elyrea',
 	'Encore zjqeueoijqwe Bombinha',
 	'Fantasma Druid',
