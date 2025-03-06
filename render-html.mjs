@@ -5,6 +5,7 @@ import {minify as minifyHtml} from 'html-minifier-terser';
 
 import {getCategoryMetaData} from './categories.mjs';
 import {generateWorldHtml} from './worlds-utils.mjs';
+import {computeBossBonuses} from './boss-points-utils.mjs';
 
 import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
 
@@ -48,6 +49,8 @@ const vocationMap = new Map([
 	['Druid', 'D'],
 	['Master Sorcerer', 'MS'],
 	['Sorcerer', 'S'],
+	['Exalted Monk', 'EM'],
+	['Monk', 'M'],
 ]);
 const abbreviateVocation = (vocation) => {
 	return vocationMap.get(vocation) || vocation;
@@ -70,14 +73,18 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 		`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`,
 	];
 	const isCompletionists = 'completionists' === categoryId;
+	const isBossPoints = 'boss-points' === categoryId;
 	const table = [];
 	if (isCompletionists) {
 		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Completion percentage<tbody>');
+	} else if (isBossPoints) {
+		table.push(`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Points<th>Base equipment loot bonus<th>Mastery equipment loot bonus<tbody>`);
 	} else {
 		table.push(`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>${maxValue ? 'Points' : 'Value'}<tbody>`);
 	}
 	for (const entry of highscores) {
 		if (isCompletionists) {
+			const bossBonuses = computeBossBonuses(entry.bossPoints);
 			table.push(`
 				<tr id="${escapeHtml(entry.name)}">
 					<th scope=row>${escapeHtml(entry.rank)}
@@ -86,8 +93,22 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 					<td>${generateWorldHtml(entry.world)}
 					<td${entry.isTopAchievementPoints ? ' class="top"' : ''}${entry.isBottomAchievementPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.achievementPoints))} out of ${escapeHtml(formatInt(MAX_ACHIEVEMENT_POINTS))} achievement points ≈ ${escapeHtml(formatPercentage(entry.achievementPointsPercentage))}">${escapeHtml(formatInt(entry.achievementPoints))} <progress max="100" value="${escapeHtml(entry.achievementPointsPercentage)}"></progress>
 					<td${entry.isTopCharmPoints ? ' class="top"' : ''}${entry.isBottomCharmPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.charmPoints))} out of ${escapeHtml(formatInt(MAX_CHARM_POINTS))} charm points ≈ ${escapeHtml(formatPercentage(entry.charmPointsPercentage))}">${escapeHtml(formatInt(entry.charmPoints))} <progress max="100" value="${escapeHtml(entry.charmPointsPercentage)}"></progress>
-					<td${entry.isTopBossPoints ? ' class="top"' : ''}${entry.isBottomBossPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.bossPoints))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(entry.bossPointsPercentage))}">${escapeHtml(formatInt(entry.bossPoints))} <progress max="100" value="${escapeHtml(entry.bossPointsPercentage)}"></progress>
+					<td${entry.isTopBossPoints ? ' class="top"' : ''}${entry.isBottomBossPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.bossPoints))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(entry.bossPointsPercentage))}&NewLine;→ +${escapeHtml(formatInt(bossBonuses.base))}% / +${escapeHtml(formatInt(bossBonuses.mastery))}% equipment loot bonus">${escapeHtml(formatInt(entry.bossPoints))} <progress max="100" value="${escapeHtml(entry.bossPointsPercentage)}"></progress>
 					<td${entry.isTopOverallPercentage ? ' class="top"' : ''}${entry.isBottomOverallPercentage ? ' class="bottom"' : ''}>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${escapeHtml(entry.overallPercentage)}"></progress>
+			`);
+		} else if (isBossPoints) {
+			const points = entry.value;
+			const bossBonuses = computeBossBonuses(points);
+			const percentage = maxValue ? (Math.round(10_000 * entry.value / maxValue) / 100) : 0;
+			table.push(`
+				<tr id="${escapeHtml(entry.name)}">
+					<th scope=row>${escapeHtml(entry.rank)}
+					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
+					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
+					<td>${generateWorldHtml(entry.world)}
+					<td title="${escapeHtml(formatInt(points))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(percentage))}&NewLine;→ +${escapeHtml(formatInt(bossBonuses.base))}% / +${escapeHtml(formatInt(bossBonuses.mastery))}% equipment loot bonus"${maxValue === points ? ' class="top"' : ''}>${escapeHtml(formatInt(points))}${maxValue ? ` <progress max="100" value="${escapeHtml(percentage)}"></progress>` : ''}
+					<td>+${escapeHtml(formatInt(bossBonuses.base))}%
+					<td>+${escapeHtml(formatInt(bossBonuses.mastery))}%
 			`);
 		} else {
 			const points = entry.value;

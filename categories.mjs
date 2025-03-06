@@ -2,6 +2,7 @@ import {
 	MAX_ACHIEVEMENT_POINTS,
 	MAX_CHARM_POINTS,
 	MAX_BOSS_POINTS,
+	MAX_BOSS_BONUSES,
 	UNFAIR_ACHIEVEMENT_POINTS,
 	MAX_ACHIEVEMENT_POINTS_UNFAIR,
 } from './max.mjs';
@@ -34,7 +35,7 @@ const map = new Map([
 	}],
 	['boss-points', {
 		name: 'boss points',
-		description: 'Highest possible score: %%%MAX_BOSS_POINTS%%% points.',
+		description: 'Highest possible score: %%%MAX_BOSS_POINTS%%% points, resulting in a +%%%BASE_BOSS_BONUS%%%% equipment loot bonus for not-yet-completed bosses and a +%%%MASTERY_BOSS_BONUS%%%% equipment loot bonus for completed bosses.',
 		max: MAX_BOSS_POINTS,
 		related: [
 			'completionists',
@@ -193,6 +194,8 @@ const populateDescription = (description) => {
 			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS%%%', formatInt(MAX_ACHIEVEMENT_POINTS))
 			.replaceAll('%%%MAX_CHARM_POINTS%%%', formatInt(MAX_CHARM_POINTS))
 			.replaceAll('%%%MAX_BOSS_POINTS%%%', formatInt(MAX_BOSS_POINTS))
+			.replaceAll('%%%BASE_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.base))
+			.replaceAll('%%%MASTERY_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.mastery))
 			.replaceAll('%%%UNFAIR_ACHIEVEMENT_POINTS%%%', formatInt(UNFAIR_ACHIEVEMENT_POINTS))
 			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%%', formatInt(MAX_ACHIEVEMENT_POINTS_UNFAIR))
 	);
