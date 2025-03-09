@@ -106,7 +106,7 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 					<th scope=row><a href="${escapeHtml(linkCharacter(entry.name))}" rel="nofollow">${escapeHtml(entry.name)}</a>
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
 					<td>${generateWorldHtml(entry.world)}
-					<td title="${escapeHtml(formatInt(points))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(percentage))}&NewLine;→ +${escapeHtml(formatInt(bossBonuses.base))}% / +${escapeHtml(formatInt(bossBonuses.mastery))}% equipment loot bonus"${maxValue === points ? ' class="top"' : ''}>${escapeHtml(formatInt(points))}${maxValue ? ` <progress max="100" value="${escapeHtml(percentage)}"></progress>` : ''}
+					<td title="${escapeHtml(formatInt(points))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(percentage))}"${maxValue === points ? ' class="top"' : ''}>${escapeHtml(formatInt(points))}${maxValue ? ` <progress max="100" value="${escapeHtml(percentage)}"></progress>` : ''}
 					<td>+${escapeHtml(formatInt(bossBonuses.base))}%
 					<td>+${escapeHtml(formatInt(bossBonuses.mastery))}%
 			`);
