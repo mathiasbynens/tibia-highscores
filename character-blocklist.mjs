@@ -1,7 +1,7 @@
 // Characters confirmed to have been rooked in order to obtain coinciding
 // achievements that are otherwise impossible to get.
 export const CHARACTER_BLOCKLIST = new Set([
-	'Alpha Char ly',
+	'Alpha Charlyne',
 	'Annie Arelluf',
 	'Bil Boladao',
 	'Borzz',
