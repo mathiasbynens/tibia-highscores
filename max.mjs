@@ -3,9 +3,9 @@
 
 import {computeBossBonuses} from './boss-points-utils.mjs';
 
-export const MAX_ACHIEVEMENT_POINTS = 1_340;
+export const MAX_ACHIEVEMENT_POINTS = 1_348;
 
-export const MAX_CHARM_POINTS = 25_189;
+export const MAX_CHARM_POINTS = 25_289;
 
 export const MAX_BOSS_POINTS = 25_550;
 export const MAX_BOSS_BONUSES = computeBossBonuses(MAX_BOSS_POINTS);
