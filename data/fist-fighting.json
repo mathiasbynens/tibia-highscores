@@ -44,16 +44,8 @@
 		"name": "The King Fighter",
 		"vocation": "Exalted Monk",
 		"world": "Jadebra",
-		"level": 168,
+		"level": 169,
 		"value": 114
-	},
-	{
-		"rank": 7,
-		"name": "Maximus Punch",
-		"vocation": "Exalted Monk",
-		"world": "Lobera",
-		"level": 274,
-		"value": 112
 	},
 	{
 		"rank": 7,
@@ -61,10 +53,18 @@
 		"vocation": "Exalted Monk",
 		"world": "Secura",
 		"level": 70,
+		"value": 113
+	},
+	{
+		"rank": 8,
+		"name": "Maximus Punch",
+		"vocation": "Exalted Monk",
+		"world": "Lobera",
+		"level": 274,
 		"value": 112
 	},
 	{
-		"rank": 7,
+		"rank": 8,
 		"name": "Ox Ironfist",
 		"vocation": "Exalted Monk",
 		"world": "Rasteibra",
@@ -72,7 +72,7 @@
 		"value": 112
 	},
 	{
-		"rank": 7,
+		"rank": 8,
 		"name": "Pho Pho",
 		"vocation": "Exalted Monk",
 		"world": "Monza",
@@ -100,7 +100,7 @@
 		"name": "Dalai Lama Vesgo",
 		"vocation": "Exalted Monk",
 		"world": "Jadebra",
-		"level": 197,
+		"level": 198,
 		"value": 111
 	},
 	{
@@ -140,7 +140,7 @@
 		"name": "The Red Enryu",
 		"vocation": "Exalted Monk",
 		"world": "Antica",
-		"level": 331,
+		"level": 334,
 		"value": 111
 	},
 	{
@@ -164,7 +164,15 @@
 		"name": "Bruise Li",
 		"vocation": "Exalted Monk",
 		"world": "Nevia",
-		"level": 343,
+		"level": 346,
+		"value": 110
+	},
+	{
+		"rank": 20,
+		"name": "Bruno'Legend",
+		"vocation": "Exalted Monk",
+		"world": "Havera",
+		"level": 20,
 		"value": 110
 	},
 	{
@@ -173,6 +181,14 @@
 		"vocation": "Exalted Monk",
 		"world": "Celesta",
 		"level": 81,
+		"value": 110
+	},
+	{
+		"rank": 20,
+		"name": "Evil Thorn",
+		"vocation": "Exalted Monk",
+		"world": "Peloria",
+		"level": 199,
 		"value": 110
 	},
 	{
@@ -248,7 +264,7 @@
 		"value": 110
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Airowun",
 		"vocation": "Exalted Monk",
 		"world": "Esmera",
@@ -256,7 +272,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Aris Monk",
 		"vocation": "Exalted Monk",
 		"world": "Wintera",
@@ -264,31 +280,15 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
-		"name": "Bruno'Legend",
-		"vocation": "Exalted Monk",
-		"world": "Havera",
-		"level": 20,
-		"value": 109
-	},
-	{
-		"rank": 32,
-		"name": "Evil Thorn",
-		"vocation": "Exalted Monk",
-		"world": "Peloria",
-		"level": 199,
-		"value": 109
-	},
-	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Khrayvus",
 		"vocation": "Exalted Monk",
 		"world": "Gentebra",
-		"level": 353,
+		"level": 354,
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Mastermind Monk",
 		"vocation": "Exalted Monk",
 		"world": "Inabra",
@@ -296,7 +296,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Persi Zen",
 		"vocation": "Exalted Monk",
 		"world": "Talera",
@@ -304,7 +304,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Pro Mnich Spoxter",
 		"vocation": "Exalted Monk",
 		"world": "Karmeya",
@@ -312,7 +312,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Tarravangian",
 		"vocation": "Exalted Monk",
 		"world": "Karmeya",
@@ -320,7 +320,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Trooth Seeker",
 		"vocation": "Exalted Monk",
 		"world": "Calmera",
@@ -328,7 +328,7 @@
 		"value": 109
 	},
 	{
-		"rank": 32,
+		"rank": 34,
 		"name": "Zamenoh",
 		"vocation": "Elite Knight",
 		"world": "Monza",
@@ -412,7 +412,7 @@
 		"name": "Monkowiec",
 		"vocation": "Exalted Monk",
 		"world": "Antica",
-		"level": 122,
+		"level": 124,
 		"value": 108
 	},
 	{
@@ -476,7 +476,7 @@
 		"name": "Fister Baggings",
 		"vocation": "Exalted Monk",
 		"world": "Esmera",
-		"level": 100,
+		"level": 103,
 		"value": 107
 	},
 	{
@@ -484,7 +484,7 @@
 		"name": "Gamonk",
 		"vocation": "Exalted Monk",
 		"world": "Vitera",
-		"level": 160,
+		"level": 162,
 		"value": 107
 	},
 	{
@@ -612,7 +612,7 @@
 		"name": "Monk The Sephi",
 		"vocation": "Exalted Monk",
 		"world": "Bona",
-		"level": 374,
+		"level": 376,
 		"value": 106
 	},
 	{
@@ -676,7 +676,7 @@
 		"name": "Ve Mo",
 		"vocation": "Exalted Monk",
 		"world": "Secura",
-		"level": 195,
+		"level": 197,
 		"value": 106
 	},
 	{
@@ -756,7 +756,7 @@
 		"name": "Elemental Fist",
 		"vocation": "Exalted Monk",
 		"world": "Serdebra",
-		"level": 151,
+		"level": 163,
 		"value": 105
 	},
 	{
@@ -796,7 +796,7 @@
 		"name": "Manabi Stormstout",
 		"vocation": "Exalted Monk",
 		"world": "Stralis",
-		"level": 257,
+		"level": 258,
 		"value": 105
 	},
 	{
@@ -812,7 +812,7 @@
 		"name": "Masnus",
 		"vocation": "Exalted Monk",
 		"world": "Vunira",
-		"level": 375,
+		"level": 379,
 		"value": 105
 	},
 	{
@@ -876,7 +876,7 @@
 		"name": "Zaaw Insane",
 		"vocation": "Exalted Monk",
 		"world": "Menera",
-		"level": 367,
+		"level": 369,
 		"value": 105
 	},
 	{
@@ -908,7 +908,7 @@
 		"name": "Alvagari Mephur",
 		"vocation": "Exalted Monk",
 		"world": "Bona",
-		"level": 275,
+		"level": 277,
 		"value": 104
 	},
 	{
@@ -964,7 +964,7 @@
 		"name": "Drakyn the Rookstayer",
 		"vocation": "Exalted Monk",
 		"world": "Quintera",
-		"level": 329,
+		"level": 331,
 		"value": 104
 	},
 	{
@@ -1084,7 +1084,7 @@
 		"name": "Roswaall",
 		"vocation": "Exalted Monk",
 		"world": "Wintera",
-		"level": 279,
+		"level": 280,
 		"value": 104
 	},
 	{
@@ -1124,7 +1124,7 @@
 		"name": "Zanron The Monk",
 		"vocation": "Exalted Monk",
 		"world": "Celesta",
-		"level": 110,
+		"level": 111,
 		"value": 104
 	},
 	{
@@ -1156,7 +1156,7 @@
 		"name": "Holyfingers",
 		"vocation": "Exalted Monk",
 		"world": "Collabra",
-		"level": 212,
+		"level": 219,
 		"value": 103
 	},
 	{
@@ -1196,7 +1196,7 @@
 		"name": "Maseco",
 		"vocation": "Exalted Monk",
 		"world": "Luminera",
-		"level": 187,
+		"level": 192,
 		"value": 103
 	},
 	{
@@ -1212,7 +1212,7 @@
 		"name": "Monk ahaha",
 		"vocation": "Exalted Monk",
 		"world": "Xyla",
-		"level": 212,
+		"level": 215,
 		"value": 103
 	},
 	{
@@ -1281,6 +1281,14 @@
 	},
 	{
 		"rank": 142,
+		"name": "Salviano Monk",
+		"vocation": "Exalted Monk",
+		"world": "Ferobra",
+		"level": 203,
+		"value": 103
+	},
+	{
+		"rank": 142,
 		"name": "Shengwu",
 		"vocation": "Exalted Monk",
 		"world": "Collabra",
@@ -1336,7 +1344,7 @@
 		"value": 103
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Almighty Punch",
 		"vocation": "Exalted Monk",
 		"world": "Havera",
@@ -1344,7 +1352,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Alpharion",
 		"vocation": "Exalted Monk",
 		"world": "Bona",
@@ -1352,7 +1360,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Angelweapon",
 		"vocation": "Knight",
 		"world": "Nefera",
@@ -1360,7 +1368,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Bam Bam Flinstone",
 		"vocation": "Knight",
 		"world": "Harmonia",
@@ -1368,15 +1376,23 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
-		"name": "Boni Inwestor",
-		"vocation": "Elite Knight",
-		"world": "Dia",
-		"level": 556,
+		"rank": 169,
+		"name": "Bamboo Fighter",
+		"vocation": "Exalted Monk",
+		"world": "Luminera",
+		"level": 273,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
+		"name": "Boni Inwestor",
+		"vocation": "Elite Knight",
+		"world": "Dia",
+		"level": 558,
+		"value": 102
+	},
+	{
+		"rank": 169,
 		"name": "Crosstoned",
 		"vocation": "Knight",
 		"world": "Harmonia",
@@ -1384,7 +1400,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Czar Lee",
 		"vocation": "Exalted Monk",
 		"world": "Celesta",
@@ -1392,7 +1408,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Diegolombo",
 		"vocation": "Exalted Monk",
 		"world": "Ustebra",
@@ -1400,15 +1416,15 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Doktur Weteryniarz",
 		"vocation": "Exalted Monk",
 		"world": "Dia",
-		"level": 462,
+		"level": 467,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Dzisiaj Bicek",
 		"vocation": "Exalted Monk",
 		"world": "Xyla",
@@ -1416,7 +1432,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Ekstra Sketchy",
 		"vocation": "Exalted Monk",
 		"world": "Yovera",
@@ -1424,7 +1440,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Fisterious",
 		"vocation": "Exalted Monk",
 		"world": "Xyla",
@@ -1432,7 +1448,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Fists Deja Vu",
 		"vocation": "Exalted Monk",
 		"world": "Antica",
@@ -1440,7 +1456,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Flayed",
 		"vocation": "Exalted Monk",
 		"world": "Yovera",
@@ -1448,7 +1464,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Flo Ri Da",
 		"vocation": "Exalted Monk",
 		"world": "Solidera",
@@ -1456,23 +1472,23 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Hatieflayer",
 		"vocation": "Exalted Monk",
 		"world": "Monza",
-		"level": 133,
+		"level": 136,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Inigo",
 		"vocation": "Exalted Monk",
 		"world": "Menera",
-		"level": 113,
+		"level": 118,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Karius Ghan",
 		"vocation": "Exalted Monk",
 		"world": "Gladibra",
@@ -1480,7 +1496,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Launk",
 		"vocation": "Exalted Monk",
 		"world": "Honbra",
@@ -1488,7 +1504,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Lil Athox",
 		"vocation": "Exalted Monk",
 		"world": "Lutabra",
@@ -1496,15 +1512,15 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Lomes schiaaa",
 		"vocation": "Exalted Monk",
 		"world": "Premia",
-		"level": 294,
+		"level": 295,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Mister Nirvana",
 		"vocation": "Exalted Monk",
 		"world": "Talera",
@@ -1512,23 +1528,23 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Monk Hong Kong",
 		"vocation": "Exalted Monk",
 		"world": "Vunira",
-		"level": 207,
+		"level": 211,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Monki Donky",
 		"vocation": "Exalted Monk",
 		"world": "Solidera",
-		"level": 312,
+		"level": 315,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Monkisano",
 		"vocation": "Exalted Monk",
 		"world": "Thyria",
@@ -1536,7 +1552,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Monkosevic",
 		"vocation": "Exalted Monk",
 		"world": "Malivora",
@@ -1544,7 +1560,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Notorious likes Profit",
 		"vocation": "Exalted Monk",
 		"world": "Karmeya",
@@ -1552,7 +1568,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Porozzo",
 		"vocation": "Knight",
 		"world": "Yonabra",
@@ -1560,7 +1576,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Punho Celestial",
 		"vocation": "Exalted Monk",
 		"world": "Astera",
@@ -1568,7 +1584,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Pyro Valour",
 		"vocation": "Exalted Monk",
 		"world": "Jaguna",
@@ -1576,7 +1592,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Saga iluminado",
 		"vocation": "Exalted Monk",
 		"world": "Vandera",
@@ -1584,15 +1600,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
-		"name": "Salviano Monk",
-		"vocation": "Exalted Monk",
-		"world": "Ferobra",
-		"level": 189,
-		"value": 102
-	},
-	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Sayan Kardo",
 		"vocation": "Exalted Monk",
 		"world": "Premia",
@@ -1600,7 +1608,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Tango Morango",
 		"vocation": "Exalted Monk",
 		"world": "Yonabra",
@@ -1608,7 +1616,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Valiant Fist",
 		"vocation": "Exalted Monk",
 		"world": "Belobra",
@@ -1616,7 +1624,7 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Will Fistya",
 		"vocation": "Exalted Monk",
 		"world": "Oceanis",
@@ -1624,15 +1632,15 @@
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Wukong Qitian",
 		"vocation": "Exalted Monk",
 		"world": "Ustebra",
-		"level": 407,
+		"level": 411,
 		"value": 102
 	},
 	{
-		"rank": 168,
+		"rank": 169,
 		"name": "Xynergy",
 		"vocation": "Exalted Monk",
 		"world": "Lobera",
@@ -1640,7 +1648,7 @@
 		"value": 102
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Aandy Monk",
 		"vocation": "Monk",
 		"world": "Belobra",
@@ -1648,7 +1656,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Al Qit",
 		"vocation": "Exalted Monk",
 		"world": "Lutabra",
@@ -1656,7 +1664,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Ballarur Monkx",
 		"vocation": "Exalted Monk",
 		"world": "Refugia",
@@ -1664,23 +1672,15 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
-		"name": "Bamboo Fighter",
-		"vocation": "Exalted Monk",
-		"world": "Luminera",
-		"level": 273,
-		"value": 101
-	},
-	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Batata Patrao",
 		"vocation": "Exalted Monk",
 		"world": "Nevia",
-		"level": 305,
+		"level": 306,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Beatrice Portinari",
 		"vocation": "Exalted Monk",
 		"world": "Thyria",
@@ -1688,15 +1688,15 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Benkei Sheik",
 		"vocation": "Exalted Monk",
 		"world": "Ourobra",
-		"level": 314,
+		"level": 318,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Bizung Monkas",
 		"vocation": "Exalted Monk",
 		"world": "Issobra",
@@ -1704,7 +1704,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Bloodrunk Leech",
 		"vocation": "Exalted Monk",
 		"world": "Lobera",
@@ -1712,15 +1712,15 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Bogotha",
 		"vocation": "Exalted Monk",
 		"world": "Refugia",
-		"level": 243,
+		"level": 244,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Brahdok",
 		"vocation": "Exalted Monk",
 		"world": "Vitera",
@@ -1728,7 +1728,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Bula Lokiec",
 		"vocation": "Exalted Monk",
 		"world": "Karmeya",
@@ -1736,7 +1736,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Chubalu",
 		"vocation": "Exalted Monk",
 		"world": "Peloria",
@@ -1744,7 +1744,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Coyote Mui Male",
 		"vocation": "Elite Knight",
 		"world": "Bona",
@@ -1752,7 +1752,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Damones",
 		"vocation": "Exalted Monk",
 		"world": "Harmonia",
@@ -1760,7 +1760,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Delimonk",
 		"vocation": "Exalted Monk",
 		"world": "Belobra",
@@ -1768,7 +1768,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Double Hook",
 		"vocation": "Exalted Monk",
 		"world": "Lutabra",
@@ -1776,7 +1776,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Einya Lightheart",
 		"vocation": "Exalted Monk",
 		"world": "Peloria",
@@ -1784,7 +1784,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Ekatriene",
 		"vocation": "Exalted Monk",
 		"world": "Peloria",
@@ -1792,7 +1792,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Fausten",
 		"vocation": "Exalted Monk",
 		"world": "Lobera",
@@ -1800,7 +1800,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Godvader",
 		"vocation": "Exalted Monk",
 		"world": "Lobera",
@@ -1808,7 +1808,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Gontas",
 		"vocation": "Exalted Monk",
 		"world": "Secura",
@@ -1816,7 +1816,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Hipsomnus",
 		"vocation": "Elite Knight",
 		"world": "Menera",
@@ -1824,7 +1824,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Incomodado",
 		"vocation": "Monk",
 		"world": "Descubra",
@@ -1832,7 +1832,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Keth Fera",
 		"vocation": "Exalted Monk",
 		"world": "Vitera",
@@ -1840,7 +1840,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Kriptoquesito",
 		"vocation": "Exalted Monk",
 		"world": "Celebra",
@@ -1848,7 +1848,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Lara Feickas",
 		"vocation": "Exalted Monk",
 		"world": "Vandera",
@@ -1856,7 +1856,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Leriisa",
 		"vocation": "Exalted Monk",
 		"world": "Thyria",
@@ -1864,15 +1864,15 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Mardicor Uzan",
 		"vocation": "Exalted Monk",
 		"world": "Nevia",
-		"level": 235,
+		"level": 236,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Monjich",
 		"vocation": "Exalted Monk",
 		"world": "Talera",
@@ -1880,7 +1880,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Mounky",
 		"vocation": "Exalted Monk",
 		"world": "Belobra",
@@ -1888,7 +1888,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Pomarszczona Pomarancza",
 		"vocation": "Exalted Monk",
 		"world": "Harmonia",
@@ -1896,7 +1896,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Punchio",
 		"vocation": "Exalted Monk",
 		"world": "Esmera",
@@ -1904,7 +1904,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Sage Diiewooh",
 		"vocation": "Exalted Monk",
 		"world": "Inabra",
@@ -1912,7 +1912,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Sputnik Monroe",
 		"vocation": "Knight",
 		"world": "Antica",
@@ -1920,23 +1920,23 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Supremazy",
 		"vocation": "Exalted Monk",
 		"world": "Celesta",
-		"level": 277,
+		"level": 280,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Tefciowy Monk",
 		"vocation": "Exalted Monk",
 		"world": "Antica",
-		"level": 340,
+		"level": 345,
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Truskaweek",
 		"vocation": "Exalted Monk",
 		"world": "Secura",
@@ -1944,7 +1944,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Warrior Punch",
 		"vocation": "Exalted Monk",
 		"world": "Honbra",
@@ -1952,7 +1952,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Wywz",
 		"vocation": "Exalted Monk",
 		"world": "Yubra",
@@ -1960,7 +1960,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Yoru Ga",
 		"vocation": "Exalted Monk",
 		"world": "Secura",
@@ -1968,7 +1968,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Zamhu",
 		"vocation": "Exalted Monk",
 		"world": "Solidera",
@@ -1976,7 +1976,7 @@
 		"value": 101
 	},
 	{
-		"rank": 206,
+		"rank": 207,
 		"name": "Zodarion Hern",
 		"vocation": "Exalted Monk",
 		"world": "Gladera",
