@@ -16,6 +16,6 @@ export const MAX_BOSS_BONUSES = computeBossBonuses(MAX_BOSS_POINTS);
 // feasible for new characters but not feasible for characters that
 // already existed when achievements were introduced, this is considered
 // to be unfair overall.
-export const UNFAIR_ACHIEVEMENT_POINTS = 37;
+export const UNFAIR_ACHIEVEMENT_POINTS = 34;
 export const MAX_ACHIEVEMENT_POINTS_UNFAIR =
 	MAX_ACHIEVEMENT_POINTS + UNFAIR_ACHIEVEMENT_POINTS;
