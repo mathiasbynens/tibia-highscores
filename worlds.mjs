@@ -7,12 +7,6 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
-	['Ambra', {
-		'name': 'Ambra',
-		'battleEye': 'green',
-		'pvp': 'Retro Open PvP',
-		'location': 'South America'
-	}],
 	['Antica', {
 		'name': 'Antica',
 		'battleEye': 'yellow',
@@ -30,6 +24,12 @@ export const worldMap = new Map([
 		'battleEye': 'yellow',
 		'pvp': 'Optional PvP',
 		'location': 'South America'
+	}],
+	['Blumera', {
+		'name': 'Blumera',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'North America'
 	}],
 	['Bona', {
 		'name': 'Bona',
@@ -67,6 +67,12 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
+	['Citra', {
+		'name': 'Citra',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'Europe'
+	}],
 	['Collabra', {
 		'name': 'Collabra',
 		'battleEye': 'green',
@@ -85,8 +91,14 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
-	['Divina', {
-		'name': 'Divina',
+	['Dracobra', {
+		'name': 'Dracobra',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'South America'
+	}],
+	['Eclipta', {
+		'name': 'Eclipta',
 		'battleEye': 'green',
 		'pvp': 'Retro Open PvP',
 		'location': 'Europe'
@@ -97,11 +109,11 @@ export const worldMap = new Map([
 		'pvp': 'Retro Open PvP',
 		'location': 'Europe'
 	}],
-	['Esmera', {
-		'name': 'Esmera',
+	['Escura', {
+		'name': 'Escura',
 		'battleEye': 'green',
-		'pvp': 'Optional PvP',
-		'location': 'North America'
+		'pvp': 'Retro Open PvP',
+		'location': 'Europe'
 	}],
 	['Etebra', {
 		'name': 'Etebra',
@@ -115,21 +127,9 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
-	['Fibera', {
-		'name': 'Fibera',
-		'battleEye': 'green',
-		'pvp': 'Retro Open PvP',
-		'location': 'North America'
-	}],
 	['Firmera', {
 		'name': 'Firmera',
 		'battleEye': 'yellow',
-		'pvp': 'Retro Open PvP',
-		'location': 'North America'
-	}],
-	['Flamera', {
-		'name': 'Flamera',
-		'battleEye': 'green',
 		'pvp': 'Retro Open PvP',
 		'location': 'North America'
 	}],
@@ -151,12 +151,6 @@ export const worldMap = new Map([
 		'pvp': 'Retro Open PvP',
 		'location': 'South America'
 	}],
-	['Gravitera', {
-		'name': 'Gravitera',
-		'battleEye': 'green',
-		'pvp': 'Retro Hardcore PvP',
-		'location': 'North America'
-	}],
 	['Harmonia', {
 		'name': 'Harmonia',
 		'battleEye': 'yellow',
@@ -175,6 +169,24 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
+	['Hostera', {
+		'name': 'Hostera',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'North America'
+	}],
+	['Idyllia', {
+		'name': 'Idyllia',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'Europe'
+	}],
+	['Ignitera', {
+		'name': 'Ignitera',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'North America'
+	}],
 	['Inabra', {
 		'name': 'Inabra',
 		'battleEye': 'yellow',
@@ -187,22 +199,16 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'South America'
 	}],
-	['Jacabra', {
-		'name': 'Jacabra',
-		'battleEye': 'green',
-		'pvp': 'Retro Hardcore PvP',
-		'location': 'South America'
-	}],
 	['Jadebra', {
 		'name': 'Jadebra',
 		'battleEye': 'green',
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
-	['Jaguna', {
-		'name': 'Jaguna',
+	['Kalanta', {
+		'name': 'Kalanta',
 		'battleEye': 'green',
-		'pvp': 'Open PvP',
+		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
 	['Kalibra', {
@@ -210,6 +216,12 @@ export const worldMap = new Map([
 		'battleEye': 'yellow',
 		'pvp': 'Optional PvP',
 		'location': 'South America'
+	}],
+	['Kalimera', {
+		'name': 'Kalimera',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'North America'
 	}],
 	['Karmeya', {
 		'name': 'Karmeya',
@@ -235,11 +247,11 @@ export const worldMap = new Map([
 		'pvp': 'Retro Open PvP',
 		'location': 'South America'
 	}],
-	['Malivora', {
-		'name': 'Malivora',
+	['Luzibra', {
+		'name': 'Luzibra',
 		'battleEye': 'green',
-		'pvp': 'Retro Open PvP',
-		'location': 'Europe'
+		'pvp': 'Optional PvP',
+		'location': 'South America'
 	}],
 	['Menera', {
 		'name': 'Menera',
@@ -247,11 +259,23 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'North America'
 	}],
+	['Monstera', {
+		'name': 'Monstera',
+		'battleEye': 'green',
+		'pvp': 'Retro Hardcore PvP',
+		'location': 'North America'
+	}],
 	['Monza', {
 		'name': 'Monza',
 		'battleEye': 'yellow',
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
+	}],
+	['Mystera', {
+		'name': 'Mystera',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'North America'
 	}],
 	['Nefera', {
 		'name': 'Nefera',
@@ -265,11 +289,11 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
-	['Obscubra', {
-		'name': 'Obscubra',
+	['Noctalia', {
+		'name': 'Noctalia',
 		'battleEye': 'green',
-		'pvp': 'Retro Hardcore PvP',
-		'location': 'South America'
+		'pvp': 'Open PvP',
+		'location': 'Europe'
 	}],
 	['Oceanis', {
 		'name': 'Oceanis',
@@ -301,17 +325,17 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'Europe'
 	}],
+	['Penumbra', {
+		'name': 'Penumbra',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'South America'
+	}],
 	['Premia', {
 		'name': 'Premia',
 		'battleEye': 'yellow',
 		'pvp': 'Open PvP',
 		'location': 'Europe'
-	}],
-	['Quebra', {
-		'name': 'Quebra',
-		'battleEye': 'green',
-		'pvp': 'Retro Open PvP',
-		'location': 'South America'
 	}],
 	['Quelibra', {
 		'name': 'Quelibra',
@@ -349,12 +373,6 @@ export const worldMap = new Map([
 		'pvp': 'Retro Hardcore PvP',
 		'location': 'Europe'
 	}],
-	['Runera', {
-		'name': 'Runera',
-		'battleEye': 'green',
-		'pvp': 'Open PvP',
-		'location': 'North America'
-	}],
 	['Secura', {
 		'name': 'Secura',
 		'battleEye': 'yellow',
@@ -373,6 +391,18 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
+	['Sombra', {
+		'name': 'Sombra',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'South America'
+	}],
+	['Sonira', {
+		'name': 'Sonira',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'Europe'
+	}],
 	['Stralis', {
 		'name': 'Stralis',
 		'battleEye': 'green',
@@ -385,11 +415,17 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
-	['Temera', {
-		'name': 'Temera',
+	['Tempestera', {
+		'name': 'Tempestera',
 		'battleEye': 'green',
 		'pvp': 'Retro Open PvP',
 		'location': 'North America'
+	}],
+	['Terribra', {
+		'name': 'Terribra',
+		'battleEye': 'green',
+		'pvp': 'Retro Hardcore PvP',
+		'location': 'South America'
 	}],
 	['Thyria', {
 		'name': 'Thyria',
@@ -403,12 +439,6 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
-	['Ulera', {
-		'name': 'Ulera',
-		'battleEye': 'green',
-		'pvp': 'Optional PvP',
-		'location': 'North America'
-	}],
 	['Unebra', {
 		'name': 'Unebra',
 		'battleEye': 'green',
@@ -420,12 +450,6 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Optional PvP',
 		'location': 'South America'
-	}],
-	['Vandera', {
-		'name': 'Vandera',
-		'battleEye': 'green',
-		'pvp': 'Open PvP',
-		'location': 'North America'
 	}],
 	['Venebra', {
 		'name': 'Venebra',
@@ -439,29 +463,11 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'Oceania'
 	}],
-	['Vitera', {
-		'name': 'Vitera',
-		'battleEye': 'green',
-		'pvp': 'Optional PvP',
-		'location': 'North America'
-	}],
 	['Vunira', {
 		'name': 'Vunira',
 		'battleEye': 'yellow',
 		'pvp': 'Open PvP',
 		'location': 'Europe'
-	}],
-	['Wadira', {
-		'name': 'Wadira',
-		'battleEye': 'green',
-		'pvp': 'Optional PvP',
-		'location': 'Europe'
-	}],
-	['Wildera', {
-		'name': 'Wildera',
-		'battleEye': 'green',
-		'pvp': 'Retro Hardcore PvP',
-		'location': 'North America'
 	}],
 	['Wintera', {
 		'name': 'Wintera',
@@ -469,17 +475,23 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'North America'
 	}],
+	['Xybra', {
+		'name': 'Xybra',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'South America'
+	}],
 	['Xyla', {
 		'name': 'Xyla',
 		'battleEye': 'green',
 		'pvp': 'Open PvP',
 		'location': 'Europe'
 	}],
-	['Yara', {
-		'name': 'Yara',
+	['Xymera', {
+		'name': 'Xymera',
 		'battleEye': 'green',
 		'pvp': 'Open PvP',
-		'location': 'Europe'
+		'location': 'North America'
 	}],
 	['Yonabra', {
 		'name': 'Yonabra',
@@ -499,21 +511,15 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'South America'
 	}],
-	['Zephyra', {
-		'name': 'Zephyra',
-		'battleEye': 'green',
-		'pvp': 'Optional PvP',
-		'location': 'Europe'
-	}],
 	['Zuna', {
 		'name': 'Zuna',
-		'battleEye': 'off',
+		'battleEye': 'yellow',
 		'pvp': 'Hardcore PvP',
 		'location': 'Europe'
 	}],
 	['Zunera', {
 		'name': 'Zunera',
-		'battleEye': 'off',
+		'battleEye': 'yellow',
 		'pvp': 'Hardcore PvP',
 		'location': 'North America'
 	}]
