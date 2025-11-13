@@ -51,7 +51,7 @@ const checkCharacter = async (characterName) => {
 		data = await response.json();
 	} catch {
 		console.log('Error in API response. Retrying…');
-		return getHighscoreData(categoryId, vocationId, page, results);
+		return checkCharacter(characterName);
 	}
 
 	if (data.information.status.error || !data.character) {
