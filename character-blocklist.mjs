@@ -3,7 +3,7 @@
 export const CHARACTER_BLOCKLIST = new Set([
 	'Alpha Charlyne',
 	'Annie Arelluf',
-	'Bil Boladao',
+	'Archangel Bonetto',
 	'Bloodrunk Leech',
 	'Broed',
 	'Capitao Athim',
