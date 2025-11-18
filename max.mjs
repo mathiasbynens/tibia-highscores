@@ -4,11 +4,11 @@
 import { computeBossBonuses } from './boss-points-utils.mjs';
 
 // Excluding coinciding achievements.
-export const MAX_ACHIEVEMENT_POINTS = 1_388;
+export const MAX_ACHIEVEMENT_POINTS = 1_399;
 
 export const MAX_CHARM_POINTS = 26_009;
 
-export const MAX_BOSS_POINTS = 26_400;
+export const MAX_BOSS_POINTS = 26_850;
 export const MAX_BOSS_BONUSES = computeBossBonuses(MAX_BOSS_POINTS);
 
 // Characters that rook themselves can unlock a number of coinciding
