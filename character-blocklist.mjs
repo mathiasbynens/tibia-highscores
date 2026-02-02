@@ -9,7 +9,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Capitao Athim',
 	'Clu Eless',
 	'Daff Knight',
-	'Elyrea',
+	'Demoniqued',
 	'Fantasma Druid',
 	'Firdeso',
 	'Galdrek',
