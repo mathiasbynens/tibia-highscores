@@ -4,11 +4,11 @@
 import { computeBossBonuses } from './boss-points-utils.mjs';
 
 // Excluding coinciding achievements.
-export const MAX_ACHIEVEMENT_POINTS = 1_407;
+export const MAX_ACHIEVEMENT_POINTS = 1_410;
 
-export const MAX_CHARM_POINTS = 26_874;
+export const MAX_CHARM_POINTS = 27_014;
 
-export const MAX_BOSS_POINTS = 27_100;
+export const MAX_BOSS_POINTS = 27_150;
 export const MAX_BOSS_BONUSES = computeBossBonuses(MAX_BOSS_POINTS);
 
 // Prior to the Newhaven update [1], characters could rook themselves
