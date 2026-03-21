@@ -5,7 +5,6 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Annie Arelluf',
 	'Archangel Bonetto',
 	'Bloodrunk Leech',
-	'Broed',
 	'Capitao Athim',
 	'Clu Eless',
 	'Daff Knight',
