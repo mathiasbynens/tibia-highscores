@@ -4,6 +4,8 @@ on:
   schedule:
     # “Run at minute :05 past hour 0, 4, 8, 12, 16, and 20.”
     - cron: '5 0,4,8,12,16,20 * * *'
+      timezone: 'Europe/Berlin'
+
   workflow_dispatch:
 
 jobs:
