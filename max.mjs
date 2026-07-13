@@ -7,8 +7,9 @@ import { computeBossBonuses } from './boss-points-utils.mjs';
 export const MAX_ACHIEVEMENT_POINTS = 1_435;
 
 export const MAX_REGULAR_CHARM_POINTS = 28_734;
-export const MAX_ECHO_WARDEN_CHARM_POINTS = 9_290;
-export const MAX_CHARM_POINTS = 38_024;
+export const MAX_ECHO_WARDEN_CHARM_POINTS = 8_497;
+export const MAX_CHARM_POINTS =
+	MAX_REGULAR_CHARM_POINTS + MAX_ECHO_WARDEN_CHARM_POINTS;
 
 export const MAX_BOSS_POINTS = 27_450;
 export const MAX_BOSS_BONUSES = computeBossBonuses(MAX_BOSS_POINTS);
