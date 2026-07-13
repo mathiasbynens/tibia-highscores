@@ -1,7 +1,12 @@
 import fs from 'node:fs/promises';
 
-import {CHARACTER_BLOCKLIST} from './character-blocklist.mjs';
-import {MAX_ACHIEVEMENT_POINTS, UNFAIR_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
+import { CHARACTER_BLOCKLIST } from './character-blocklist.mjs';
+import {
+	MAX_ACHIEVEMENT_POINTS,
+	UNFAIR_ACHIEVEMENT_POINTS,
+	MAX_CHARM_POINTS,
+	MAX_BOSS_POINTS,
+} from './max.mjs';
 
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');
@@ -20,7 +25,8 @@ export const computeCompletionists = async () => {
 		const points = CHARACTER_BLOCKLIST.has(characterName)
 			? entry.value - UNFAIR_ACHIEVEMENT_POINTS
 			: entry.value;
-		const achievementPointsPercentage = Math.round(10_000 * points / MAX_ACHIEVEMENT_POINTS) / 100;
+		const achievementPointsPercentage =
+			Math.round((10_000 * points) / MAX_ACHIEVEMENT_POINTS) / 100;
 		characters.set(characterName, {
 			rank: 0,
 			name: characterName,
@@ -48,7 +54,8 @@ export const computeCompletionists = async () => {
 	for (const entry of charmPoints) {
 		const characterName = entry.name;
 		const points = entry.value;
-		const charmPointsPercentage = Math.round(10_000 * points / MAX_CHARM_POINTS) / 100;
+		const charmPointsPercentage =
+			Math.round((10_000 * points) / MAX_CHARM_POINTS) / 100;
 		if (characters.has(characterName)) {
 			const character = characters.get(characterName);
 			character.charmPoints = points;
@@ -82,7 +89,8 @@ export const computeCompletionists = async () => {
 	for (const entry of bossPoints) {
 		const characterName = entry.name;
 		const points = entry.value;
-		const bossPointsPercentage = Math.round(10_000 * points / MAX_BOSS_POINTS) / 100;
+		const bossPointsPercentage =
+			Math.round((10_000 * points) / MAX_BOSS_POINTS) / 100;
 		if (characters.has(characterName)) {
 			const character = characters.get(characterName);
 			character.bossPoints = points;
@@ -114,22 +122,31 @@ export const computeCompletionists = async () => {
 	}
 
 	for (const [name, stats] of characters) {
-		const overallPercentage = Math.round(100 * (stats.achievementPointsPercentage + stats.charmPointsPercentage + stats.bossPointsPercentage) / 3) / 100;
+		const overallPercentage =
+			Math.round(
+				(100 *
+					(stats.achievementPointsPercentage +
+						stats.charmPointsPercentage +
+						stats.bossPointsPercentage)) /
+					3,
+			) / 100;
 		stats.overallPercentage = overallPercentage;
 	}
 
-	const completionists = Array.from(characters.values()).sort((a, b) => {
-		return b.overallPercentage - a.overallPercentage;
-	}).filter((entry) => {
-		// Only include entries with non-zero `charmPoints`, `bossPoints`, and
-		// `achievementPoints`. As soon as any of these is `0`, we cannot
-		// accurately compute the character’s overall completion percentage.
-		return (
-			entry.charmPoints > 0 &&
-			entry.bossPoints > 0 &&
-			entry.achievementPoints > 0
-		);
-	});
+	const completionists = Array.from(characters.values())
+		.sort((a, b) => {
+			return b.overallPercentage - a.overallPercentage;
+		})
+		.filter((entry) => {
+			// Only include entries with non-zero `charmPoints`, `bossPoints`, and
+			// `achievementPoints`. As soon as any of these is `0`, we cannot
+			// accurately compute the character’s overall completion percentage.
+			return (
+				entry.charmPoints > 0 &&
+				entry.bossPoints > 0 &&
+				entry.achievementPoints > 0
+			);
+		});
 
 	let rank = 1;
 	for (const entry of completionists) {
@@ -150,30 +167,40 @@ export const computeCompletionists = async () => {
 		overallPercentage: Infinity,
 	};
 	for (const stats of completionists) {
-		const {achievementPoints, charmPoints, bossPoints, overallPercentage} = stats;
+		const { achievementPoints, charmPoints, bossPoints, overallPercentage } =
+			stats;
 
-		if (achievementPoints > top.achievementPoints) top.achievementPoints = achievementPoints;
+		if (achievementPoints > top.achievementPoints)
+			top.achievementPoints = achievementPoints;
 		if (charmPoints > top.charmPoints) top.charmPoints = charmPoints;
 		if (bossPoints > top.bossPoints) top.bossPoints = bossPoints;
-		if (overallPercentage > top.overallPercentage) top.overallPercentage = overallPercentage;
+		if (overallPercentage > top.overallPercentage)
+			top.overallPercentage = overallPercentage;
 
-		if (achievementPoints < bottom.achievementPoints) bottom.achievementPoints = achievementPoints;
+		if (achievementPoints < bottom.achievementPoints)
+			bottom.achievementPoints = achievementPoints;
 		if (charmPoints < bottom.charmPoints) bottom.charmPoints = charmPoints;
 		if (bossPoints < bottom.bossPoints) bottom.bossPoints = bossPoints;
-		if (overallPercentage < bottom.overallPercentage) bottom.overallPercentage = overallPercentage;
+		if (overallPercentage < bottom.overallPercentage)
+			bottom.overallPercentage = overallPercentage;
 	}
 	for (const stats of completionists) {
-		const {achievementPoints, charmPoints, bossPoints, overallPercentage} = stats;
+		const { achievementPoints, charmPoints, bossPoints, overallPercentage } =
+			stats;
 
-		if (achievementPoints === top.achievementPoints) stats.isTopAchievementPoints = true;
+		if (achievementPoints === top.achievementPoints)
+			stats.isTopAchievementPoints = true;
 		if (charmPoints === top.charmPoints) stats.isTopCharmPoints = true;
 		if (bossPoints === top.bossPoints) stats.isTopBossPoints = true;
-		if (overallPercentage === top.overallPercentage) stats.isTopOverallPercentage = true;
+		if (overallPercentage === top.overallPercentage)
+			stats.isTopOverallPercentage = true;
 
-		if (achievementPoints === bottom.achievementPoints) stats.isBottomAchievementPoints = true;
+		if (achievementPoints === bottom.achievementPoints)
+			stats.isBottomAchievementPoints = true;
 		if (charmPoints === bottom.charmPoints) stats.isBottomCharmPoints = true;
 		if (bossPoints === bottom.bossPoints) stats.isBottomBossPoints = true;
-		if (overallPercentage === bottom.overallPercentage) stats.isBottomOverallPercentage = true;
+		if (overallPercentage === bottom.overallPercentage)
+			stats.isBottomOverallPercentage = true;
 	}
 
 	return completionists;

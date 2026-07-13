@@ -1,13 +1,17 @@
 import fs from 'node:fs/promises';
 
-import {escape as escapeHtml} from 'lodash-es';
-import {minify as minifyHtml} from 'html-minifier-terser';
+import { escape as escapeHtml } from 'lodash-es';
+import { minify as minifyHtml } from 'html-minifier-terser';
 
-import {getCategoryMetaData} from './categories.mjs';
-import {generateWorldHtml} from './worlds-utils.mjs';
-import {computeBossBonuses} from './boss-points-utils.mjs';
+import { getCategoryMetaData } from './categories.mjs';
+import { generateWorldHtml } from './worlds-utils.mjs';
+import { computeBossBonuses } from './boss-points-utils.mjs';
 
-import {MAX_ACHIEVEMENT_POINTS, MAX_CHARM_POINTS, MAX_BOSS_POINTS} from './max.mjs';
+import {
+	MAX_ACHIEVEMENT_POINTS,
+	MAX_CHARM_POINTS,
+	MAX_BOSS_POINTS,
+} from './max.mjs';
 
 const readJsonFile = async (fileName) => {
 	const json = await fs.readFile(fileName, 'utf8');
@@ -23,8 +27,8 @@ const formatInt = (number) => {
 };
 
 const percentageFormatter = new Intl.NumberFormat('en', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 2,
 });
 const formatPercentage = (number) => {
 	return percentageFormatter.format(number) + '%';
@@ -69,18 +73,22 @@ const renderRelatedHtml = (related) => {
 };
 
 const renderHtml = (highscores, categoryId, maxValue = false) => {
-	const output = [
-		`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`,
-	];
+	const output = [`<p>Last updated on <time>${escapeHtml(dateId)}</time>.`];
 	const isCompletionists = 'completionists' === categoryId;
 	const isBossPoints = 'boss-points' === categoryId;
 	const table = [];
 	if (isCompletionists) {
-		table.push('<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Completion percentage<tbody>');
+		table.push(
+			'<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Achievement points<th>Charm points<th>Boss points<th>Completion percentage<tbody>',
+		);
 	} else if (isBossPoints) {
-		table.push(`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Points<th>Base equipment loot bonus<th>Mastery equipment loot bonus<tbody>`);
+		table.push(
+			`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>Points<th>Base equipment loot bonus<th>Mastery equipment loot bonus<tbody>`,
+		);
 	} else {
-		table.push(`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>${maxValue ? 'Points' : 'Value'}<tbody>`);
+		table.push(
+			`<div class="table-wrapper"><table><thead><tr><th>Rank<th>Name<th>Level + vocation<th>World<th>${maxValue ? 'Points' : 'Value'}<tbody>`,
+		);
 	}
 	for (const entry of highscores) {
 		if (isCompletionists) {
@@ -99,7 +107,9 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 		} else if (isBossPoints) {
 			const points = entry.value;
 			const bossBonuses = computeBossBonuses(points);
-			const percentage = maxValue ? (Math.round(10_000 * entry.value / maxValue) / 100) : 0;
+			const percentage = maxValue
+				? Math.round((10_000 * entry.value) / maxValue) / 100
+				: 0;
 			table.push(`
 				<tr id="${escapeHtml(entry.name)}">
 					<th scope=row>${escapeHtml(entry.rank)}
@@ -112,7 +122,9 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 			`);
 		} else {
 			const points = entry.value;
-			const percentage = maxValue ? (Math.round(10_000 * entry.value / maxValue) / 100) : 0;
+			const percentage = maxValue
+				? Math.round((10_000 * entry.value) / maxValue) / 100
+				: 0;
 			table.push(`
 				<tr id="${escapeHtml(entry.name)}">
 					<th scope=row>${escapeHtml(entry.rank)}
@@ -129,13 +141,14 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 	return html;
 };
 
-const HTML_TEMPLATE = (await fs.readFile('./templates/index.html', 'utf8')).toString();
+const HTML_TEMPLATE = (
+	await fs.readFile('./templates/index.html', 'utf8')
+).toString();
 export const updateHtml = async (id) => {
 	const highscores = await readJsonFile(`./data/${id}.json`);
 	const meta = getCategoryMetaData(id);
 	if (!meta) console.log(id);
-	const html = HTML_TEMPLATE
-		.replaceAll('%%%CATEGORY%%%', escapeHtml(meta.name))
+	const html = HTML_TEMPLATE.replaceAll('%%%CATEGORY%%%', escapeHtml(meta.name))
 		.replaceAll('%%%DESCRIPTION%%%', escapeHtml(meta.description))
 		.replaceAll('%%%RELATED%%%', renderRelatedHtml(meta.related))
 		.replace('%%%DATA%%%', renderHtml(highscores, id, meta.max));

@@ -1,5 +1,7 @@
 import {
 	MAX_ACHIEVEMENT_POINTS,
+	MAX_REGULAR_CHARM_POINTS,
+	MAX_ECHO_WARDEN_CHARM_POINTS,
 	MAX_CHARM_POINTS,
 	MAX_BOSS_POINTS,
 	MAX_BOSS_BONUSES,
@@ -7,6 +9,7 @@ import {
 	MAX_ACHIEVEMENT_POINTS_UNFAIR,
 } from './max.mjs';
 
+// prettier-ignore
 const map = new Map([
 	['achievements-filtered', {
 		name: 'achievement points (filtered)',
@@ -43,7 +46,7 @@ const map = new Map([
 	}],
 	['charm-points', {
 		name: 'charm points',
-		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% points.',
+		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% points (%%%MAX_REGULAR_CHARM_POINTS%%% regular charm points + %%%MAX_ECHO_WARDEN_CHARM_POINTS%%% echo warden charm points).',
 		max: MAX_CHARM_POINTS,
 		related: [
 			'completionists',
@@ -189,16 +192,31 @@ const formatInt = (number) => {
 };
 
 const populateDescription = (description) => {
-	return (
-		description
-			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS%%%', formatInt(MAX_ACHIEVEMENT_POINTS))
-			.replaceAll('%%%MAX_CHARM_POINTS%%%', formatInt(MAX_CHARM_POINTS))
-			.replaceAll('%%%MAX_BOSS_POINTS%%%', formatInt(MAX_BOSS_POINTS))
-			.replaceAll('%%%BASE_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.base))
-			.replaceAll('%%%MASTERY_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.mastery))
-			.replaceAll('%%%UNFAIR_ACHIEVEMENT_POINTS%%%', formatInt(UNFAIR_ACHIEVEMENT_POINTS))
-			.replaceAll('%%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%%', formatInt(MAX_ACHIEVEMENT_POINTS_UNFAIR))
-	);
+	return description
+		.replaceAll(
+			'%%%MAX_ACHIEVEMENT_POINTS%%%',
+			formatInt(MAX_ACHIEVEMENT_POINTS),
+		)
+		.replaceAll(
+			'%%%MAX_REGULAR_CHARM_POINTS%%%',
+			formatInt(MAX_REGULAR_CHARM_POINTS),
+		)
+		.replaceAll(
+			'%%%MAX_ECHO_WARDEN_CHARM_POINTS%%%',
+			formatInt(MAX_ECHO_WARDEN_CHARM_POINTS),
+		)
+		.replaceAll('%%%MAX_CHARM_POINTS%%%', formatInt(MAX_CHARM_POINTS))
+		.replaceAll('%%%MAX_BOSS_POINTS%%%', formatInt(MAX_BOSS_POINTS))
+		.replaceAll('%%%BASE_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.base))
+		.replaceAll('%%%MASTERY_BOSS_BONUS%%%', formatInt(MAX_BOSS_BONUSES.mastery))
+		.replaceAll(
+			'%%%UNFAIR_ACHIEVEMENT_POINTS%%%',
+			formatInt(UNFAIR_ACHIEVEMENT_POINTS),
+		)
+		.replaceAll(
+			'%%%MAX_ACHIEVEMENT_POINTS_UNFAIR%%%',
+			formatInt(MAX_ACHIEVEMENT_POINTS_UNFAIR),
+		);
 };
 
 export const getCategoryMetaData = (id) => {
