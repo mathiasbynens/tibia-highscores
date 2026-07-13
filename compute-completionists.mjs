@@ -4,7 +4,7 @@ import { CHARACTER_BLOCKLIST } from './character-blocklist.mjs';
 import {
 	MAX_ACHIEVEMENT_POINTS,
 	UNFAIR_ACHIEVEMENT_POINTS,
-	MAX_CHARM_POINTS,
+	MAX_REGULAR_CHARM_POINTS,
 	MAX_BOSS_POINTS,
 } from './max.mjs';
 
@@ -55,7 +55,7 @@ export const computeCompletionists = async () => {
 		const characterName = entry.name;
 		const points = entry.value;
 		const charmPointsPercentage =
-			Math.round((10_000 * points) / MAX_CHARM_POINTS) / 100;
+			Math.round((10_000 * points) / MAX_REGULAR_CHARM_POINTS) / 100;
 		if (characters.has(characterName)) {
 			const character = characters.get(characterName);
 			character.charmPoints = points;

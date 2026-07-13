@@ -9,7 +9,7 @@ import { computeBossBonuses } from './boss-points-utils.mjs';
 
 import {
 	MAX_ACHIEVEMENT_POINTS,
-	MAX_CHARM_POINTS,
+	MAX_REGULAR_CHARM_POINTS,
 	MAX_BOSS_POINTS,
 } from './max.mjs';
 
@@ -100,7 +100,7 @@ const renderHtml = (highscores, categoryId, maxValue = false) => {
 					<td>${escapeHtml(entry.level)} ${escapeHtml(abbreviateVocation(entry.vocation))}
 					<td>${generateWorldHtml(entry.world)}
 					<td${entry.isTopAchievementPoints ? ' class="top"' : ''}${entry.isBottomAchievementPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.achievementPoints))} out of ${escapeHtml(formatInt(MAX_ACHIEVEMENT_POINTS))} achievement points ≈ ${escapeHtml(formatPercentage(entry.achievementPointsPercentage))}">${escapeHtml(formatInt(entry.achievementPoints))} <progress max="100" value="${escapeHtml(entry.achievementPointsPercentage)}"></progress>
-					<td${entry.isTopCharmPoints ? ' class="top"' : ''}${entry.isBottomCharmPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.charmPoints))} out of ${escapeHtml(formatInt(MAX_CHARM_POINTS))} charm points ≈ ${escapeHtml(formatPercentage(entry.charmPointsPercentage))}">${escapeHtml(formatInt(entry.charmPoints))} <progress max="100" value="${escapeHtml(entry.charmPointsPercentage)}"></progress>
+					<td${entry.isTopCharmPoints ? ' class="top"' : ''}${entry.isBottomCharmPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.charmPoints))} out of ${escapeHtml(formatInt(MAX_REGULAR_CHARM_POINTS))} charm points ≈ ${escapeHtml(formatPercentage(entry.charmPointsPercentage))}">${escapeHtml(formatInt(entry.charmPoints))} <progress max="100" value="${escapeHtml(entry.charmPointsPercentage)}"></progress>
 					<td${entry.isTopBossPoints ? ' class="top"' : ''}${entry.isBottomBossPoints ? ' class="bottom"' : ''} title="${escapeHtml(formatInt(entry.bossPoints))} out of ${escapeHtml(formatInt(MAX_BOSS_POINTS))} boss points ≈ ${escapeHtml(formatPercentage(entry.bossPointsPercentage))}&NewLine;→ +${escapeHtml(formatInt(bossBonuses.base))}% / +${escapeHtml(formatInt(bossBonuses.mastery))}% equipment loot bonus">${escapeHtml(formatInt(entry.bossPoints))} <progress max="100" value="${escapeHtml(entry.bossPointsPercentage)}"></progress>
 					<td${entry.isTopOverallPercentage ? ' class="top"' : ''}${entry.isBottomOverallPercentage ? ' class="bottom"' : ''}>${escapeHtml(formatPercentage(entry.overallPercentage))} <progress max="100" value="${escapeHtml(entry.overallPercentage)}"></progress>
 			`);
