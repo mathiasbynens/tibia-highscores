@@ -164,10 +164,10 @@ const map = new Map([
 		name: 'Goshnar’s Taint',
 		description: 'The Goshnar’s Taint highscores are related to killing the bosses in the Soul War quest. Killing a mini-boss yields 1 point, and killing the final boss yields 10 points.',
 	}],
-	// ['phosphorus-record', {
-	// 	name: 'Phosphorus record',
-	// 	description: 'The Phosphorus record highscores reflect the highest difficulty level (using the Boss Difficulty System) at which the Phosphorus boss fight was successfully completed.',
-	// }],
+	['phosphorus-record', {
+		name: 'Phosphorus record',
+		description: 'The Phosphorus record highscores reflect the highest difficulty level (using the Boss Difficulty System) at which the Phosphorus boss fight was successfully completed.',
+	}],
 	['loyalty-points', {
 		name: 'loyalty points',
 		description: '',
