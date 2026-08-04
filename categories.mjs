@@ -46,8 +46,8 @@ const map = new Map([
 	}],
 	['charm-points', {
 		name: 'charm points',
-		description: 'Highest possible score: %%%MAX_REGULAR_CHARM_POINTS%%% points. The real in-game maximum is %%%MAX_CHARM_POINTS%%% (%%%MAX_REGULAR_CHARM_POINTS%%% regular charm points + %%%MAX_ECHO_WARDEN_CHARM_POINTS%%% echo warden charm points), but the highscores seem to exclude echo warden charm points.',
-		max: MAX_REGULAR_CHARM_POINTS,
+		description: 'Highest possible score: %%%MAX_CHARM_POINTS%%% (%%%MAX_REGULAR_CHARM_POINTS%%% regular charm points + %%%MAX_ECHO_WARDEN_CHARM_POINTS%%% echo warden charm points).',
+		max: MAX_CHARM_POINTS,
 		related: [
 			'completionists',
 		],
@@ -58,7 +58,7 @@ const map = new Map([
 	}],
 	['completionists', {
 		name: 'completionists',
-		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_REGULAR_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game. Only characters with global top 1000 highscore entries for achievement points, charm points, and boss points are considered.',
+		description: 'Completionists are players who seek to complete all possible tasks in Tibia. We measure the completeness of a character by considering how many achievement points (max. %%%MAX_ACHIEVEMENT_POINTS%%%), charm points (max. %%%MAX_CHARM_POINTS%%%), and boss points (max. %%%MAX_BOSS_POINTS%%%) it has, based on the maximum amount of these points that can be obtained in the game. Only characters with global top 1000 highscore entries for achievement points, charm points, and boss points are considered.',
 		related: [
 			'achievements',
 			'charm-points',
@@ -104,14 +104,6 @@ const map = new Map([
 	}],
 	['fist-fighting', {
 		name: 'fist fighting',
-		description: '',
-	}],
-	['goshnars-taint', {
-		name: 'Goshnar’s Taint',
-		description: 'The Goshnar’s Taint highscores are related to killing the bosses in the Soul War quest. Killing a mini-boss yields 1 point, and killing the final boss yields 10 points.',
-	}],
-	['loyalty-points', {
-		name: 'loyalty points',
 		description: '',
 	}],
 	['magic-level-druids', {
@@ -166,6 +158,26 @@ const map = new Map([
 	}],
 	['sword-fighting', {
 		name: 'sword fighting',
+		description: '',
+	}],
+	['goshnars-taint', {
+		name: 'Goshnar’s Taint',
+		description: 'The Goshnar’s Taint highscores are related to killing the bosses in the Soul War quest. Killing a mini-boss yields 1 point, and killing the final boss yields 10 points.',
+	}],
+	// ['phosphorus-record', {
+	// 	name: 'Phosphorus record',
+	// 	description: 'The Phosphorus record highscores reflect the highest difficulty level (using the Boss Difficulty System) at which the Phosphorus boss fight was successfully completed.',
+	// }],
+	['loyalty-points', {
+		name: 'loyalty points',
+		description: '',
+	}],
+	['bounty-points', {
+		name: 'bounty points',
+		description: '',
+	}],
+	['weekly-tasks', {
+		name: 'weekly tasks',
 		description: '',
 	}],
 ]);
