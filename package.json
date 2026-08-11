@@ -5,7 +5,8 @@
 		"worlds": "node get-worlds-data.mjs",
 		"fetch": "node --no-warnings get-highscores-data.mjs",
 		"render": "node render-html.mjs",
-		"test": "TEST=true node character-blocklist.mjs"
+		"test": "TEST=true node character-blocklist.mjs",
+		"format": "prettier . --write"
 	},
 	"devDependencies": {
 		"glob": "^10.3.10",
@@ -13,6 +14,6 @@
 		"jsesc": "^3.0.2",
 		"lodash-es": "^4.17.21",
 		"node-fetch-retry": "^2.0.1",
-		"prettier": "^3.0.3"
+		"prettier": "^3.9.6"
 	}
 }

@@ -1,4 +1,4 @@
-import {worldMap} from './worlds.mjs';
+import { worldMap } from './worlds.mjs';
 
 const FLAG_BR = '\u{1F1E7}\u{1F1F7}';
 const FLAG_SG = '\u{1F1F8}\u{1F1EC}';
@@ -44,7 +44,7 @@ const generateBattleEyeHtml = (battleEyeType) => {
 			return battleEyeType;
 		}
 	}
-}
+};
 export const generateWorldHtml = (worldName) => {
 	const entry = worldMap.get(worldName);
 	if (entry) {

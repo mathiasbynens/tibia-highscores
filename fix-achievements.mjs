@@ -1,8 +1,12 @@
-import {CHARACTER_BLOCKLIST} from './character-blocklist.mjs';
-import {UNFAIR_ACHIEVEMENT_POINTS} from './max.mjs';
+import { CHARACTER_BLOCKLIST } from './character-blocklist.mjs';
+import { UNFAIR_ACHIEVEMENT_POINTS } from './max.mjs';
 
-export const removeUnfairAchievementsHighscoreEntries = (_unfairAchievementsHighscores) => {
-	const unfairAchievementsHighscores = structuredClone(_unfairAchievementsHighscores);
+export const removeUnfairAchievementsHighscoreEntries = (
+	_unfairAchievementsHighscores,
+) => {
+	const unfairAchievementsHighscores = structuredClone(
+		_unfairAchievementsHighscores,
+	);
 	const fairAchievementsHighscores = [];
 	let rank = 0;
 	let prevPoints = 0;
@@ -21,8 +25,12 @@ export const removeUnfairAchievementsHighscoreEntries = (_unfairAchievementsHigh
 	return fairAchievementsHighscores;
 };
 
-export const adjustUnfairAchievementsHighscoreEntries = (_unfairAchievementsHighscores) => {
-	const unfairAchievementsHighscores = structuredClone(_unfairAchievementsHighscores);
+export const adjustUnfairAchievementsHighscoreEntries = (
+	_unfairAchievementsHighscores,
+) => {
+	const unfairAchievementsHighscores = structuredClone(
+		_unfairAchievementsHighscores,
+	);
 	for (const entry of unfairAchievementsHighscores) {
 		if (CHARACTER_BLOCKLIST.has(entry.name)) {
 			entry.value -= UNFAIR_ACHIEVEMENT_POINTS;

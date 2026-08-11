@@ -1,4 +1,4 @@
-import fetch from 'node-fetch-retry';
+import { fetchJson } from './utils.mjs';
 
 // Characters confirmed to have been rooked in order to obtain coinciding
 // achievements that are otherwise impossible to get.
@@ -42,38 +42,10 @@ export const CHARACTER_BLOCKLIST = new Set([
 	'Yxx xy',
 ]);
 
-const MAX_RETRY_COUNT = 5;
-
-const checkCharacter = async (characterName, retryCount = 0) => {
+const checkCharacter = async (characterName) => {
 	const url = `https://api.tibiadata.com/v4/character/${encodeURIComponent(characterName)}`;
 	console.log(`Checking ${characterName}…`);
-	const response = await fetch(url, {
-		retry: 3,
-		pause: 1_000,
-	});
-
-	let data = null;
-	try {
-		data = await response.json();
-	} catch {
-		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
-			return false;
-		}
-		console.log('Error in API response. Retrying…');
-		return checkCharacter(characterName, retryCount + 1);
-	}
-
-	if (data.information.status.error || !data.character) {
-		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
-			return false;
-		}
-		console.log('Error in API response. Retrying…');
-		return checkCharacter(characterName, retryCount + 1);
-	}
+	const data = await fetchJson(url, (data) => !!data.character);
 
 	const currentName = data.character.character.name;
 	if (currentName !== characterName) {

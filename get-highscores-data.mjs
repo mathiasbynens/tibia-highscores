@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import fetch from 'node-fetch-retry';
+import { fetchJson } from './utils.mjs';
 import {
 	adjustUnfairAchievementsHighscoreEntries,
 	removeUnfairAchievementsHighscoreEntries,
@@ -40,7 +40,6 @@ const CATEGORY_IDS_REQUIRING_MORE_PAGES = new Set([
 const VOCATION_IDS = new Set(['knights', 'paladins', 'druids', 'sorcerers']);
 const MAX_PAGE = 5;
 const MAX_PAGE_SPECIAL = 20;
-const MAX_RETRY_COUNT = 5;
 
 const stringify = (data) => {
 	return JSON.stringify(data, null, '\t') + '\n';
@@ -51,49 +50,10 @@ const getHighscoreData = async (
 	vocationId = 'all',
 	page = 1,
 	results = [],
-	retryCount = 0,
 ) => {
 	const url = `https://api.tibiadata.com/v4/highscores/all/${categoryId}/${vocationId}/${page}`;
 	console.log(url);
-	const response = await fetch(url, {
-		retry: 3,
-		pause: 1_000,
-	});
-
-	let data = null;
-	try {
-		data = await response.json();
-	} catch {
-		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
-			return results;
-		}
-		console.log('Error in API response. Retrying…');
-		return getHighscoreData(
-			categoryId,
-			vocationId,
-			page,
-			results,
-			retryCount + 1,
-		);
-	}
-
-	if (data.information.status.error || !data.highscores) {
-		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
-			return results;
-		}
-		console.log('Error in API response. Retrying…');
-		return getHighscoreData(
-			categoryId,
-			vocationId,
-			page,
-			results,
-			retryCount + 1,
-		);
-	}
+	const data = await fetchJson(url, (data) => !!data.highscores);
 
 	const elements = data.highscores.highscore_list;
 	results.push(...elements);
