@@ -133,6 +133,12 @@ export const worldMap = new Map([
 		'pvp': 'Retro Open PvP',
 		'location': 'North America'
 	}],
+	['Floribra', {
+		'name': 'Floribra',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'South America'
+	}],
 	['Gentebra', {
 		'name': 'Gentebra',
 		'battleEye': 'yellow',
@@ -181,6 +187,12 @@ export const worldMap = new Map([
 		'pvp': 'Optional PvP',
 		'location': 'Europe'
 	}],
+	['Ignibra', {
+		'name': 'Ignibra',
+		'battleEye': 'green',
+		'pvp': 'Retro Open PvP',
+		'location': 'South America'
+	}],
 	['Ignitera', {
 		'name': 'Ignitera',
 		'battleEye': 'green',
@@ -205,6 +217,12 @@ export const worldMap = new Map([
 		'pvp': 'Open PvP',
 		'location': 'South America'
 	}],
+	['Junera', {
+		'name': 'Junera',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'North America'
+	}],
 	['Kalanta', {
 		'name': 'Kalanta',
 		'battleEye': 'green',
@@ -222,6 +240,12 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Optional PvP',
 		'location': 'North America'
+	}],
+	['Kanda', {
+		'name': 'Kanda',
+		'battleEye': 'green',
+		'pvp': 'Optional PvP',
+		'location': 'Europe'
 	}],
 	['Karmeya', {
 		'name': 'Karmeya',
@@ -252,6 +276,12 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Optional PvP',
 		'location': 'South America'
+	}],
+	['Maligna', {
+		'name': 'Maligna',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'Europe'
 	}],
 	['Menera', {
 		'name': 'Menera',
@@ -306,6 +336,12 @@ export const worldMap = new Map([
 		'battleEye': 'green',
 		'pvp': 'Open PvP',
 		'location': 'South America'
+	}],
+	['Opulera', {
+		'name': 'Opulera',
+		'battleEye': 'green',
+		'pvp': 'Open PvP',
+		'location': 'North America'
 	}],
 	['Ourobra', {
 		'name': 'Ourobra',

@@ -31,6 +31,6 @@ jobs:
           npm run build
           git config user.name 'Tibia highscores bot'
           git config user.email 'highscores@tibiamaps.io'
-          git add data
+          git add data worlds.mjs
           git commit data -m "Update highscores data" || true
           git push
