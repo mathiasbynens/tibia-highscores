@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 
+import fetch from 'node-fetch-retry';
 import jsesc from 'jsesc';
 
 const determineBattleEyeType = (isProtected, date) => {
@@ -9,20 +10,35 @@ const determineBattleEyeType = (isProtected, date) => {
 	return 'off';
 };
 
-const getWorldsData = async () => {
+const MAX_RETRY_COUNT = 5;
+
+const getWorldsData = async (retryCount = 0) => {
 	const url = 'https://api.tibiadata.com/v4/worlds';
-	const response = await fetch(url);
+	const response = await fetch(url, {
+		retry: 3,
+		pause: 1_000,
+	});
 	let data = null;
 	try {
 		data = await response.json();
 	} catch {
+		if (retryCount > MAX_RETRY_COUNT) {
+			console.log('Too many retries. Giving up…');
+			process.exit(1);
+			return new Map();
+		}
 		console.log('Error in API response. Retrying…');
-		return getWorldsData();
+		return getWorldsData(retryCount + 1);
 	}
 
 	if (data.information.status.error || !data.worlds) {
+		if (retryCount > MAX_RETRY_COUNT) {
+			console.log('Too many retries. Giving up…');
+			process.exit(1);
+			return new Map();
+		}
 		console.log('Error in API response. Retrying…');
-		return getWorldsData();
+		return getWorldsData(retryCount + 1);
 	}
 
 	const map = new Map();
