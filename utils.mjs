@@ -13,17 +13,29 @@ export const fetchJson = async (url, validateFn, retryCount = 0) => {
 		data = await response.json();
 	} catch {
 		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
+			throw new Error(`TibiaData returned invalid JSON for ${url}`);
 		}
 		console.log('Error in API response. Retrying…');
 		return fetchJson(url, validateFn, retryCount + 1);
 	}
 
-	if (data.information?.status?.error || (validateFn && !validateFn(data))) {
+	if (!response.ok && response.status < 500) {
+		const message = data.information?.status?.message;
+		throw new Error(
+			`TibiaData request failed with HTTP ${response.status}${message ? `: ${message}` : ''}`,
+		);
+	}
+
+	if (
+		!response.ok ||
+		data.information?.status?.error ||
+		(validateFn && !validateFn(data))
+	) {
 		if (retryCount > MAX_RETRY_COUNT) {
-			console.log('Too many retries. Giving up…');
-			process.exit(1);
+			const message = data.information?.status?.message;
+			throw new Error(
+				`TibiaData request failed after retries${message ? `: ${message}` : ''}`,
+			);
 		}
 		console.log('Error in API response. Retrying…');
 		return fetchJson(url, validateFn, retryCount + 1);

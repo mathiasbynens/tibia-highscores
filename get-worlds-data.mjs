@@ -11,7 +11,7 @@ const determineBattleEyeType = (isProtected, date) => {
 };
 
 const getWorldsData = async () => {
-	const url = 'https://api.tibiadata.com/v4/worlds';
+	const url = 'https://api.tibiadata.com/v5/worlds';
 	const data = await fetchJson(url, (data) => !!data.worlds);
 
 	const map = new Map();
