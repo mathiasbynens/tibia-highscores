@@ -6,7 +6,7 @@ import {
 } from './fix-achievements.mjs';
 import { computeCompletionists } from './compute-completionists.mjs';
 
-// https://docs.tibiadata.com/#get-/v4/highscores/-world-/-category-/-vocation-/-page-
+// https://docs.tibiadata.com/#get-/v5/highscores/-world-/-category-/-vocation-/-page-
 const categoryMap = new Map([
 	// categoryId → niceCategoryName
 	['achievements', 'achievements'],
@@ -51,7 +51,7 @@ const getHighscoreData = async (
 	page = 1,
 	results = [],
 ) => {
-	const url = `https://api.tibiadata.com/v4/highscores/all/${categoryId}/${vocationId}/${page}`;
+	const url = `https://api.tibiadata.com/v5/highscores/all/${categoryId}/${vocationId}/${page}`;
 	console.log(url);
 	const data = await fetchJson(url, (data) => !!data.highscores);
 

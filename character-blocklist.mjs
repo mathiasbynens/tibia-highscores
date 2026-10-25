@@ -43,7 +43,7 @@ export const CHARACTER_BLOCKLIST = new Set([
 ]);
 
 const checkCharacter = async (characterName) => {
-	const url = `https://api.tibiadata.com/v4/character/${encodeURIComponent(characterName)}`;
+	const url = `https://api.tibiadata.com/v5/character/${encodeURIComponent(characterName)}`;
 	console.log(`Checking ${characterName}…`);
 	const data = await fetchJson(url, (data) => !!data.character);
 
